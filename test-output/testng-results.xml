@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-22T22:07:57 IST" name="TestAutomationPractive" finished-at="2025-05-22T22:08:15 IST" duration-ms="17920">
+    <groups>
+    </groups>
+    <test started-at="2025-05-22T22:07:57 IST" name="Blogspot" finished-at="2025-05-22T22:08:15 IST" duration-ms="17920">
+      <class name="com.pivotree.auto.training.Case_ValidatePageTitle">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.Case_ValidatePageTitle@69fb6037]" started-at="2025-05-22T22:07:58 IST" name="BrowserIntilization" finished-at="2025-05-22T22:08:03 IST" duration-ms="4612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="ValidateMultiplePageLocators()[pri:2, instance:com.pivotree.auto.training.Case_ValidatePageTitle@69fb6037]" started-at="2025-05-22T22:08:03 IST" name="ValidateMultiplePageLocators" finished-at="2025-05-22T22:08:15 IST" duration-ms="12349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateMultiplePageLocators -->
+      </class> <!-- com.pivotree.auto.training.Case_ValidatePageTitle -->
+    </test> <!-- Blogspot -->
+  </suite> <!-- TestAutomationPractive -->
+</testng-results>
