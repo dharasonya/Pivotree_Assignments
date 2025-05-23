@@ -1,42 +1,18 @@
 package ePay_CRM.Test_ActionMethods;
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.StringSelection;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
-import java.awt.event.KeyEvent;
-import java.io.IOException;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
-import javafx.util.Pair; 
-import org.apache.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
-
 import ePay_CRM.LandingPage.BasePageSetup;
-import ePay_CRM.LandingPage.Method_OrangeHRM_BaseSteps;
 import ePay_CRM.Reusable_Utils.CallListeners;
 import ePay_CRM.Reusable_Utils.ScrollHandler;
 import ePay_CRM.Reusable_Utils.WaitUtils;
 import ePay_CRM.Test_PageObjects.Repo_BlogSpot;
-import ePay_CRM.Test_PageObjects.Repo_PIM;
 import ePay_CRM.WrapMethods.WrapperMethods;
 import ePay_CRM.Reusable_Utils.CommonLogger;
 

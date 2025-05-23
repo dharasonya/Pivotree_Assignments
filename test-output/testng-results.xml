@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T18:43:12 IST" name="TestAutomationPractive" finished-at="2025-05-23T18:44:14 IST" duration-ms="62484">
+  <suite started-at="2025-05-23T18:53:00 IST" name="TestAutomationPractive" finished-at="2025-05-23T18:54:06 IST" duration-ms="65507">
     <groups>
     </groups>
-    <test started-at="2025-05-23T18:43:12 IST" name="Blogspot" finished-at="2025-05-23T18:44:14 IST" duration-ms="62484">
+    <test started-at="2025-05-23T18:53:00 IST" name="Blogspot" finished-at="2025-05-23T18:54:06 IST" duration-ms="65507">
       <class name="com.pivotree.auto.training.TC_SelectDateFromPicker">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@366647c2]" started-at="2025-05-23T18:43:41 IST" name="BrowserIntilization" finished-at="2025-05-23T18:43:43 IST" duration-ms="1867" status="PASS">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@366647c2]" started-at="2025-05-23T18:53:34 IST" name="BrowserIntilization" finished-at="2025-05-23T18:53:36 IST" duration-ms="2177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_DyanmicCheckBoxSelection()[pri:1, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@366647c2]" started-at="2025-05-23T18:43:43 IST" name="Validate_DyanmicCheckBoxSelection" finished-at="2025-05-23T18:43:49 IST" duration-ms="6464" status="PASS">
+        <test-method signature="Validate_DyanmicCheckBoxSelection()[pri:1, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@366647c2]" started-at="2025-05-23T18:53:36 IST" name="Validate_DyanmicCheckBoxSelection" finished-at="2025-05-23T18:53:43 IST" duration-ms="6751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_DyanmicCheckBoxSelection -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@366647c2]" started-at="2025-05-23T18:43:49 IST" name="TearDown" finished-at="2025-05-23T18:43:50 IST" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@366647c2]" started-at="2025-05-23T18:53:43 IST" name="TearDown" finished-at="2025-05-23T18:53:43 IST" duration-ms="361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,108 +34,8 @@
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.pivotree.auto.training.TC_SelectDateFromPicker -->
-      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@482bce4f]" started-at="2025-05-23T18:43:33 IST" name="BrowserIntilization" finished-at="2025-05-23T18:43:35 IST" duration-ms="1966" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_DyanmicCheckBoxSelection()[pri:1, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@482bce4f]" started-at="2025-05-23T18:43:35 IST" name="Validate_DyanmicCheckBoxSelection" finished-at="2025-05-23T18:43:40 IST" duration-ms="5273" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='form-group'])[4]/div/input[@value='dummy']"}
-  (Session info: chrome=136.0.7103.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a97b8b5fa2e788803aa37bf1ce25290, findElement {using=xpath, value=(//div[@class='form-group'])[4]/div/input[@value='dummy']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50344}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50344/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a97b8b5fa2e788803aa37bf1ce25290]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='form-group'])[4]/div/input[@value='dummy']"}
-  (Session info: chrome=136.0.7103.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a97b8b5fa2e788803aa37bf1ce25290, findElement {using=xpath, value=(//div[@class='form-group'])[4]/div/input[@value='dummy']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50344}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50344/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a97b8b5fa2e788803aa37bf1ce25290
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at ePay_CRM.Test_PageObjects.Repo_BlogSpot.getValueElement(Repo_BlogSpot.java:88)
-at ePay_CRM.Test_ActionMethods.Method_BlogSpot.select_deselect_Checkboxes(Method_BlogSpot.java:229)
-at com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes.Validate_DyanmicCheckBoxSelection(TC_DynamicHandlingCheckBoxes.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_DyanmicCheckBoxSelection -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@482bce4f]" started-at="2025-05-23T18:43:41 IST" name="TearDown" finished-at="2025-05-23T18:43:41 IST" duration-ms="299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes -->
       <class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:50 IST" name="BrowserIntilization" finished-at="2025-05-23T18:43:51 IST" duration-ms="1802" status="PASS">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:43 IST" name="BrowserIntilization" finished-at="2025-05-23T18:53:45 IST" duration-ms="1957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,15 +46,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:51 IST" name="setup" finished-at="2025-05-23T18:43:51 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:45 IST" name="setup" finished-at="2025-05-23T18:53:45 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Validate_Highest_PriceWiseBookDetails()[pri:1, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:51 IST" name="Validate_Highest_PriceWiseBookDetails" finished-at="2025-05-23T18:43:57 IST" duration-ms="5767" status="PASS">
+        <test-method signature="Validate_Highest_PriceWiseBookDetails()[pri:1, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:45 IST" name="Validate_Highest_PriceWiseBookDetails" finished-at="2025-05-23T18:53:51 IST" duration-ms="5855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Highest_PriceWiseBookDetails -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:57 IST" name="TearDown" finished-at="2025-05-23T18:43:57 IST" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:51 IST" name="TearDown" finished-at="2025-05-23T18:53:51 IST" duration-ms="352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +65,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:57 IST" name="BrowserIntilization" finished-at="2025-05-23T18:43:59 IST" duration-ms="1874" status="PASS">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:51 IST" name="BrowserIntilization" finished-at="2025-05-23T18:53:53 IST" duration-ms="1834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,15 +76,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:59 IST" name="setup" finished-at="2025-05-23T18:43:59 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:53 IST" name="setup" finished-at="2025-05-23T18:53:53 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Validate_Lowest_PriceWiseBookDetails()[pri:2, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:43:59 IST" name="Validate_Lowest_PriceWiseBookDetails" finished-at="2025-05-23T18:44:06 IST" duration-ms="6826" status="PASS">
+        <test-method signature="Validate_Lowest_PriceWiseBookDetails()[pri:2, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:53 IST" name="Validate_Lowest_PriceWiseBookDetails" finished-at="2025-05-23T18:53:59 IST" duration-ms="5863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Lowest_PriceWiseBookDetails -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:44:06 IST" name="TearDown" finished-at="2025-05-23T18:44:06 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:59 IST" name="TearDown" finished-at="2025-05-23T18:53:59 IST" duration-ms="315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,7 +95,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:44:06 IST" name="BrowserIntilization" finished-at="2025-05-23T18:44:09 IST" duration-ms="2116" status="PASS">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:53:59 IST" name="BrowserIntilization" finished-at="2025-05-23T18:54:01 IST" duration-ms="1887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,15 +106,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:44:09 IST" name="setup" finished-at="2025-05-23T18:44:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:54:01 IST" name="setup" finished-at="2025-05-23T18:54:01 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Validate_Average_PriceWiseBookDetails()[pri:3, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:44:09 IST" name="Validate_Average_PriceWiseBookDetails" finished-at="2025-05-23T18:44:14 IST" duration-ms="5146" status="PASS">
+        <test-method signature="Validate_Average_PriceWiseBookDetails()[pri:3, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:54:01 IST" name="Validate_Average_PriceWiseBookDetails" finished-at="2025-05-23T18:54:06 IST" duration-ms="4461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_Average_PriceWiseBookDetails -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:44:14 IST" name="TearDown" finished-at="2025-05-23T18:44:14 IST" duration-ms="365" status="PASS">
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@6a6afff2]" started-at="2025-05-23T18:54:06 IST" name="TearDown" finished-at="2025-05-23T18:54:06 IST" duration-ms="340" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -226,8 +126,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails -->
-      <class name="com.pivotree.auto.training.TC_FillPersonalDetails">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:43:12 IST" name="BrowserIntilization" finished-at="2025-05-23T18:43:15 IST" duration-ms="2593" status="PASS">
+      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@482bce4f]" started-at="2025-05-23T18:53:24 IST" name="BrowserIntilization" finished-at="2025-05-23T18:53:26 IST" duration-ms="1861" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,11 +138,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method signature="ValidatePageTitle()[pri:1, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:43:15 IST" name="ValidatePageTitle" finished-at="2025-05-23T18:43:20 IST" duration-ms="4972" status="PASS">
+        <test-method signature="Validate_DyanmicCheckBoxSelection()[pri:1, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@482bce4f]" started-at="2025-05-23T18:53:26 IST" name="Validate_DyanmicCheckBoxSelection" finished-at="2025-05-23T18:53:33 IST" duration-ms="7820" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidatePageTitle -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:43:20 IST" name="TearDown" finished-at="2025-05-23T18:43:20 IST" duration-ms="330" status="PASS">
+        </test-method> <!-- Validate_DyanmicCheckBoxSelection -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@482bce4f]" started-at="2025-05-23T18:53:33 IST" name="TearDown" finished-at="2025-05-23T18:53:34 IST" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,7 +153,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:43:20 IST" name="BrowserIntilization" finished-at="2025-05-23T18:43:22 IST" duration-ms="1977" status="PASS">
+      </class> <!-- com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes -->
+      <class name="com.pivotree.auto.training.TC_FillPersonalDetails">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:53:01 IST" name="BrowserIntilization" finished-at="2025-05-23T18:53:05 IST" duration-ms="3704" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,11 +166,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method signature="ValidateMultiplePageLocators()[pri:2, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:43:22 IST" name="ValidateMultiplePageLocators" finished-at="2025-05-23T18:43:33 IST" duration-ms="10908" status="PASS">
+        <test-method signature="ValidatePageTitle()[pri:1, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:53:05 IST" name="ValidatePageTitle" finished-at="2025-05-23T18:53:09 IST" duration-ms="4516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatePageTitle -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:53:09 IST" name="TearDown" finished-at="2025-05-23T18:53:10 IST" duration-ms="506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:53:10 IST" name="BrowserIntilization" finished-at="2025-05-23T18:53:12 IST" duration-ms="2051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="ValidateMultiplePageLocators()[pri:2, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:53:12 IST" name="ValidateMultiplePageLocators" finished-at="2025-05-23T18:53:23 IST" duration-ms="11515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateMultiplePageLocators -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:43:33 IST" name="TearDown" finished-at="2025-05-23T18:43:33 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@1329eff]" started-at="2025-05-23T18:53:23 IST" name="TearDown" finished-at="2025-05-23T18:53:24 IST" duration-ms="397" status="PASS">
           <params>
             <param index="0">
               <value>

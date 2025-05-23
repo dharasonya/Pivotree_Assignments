@@ -15,8 +15,5 @@ public class TC_DynamicHandlingCheckBoxes extends BasePageSetup {
 		Method_BlogSpot corestep=Get_BlogSpot_Obj();
 		getUrl();
 		corestep.select_deselect_Checkboxes("Sunday,Tuesday,Wednesday,Monday,Thursday,Friday,Saturday");
-		//corestep.DeselectCheckboxes("Sunday,Monday");
-		
-		
 	}
 }
