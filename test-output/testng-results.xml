@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T21:39:27 IST" name="TestAutomationPractive" finished-at="2025-05-23T21:40:05 IST" duration-ms="38702">
+  <suite started-at="2025-05-23T22:29:41 IST" name="TestAutomationPractive" finished-at="2025-05-23T22:30:28 IST" duration-ms="47405">
     <groups>
     </groups>
-    <test started-at="2025-05-23T21:39:27 IST" name="Blogspot" finished-at="2025-05-23T21:40:05 IST" duration-ms="38702">
-      <class name="com.pivotree.auto.training.TC_DynamicTabNavigation">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:39:28 IST" name="BrowserIntilization" finished-at="2025-05-23T21:39:32 IST" duration-ms="4086" status="PASS">
+    <test started-at="2025-05-23T22:29:41 IST" name="Blogspot" finished-at="2025-05-23T22:30:28 IST" duration-ms="47405">
+      <class name="com.pivotree.auto.training.TC_ValidateDateErros">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:29:41 IST" name="BrowserIntilization" finished-at="2025-05-23T22:29:47 IST" duration-ms="5606" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:39:32 IST" name="setup" finished-at="2025-05-23T21:39:32 IST" duration-ms="50" status="PASS">
+        <test-method signature="Validate_Enter_OnlyStartDate()[pri:1, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:29:47 IST" name="Validate_Enter_OnlyStartDate" finished-at="2025-05-23T22:29:53 IST" duration-ms="5866" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Validate_TabNamesNavigatedCorrectly()[pri:2, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:39:32 IST" name="Validate_TabNamesNavigatedCorrectly" finished-at="2025-05-23T21:40:05 IST" duration-ms="32792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_TabNamesNavigatedCorrectly -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:40:05 IST" name="TearDown" finished-at="2025-05-23T21:40:05 IST" duration-ms="875" status="PASS">
+        </test-method> <!-- Validate_Enter_OnlyStartDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:29:53 IST" name="TearDown" finished-at="2025-05-23T22:29:54 IST" duration-ms="754" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +33,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.pivotree.auto.training.TC_DynamicTabNavigation -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:29:54 IST" name="BrowserIntilization" finished-at="2025-05-23T22:29:57 IST" duration-ms="3236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_Enter_OnlyEndDate()[pri:2, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:29:57 IST" name="Validate_Enter_OnlyEndDate" finished-at="2025-05-23T22:30:05 IST" duration-ms="7865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Enter_OnlyEndDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:05 IST" name="TearDown" finished-at="2025-05-23T22:30:05 IST" duration-ms="351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:05 IST" name="BrowserIntilization" finished-at="2025-05-23T22:30:08 IST" duration-ms="2964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_No_Value_Enter_StartEndDate()[pri:3, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:08 IST" name="Validate_No_Value_Enter_StartEndDate" finished-at="2025-05-23T22:30:16 IST" duration-ms="7438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_No_Value_Enter_StartEndDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:16 IST" name="TearDown" finished-at="2025-05-23T22:30:16 IST" duration-ms="775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:16 IST" name="BrowserIntilization" finished-at="2025-05-23T22:30:20 IST" duration-ms="3862" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_StartDate_GreaterEndDate()[pri:3, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:20 IST" name="Validate_StartDate_GreaterEndDate" finished-at="2025-05-23T22:30:27 IST" duration-ms="7209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_StartDate_GreaterEndDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@236e3f4e]" started-at="2025-05-23T22:30:27 IST" name="TearDown" finished-at="2025-05-23T22:30:28 IST" duration-ms="494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_ValidateDateErros -->
     </test> <!-- Blogspot -->
   </suite> <!-- TestAutomationPractive -->
 </testng-results>

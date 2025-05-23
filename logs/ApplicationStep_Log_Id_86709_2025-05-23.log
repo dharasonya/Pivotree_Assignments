@@ -1,0 +1,33 @@
+23:05:2025 22:27:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:155] - Browser Initilzation Started : chrome
+23:05:2025 22:27:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:106] - Browser Launched :- chrome
+23:05:2025 22:27:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+23:05:2025 22:27:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:194] - https://testautomationpractice.blogspot.com/
+23:05:2025 22:27:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:46] - Field: StartDate is entered & verified.
+23:05:2025 22:27:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:289] - On Click :Submit is Clicked & Verified.
+23:05:2025 22:27:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - Closing Browser: chrome
+23:05:2025 22:27:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:182] - -------Execution Completed---
+23:05:2025 22:27:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:155] - Browser Initilzation Started : chrome
+23:05:2025 22:28:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:106] - Browser Launched :- chrome
+23:05:2025 22:28:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------2
+23:05:2025 22:28:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:194] - https://testautomationpractice.blogspot.com/
+23:05:2025 22:28:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:46] - Field: EndDate is entered & verified.
+23:05:2025 22:28:10 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:289] - On Click :Submit is Clicked & Verified.
+23:05:2025 22:28:10 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - Closing Browser: chrome
+23:05:2025 22:28:11 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:182] - -------Execution Completed---
+23:05:2025 22:28:11 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:155] - Browser Initilzation Started : chrome
+23:05:2025 22:28:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:106] - Browser Launched :- chrome
+23:05:2025 22:28:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------3
+23:05:2025 22:28:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:194] - https://testautomationpractice.blogspot.com/
+23:05:2025 22:28:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:289] - On Click :Submit is Clicked & Verified.
+23:05:2025 22:28:22 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - Closing Browser: chrome
+23:05:2025 22:28:22 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:182] - -------Execution Completed---
+23:05:2025 22:28:22 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:155] - Browser Initilzation Started : chrome
+23:05:2025 22:28:26 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:106] - Browser Launched :- chrome
+23:05:2025 22:28:26 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------4
+23:05:2025 22:28:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:194] - https://testautomationpractice.blogspot.com/
+23:05:2025 22:28:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:46] - Field: StartDate is entered & verified.
+23:05:2025 22:28:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:46] - Field: EndDate is entered & verified.
+23:05:2025 22:28:34 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:289] - On Click :Submit is Clicked & Verified.
+23:05:2025 22:28:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - Closing Browser: chrome
+23:05:2025 22:28:37 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:182] - -------Execution Completed---
+23:05:2025 22:28:38 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

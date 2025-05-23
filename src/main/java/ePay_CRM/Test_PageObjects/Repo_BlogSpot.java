@@ -83,6 +83,15 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//div[@id='crosscol']/div/div/ul/li/a")
 	public List<WebElement> getAllTabNames;
 	
+	@FindBy(xpath="//*[@class='submit-btn']")
+	public WebElement onSubmitOfDates;
+	
+	@FindBy(xpath="//*[text()='Please select both start and end dates.']")
+	public WebElement Error_SelectBothStartEndDate;
+	
+	@FindBy(xpath="//*[text()='End date must be after start date.']")
+	public WebElement Error_EndDateGreaterThanStartDate;
+	
 	public WebElement getGenderElement(String gender) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[3]/div/input[@value='" + gender + "']"));
 	}

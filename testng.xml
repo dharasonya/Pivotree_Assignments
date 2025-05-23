@@ -17,9 +17,13 @@
 			<class
 				name="com.pivotree.auto.training.TC_SelectDateFromPicker" />
 			<class
-				name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails" />-->	
+				name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails" />
 			<class
-				name="com.pivotree.auto.training.TC_DynamicTabNavigation" />
+				name="com.pivotree.auto.training.TC_DynamicTabNavigation" />-->	
+			<class
+				name="com.pivotree.auto.training.TC_ValidateDateErros" />
+				
+				
 		</classes>
 		</test> <!-- Blogspot -->
 </suite> <!-- TestAutomationPractive -->

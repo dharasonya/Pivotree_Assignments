@@ -335,7 +335,7 @@ public class Method_BlogSpot extends BasePageSetup{
 			actualTabNames.add(onScreenTabListValues.getText());
 		}
 		Assert.assertEquals(expectedTabNames, actualTabNames,"Verify Actual Tab Names visibility");
-		
+
 		event.printSnap("Tab Names Correctness");
 		CommonLogger.log("The process of Comparing Tab Names has been completed.");
 
@@ -356,13 +356,13 @@ public class Method_BlogSpot extends BasePageSetup{
 			actualTabNames.add(onScreenTabListValues.getText());
 		}
 		Assert.assertEquals(expectedTabs, actualTabNames,"Verify Actual Tab Names visibility");
-		
-		
+
+
 		// Navigation to every tab and re-direct back to home
 		for(int i=0;i<obj.getAllTabNames.size();i++)
 		{
 			String tabName=obj.getAllTabNames.get(i).getText();
-	
+
 			if(actualTabNames.contains(tabName))
 			{
 				obj.getTabName(tabName).click();
@@ -370,13 +370,50 @@ public class Method_BlogSpot extends BasePageSetup{
 				driver.navigate().back();
 				wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
 				Assert.assertTrue(obj.getTabName(tabName).isDisplayed(), "Verify tab is visible: " + obj.getTabName(tabName).getText());
-				
+
 			}
 		}
-		
-	
+
+
 		CommonLogger.log("The process of Navigating of Expected Tabs has been completed.");
 
-		
+
+	}
+
+	public void validateDateErrors(String startDate, String endDate) {
+		// TODO Auto-generated method stub
+		if(!startDate.isEmpty() && endDate.isEmpty())
+		{
+			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError="Please select both start and end dates.";
+			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");
+		}
+		else if(startDate.isEmpty() && !endDate.isEmpty())
+		{
+			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError="Please select both start and end dates.";
+			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");
+		}
+		else if(startDate.isEmpty() && endDate.isEmpty())
+		{
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError="Please select both start and end dates.";
+			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");
+		}
+		else if(!startDate.isEmpty() && !endDate.isEmpty())
+		{
+			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+
+			String expectedError="End date must be after start date.";
+			Assert.assertEquals(expectedError,obj.Error_EndDateGreaterThanStartDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");	
+		}
 	}
 }
