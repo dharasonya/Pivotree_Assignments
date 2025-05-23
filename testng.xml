@@ -10,7 +10,10 @@
   <parameter name="BrowserValue" value="chrome" />
 	
     <classes>
-      <class name="com.pivotree.auto.training.Case_ValidatePageTitle"/>
+   <!--   <class name="com.pivotree.auto.training.TC_FillPersonalDetails" enabled=false/>-->
+      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes"/>
+     <!-- <class name="com.pivotree.auto.training.TC_SelectDateFromPicker"/> --> 
+      
     </classes>
   </test> <!-- Blogspot -->
 </suite> <!-- TestAutomationPractive -->

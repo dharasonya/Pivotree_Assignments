@@ -32,16 +32,22 @@ public class Repo_BlogSpot {
 	@FindBy(tagName="textarea")
 	public WebElement EnterAddress;
 
-	@FindBy(xpath="((//*[@class='form-group']))[4]/div")
+	//@FindBy(xpath="((//*[@class='form-group']))[4]/div")
+	@FindBy(css =".form-group:nth-of-type(4) > div")
 	public List<WebElement> chooseMultipleDays;
 
+	@FindBy(xpath="//*[text()='Days:']")
+	public WebElement DaysLabel;
+	
 	@FindBy(id="country")
 	public WebElement selectCountry;
 
-	@FindBy(xpath="//input[@id='datepicker']")
+	//@FindBy(xpath="//input[@id='datepicker']")
+	@FindBy(css="input#datepicker")
 	public WebElement enterDatePicker1;
 
-	@FindBy(name="SelectedDate")
+	//@FindBy(name="SelectedDate")
+	@FindBy(css="input[name='SelectedDate']")
 	public WebElement selectDatePicker2;
 
 	@FindBy(xpath="//input[@id='start-date']")

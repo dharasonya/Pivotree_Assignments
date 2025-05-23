@@ -36,7 +36,7 @@ public class ExtentReporterNG {
 		
 		ExtentSparkReporter reporter=new ExtentSparkReporter(path);
 
-		reporter.config().setReportName("Euronet Project Report");
+		reporter.config().setReportName("Pivotree Report");
 
 		reporter.config().setDocumentTitle("Automated Test Results");
 
@@ -46,7 +46,7 @@ public class ExtentReporterNG {
 
 		extent.attachReporter(reporter);
 
-		extent.setSystemInfo("Automation Testing Done By", "Sonyarani Dhara-Sr.Test Engineer");      
+		extent.setSystemInfo("Automation Testing Done By", "Sonyarani Dhara-Automation Tester");      
 
 		extent.setSystemInfo("Environment", "SIT");          
 

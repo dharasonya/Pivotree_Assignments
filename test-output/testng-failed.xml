@@ -7,12 +7,12 @@
   <test thread-count="5" name="Blogspot(failed)">
     <parameter name="BrowserValue" value="chrome"/>
     <classes>
-      <class name="com.pivotree.auto.training.Case_ValidatePageTitle">
+      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes">
         <methods>
-          <include name="ValidateMultiplePageLocators"/>
+          <include name="Validate_DyanmicCheckBoxSelection"/>
           <include name="BrowserIntilization"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.Case_ValidatePageTitle -->
+      </class> <!-- com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes -->
     </classes>
   </test> <!-- Blogspot(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->

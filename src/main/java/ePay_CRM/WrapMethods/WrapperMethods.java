@@ -7,6 +7,7 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.Keys;
@@ -188,55 +189,80 @@ public class WrapperMethods extends BasePageSetup {
 
 
 	public void selectRadioButton(List<WebElement> elements, WebElement attribute, String value, String FieldName) {
-	    try {
-	        wait.waitForListOfAllElementsToBeVisible(elements, 5);
+		try {
+			wait.waitForListOfAllElementsToBeVisible(elements, 5);
 
-	        for (WebElement elementValues : elements) {
-	            if (elementValues.getText().equalsIgnoreCase(value)) {
-	                Assert.assertTrue(elementValues.isDisplayed(), "Verify Radio button is displayed!");
-	                Assert.assertFalse(elementValues.isSelected(), "Verify Radio button is not pre-selected!");
-	                elementValues.click();
-	                Assert.assertEquals(attribute.getAttribute("value").toLowerCase(), value, "Verify Selected Radio Button Label");
+			for (WebElement elementValues : elements) {
+				if (elementValues.getText().equalsIgnoreCase(value)) {
+					Assert.assertTrue(elementValues.isDisplayed(), "Verify Radio button is displayed!");
+					Assert.assertFalse(elementValues.isSelected(), "Verify Radio button is not pre-selected!");
+					elementValues.click();
+					Assert.assertEquals(attribute.getAttribute("value").toLowerCase(), value, "Verify Selected Radio Button Label");
 
-	                CommonLogger.log("For Radio: " + FieldName + " : Values: " + value + " is selected & Verified.");
-	               
-	                break;  // Stop looping after successful selection
-	            }
-	        }
+					CommonLogger.log("For Radio: " + FieldName + " : Values: " + value + " is selected & Verified.");
 
-	        // Handle the case where no match is found
-	       
-
-	    } catch (Exception e) {
-	        CommonLogger.log("RunTime Exception Occurred, unable to locate element: " + elements + " - " + e);
-	        CommonLogger.errorLog(e);
-	    }
+					break;  // Stop looping after successful selection
+				}
+			}
+			// Handle the case where no match is found
+		} catch (Exception e) {
+			CommonLogger.log("RunTime Exception Occurred, unable to locate element: " + elements + " - " + e);
+			CommonLogger.errorLog(e);
+		}
 	}
-	public void selectCheckBoxes(List<WebElement> elements, WebElement attribute, String value, String FieldName) {
-	    try {
-	        wait.waitForListOfAllElementsToBeVisible(elements, 5);
-   
-	        for (WebElement elementValues : elements) { 	
-	        	if (elementValues.getText().equalsIgnoreCase(value)) {
-	                Assert.assertTrue(elementValues.isDisplayed(), "Verify Checkbox button is displayed!");
-	                Assert.assertFalse(elementValues.isSelected(), "Verify Checkbox button is not pre-selected!");
-	                elementValues.click();
-	                Assert.assertEquals(attribute.getAttribute("value"), value.toLowerCase(), "Verify Selected Checkbox Label");
+	public void selectCheckBoxes(List<WebElement> elements, String values, WebElement attribute, String FieldName) {
 
-	                CommonLogger.log("For Checkbox: " + FieldName + " : Values: " + value + " is selected & Verified.");
-	                
-	                // Stop looping after successful selection
-	            }
-	        }
+		List<String> selectedValues=new ArrayList<String>();         
+		try {
+			wait.waitForListOfAllElementsToBeVisible(elements, 5);
 
-	      
+			boolean matchFound = false; // Track if at least one checkbox was selected
 
-	    } catch (Exception e) {
-	        CommonLogger.log("RunTime Exception Occurred, unable to locate element: " + elements + " - " + e);
-	        CommonLogger.errorLog(e);
-	    }
+			for (WebElement elementValues : elements) {
+				String checkboxLabel = elementValues.getText();// Get the value attribute of the checkbox
+				// Check if current checkbox matches any of the given values
+				if (values.contains(checkboxLabel)) {
+					Assert.assertTrue(elementValues.isDisplayed(), "Verify Checkbox is displayed!");
+
+					if (!elementValues.isSelected() && !selectedValues.contains(elementValues.getText())) { // Ensure it's not already checked
+						elementValues.click();
+						CommonLogger.log("Checkbox selected: " + checkboxLabel);
+						selectedValues.add(elementValues.getText());
+						
+						if(attribute.isSelected())
+						{
+							Assert.assertTrue(attribute.isSelected(),"Verify Element is Selected");
+						}
+						else if(!attribute.isSelected())
+						{
+							Assert.assertFalse(attribute.isSelected(),"Verify Element is De-Selected");
+						}
+						
+						
+					} else {
+						CommonLogger.log("Checkbox already selected: " + checkboxLabel);
+					}
+					matchFound = true;
+
+					//Verify attribute value after selection
+					Assert.assertEquals(attribute.getAttribute("value").toLowerCase(), checkboxLabel.toLowerCase(), 
+							"Verify Selected Checkbox Attribute Value");
+				}
+			}
+
+			// Fail test if no checkboxes were found for selection
+			if (!matchFound) {
+				Assert.fail("No matching checkboxes found for values: " + values);
+			}
+
+		} catch (Exception e) {
+			CommonLogger.log("RunTime Exception Occurred while selecting checkboxes: " + e.getMessage());
+			CommonLogger.errorLog(e);
+			Assert.fail("Error selecting checkboxes: " + e.getMessage());
+		}
 	}
-
+	
+	
 
 	public String getTextAndVerify(WebElement element, String FieldName) throws Exception {
 		String value = "";
