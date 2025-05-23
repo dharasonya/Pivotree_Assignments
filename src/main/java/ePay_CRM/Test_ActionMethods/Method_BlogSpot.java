@@ -60,7 +60,7 @@ public class Method_BlogSpot extends BasePageSetup{
 		event.printSnap("Personal Details Added");
 		CommonLogger.log("The process of adding Personal details has been completed.");
 	}
-	
+
 	public void selectDateFromPicker(String Date2) {
 		CommonLogger.log("Initiated the process of Date Section-PersonalDetails-GUI Elements");
 		this.selectDate(Date2);
@@ -196,9 +196,9 @@ public class Method_BlogSpot extends BasePageSetup{
 	public void select_deselect_Checkboxes(String Days) {
 		CommonLogger.log("Initiated the process of Dynamic checkbox selection/De-selection -Section-PersonalDetails-GUI Elements");
 		//Convert comma-separated Days into a List
-		
+
 		scroll.scrollToElement(obj.DaysLabel);
-		
+
 		List<String> daysList = Arrays.asList(Days.split(",")); // Splitting by ',' 
 		for(int i=0;i<daysList.size();i++) 
 		{ 
@@ -207,63 +207,63 @@ public class Method_BlogSpot extends BasePageSetup{
 		event.printSnap("Checkbox selected");
 		CommonLogger.log("The process of Dynamic Checkbox selection/deselection has been completed.");
 	}
-	
+
 	public void getMaxBookDetails() {
 
 		CommonLogger.log("Initiated the process of Finding HighestPrice Book details on Section-StaticWebTable-GUI Elements");
 
 		int maxPrice = Integer.parseInt(obj.ListPrice.get(0).getText()); // Initialize with first price
 
-	    // Loop to find max price and its index
-	    for (int i = 0; i < obj.ListPrice.size(); i++) {
-	        int currValue = Integer.parseInt(obj.ListPrice.get(i).getText());
+		// Loop to find max price and its index
+		for (int i = 0; i < obj.ListPrice.size(); i++) {
+			int currValue = Integer.parseInt(obj.ListPrice.get(i).getText());
 
-	        if (currValue > maxPrice) {
-	        	maxPrice = currValue;
-	        }
-	    }
-	    int expectedMinPrice=3000;
+			if (currValue > maxPrice) {
+				maxPrice = currValue;
+			}
+		}
+		int expectedMinPrice=3000;
 		Assert.assertEquals(expectedMinPrice, maxPrice,"Verify Max Price of Book");
-	    CommonLogger.log("----Highest Price Book Details ----: "+maxPrice);
-	    CommonLogger.log("Highest Price Book BookName : "+getBookName(maxPrice));
-	    CommonLogger.log("Highest Price AuthorName : "+this.getAuthorName(maxPrice));
-	    CommonLogger.log("Highest Price Subject : "+this.getSubjectName(maxPrice));
-	    
-	    scroll.scrollToElement(obj.LabelStaticWebTable);
-	    event.printSnap("Static Web Table");
+		CommonLogger.log("----Highest Price Book Details ----: "+maxPrice);
+		CommonLogger.log("Highest Price Book BookName : "+getBookName(maxPrice));
+		CommonLogger.log("Highest Price AuthorName : "+this.getAuthorName(maxPrice));
+		CommonLogger.log("Highest Price Subject : "+this.getSubjectName(maxPrice));
+
+		scroll.scrollToElement(obj.LabelStaticWebTable);
+		event.printSnap("Static Web Table");
 		CommonLogger.log("The process of Finding HighestBookDetails has been completed.");
-	    
+
 	}
-	
+
 	public void getMinBookDetails() {
-	    
+
 		CommonLogger.log("Initiated the process of Finding LowestPrice Book details on Section-StaticWebTable-GUI Elements");
 
 		int minPrice = Integer.parseInt(obj.ListPrice.get(0).getText()); // Initialize with first price
 
-	    // Loop to find max price and its index
-	    for (int i = 0; i < obj.ListPrice.size(); i++) {
-	        int currValue = Integer.parseInt(obj.ListPrice.get(i).getText());
+		// Loop to find max price and its index
+		for (int i = 0; i < obj.ListPrice.size(); i++) {
+			int currValue = Integer.parseInt(obj.ListPrice.get(i).getText());
 
-	        if (currValue < minPrice) {
-	        	minPrice = currValue;
-	        }
-	    }
-	    int expectedMinPrice=300;
+			if (currValue < minPrice) {
+				minPrice = currValue;
+			}
+		}
+		int expectedMinPrice=300;
 		Assert.assertEquals(expectedMinPrice, minPrice,"Verify Min Price of Book");
-	    CommonLogger.log("----Lowest Price Book Details ----: "+minPrice);
-	    CommonLogger.log("Lowest Price Book BookName : "+getBookName(minPrice));
-	    CommonLogger.log("Lowest Price AuthorName : "+this.getAuthorName(minPrice));
-	    CommonLogger.log("Loweser Price Subject : "+this.getSubjectName(minPrice));
-	    scroll.scrollToElement(obj.LabelStaticWebTable);
-	    event.printSnap("Static Web Table");
+		CommonLogger.log("----Lowest Price Book Details ----: "+minPrice);
+		CommonLogger.log("Lowest Price Book BookName : "+getBookName(minPrice));
+		CommonLogger.log("Lowest Price AuthorName : "+this.getAuthorName(minPrice));
+		CommonLogger.log("Loweser Price Subject : "+this.getSubjectName(minPrice));
+		scroll.scrollToElement(obj.LabelStaticWebTable);
+		event.printSnap("Static Web Table");
 		CommonLogger.log("The process of Finding LowestBookDetails has been completed.");
 	}
 
 
 	private List<String> getBookName(int Price) {
 		// TODO Auto-generated method stub
-		
+
 		List<String> bookList=new ArrayList<String>();
 		for(int i=0;i<obj.ListBookName.size();i++)
 		{
@@ -272,13 +272,13 @@ public class Method_BlogSpot extends BasePageSetup{
 				bookList.add(obj.getBookName(i+2));
 			}
 		}
-		
+
 		return bookList;
-		
+
 	}
 	private List<String> getAuthorName(int Price) {
 		// TODO Auto-generated method stub
-		
+
 		List<String> bookList=new ArrayList<String>();
 		for(int i=0;i<obj.ListAuthor.size();i++)
 		{
@@ -287,13 +287,13 @@ public class Method_BlogSpot extends BasePageSetup{
 				bookList.add(obj.getAuthorName(i+2));
 			}
 		}
-		
+
 		return bookList;
-		
+
 	}
 	private List<String> getSubjectName(int Price) {
 		// TODO Auto-generated method stub
-		
+
 		List<String> bookList=new ArrayList<String>();
 		for(int i=0;i<obj.ListSubject.size();i++)
 		{
@@ -302,23 +302,81 @@ public class Method_BlogSpot extends BasePageSetup{
 				bookList.add(obj.getSubjectName(i+2));
 			}
 		}
-		
+
 		return bookList;
-		
+
 	}
 	public void getAveragePriceBookDetails() {
-	    int totalElements = 0;
-	    float sum = 0;
-	    float ExpectedAvg = 1183.33f;
+		int totalElements = 0;
+		float sum = 0;
+		float ExpectedAvg = 1183.33f;
 
-	    for (int i = 0; i < obj.ListPrice.size(); i++) {
-	        totalElements++;
-	        sum += Integer.parseInt(obj.ListPrice.get(i).getText());
-	    }
+		for (int i = 0; i < obj.ListPrice.size(); i++) {
+			totalElements++;
+			sum += Integer.parseInt(obj.ListPrice.get(i).getText());
+		}
 
-	    float averagePrice = sum / totalElements; // Calculate average
-	    String roundedAverage = String.format("%.2f", averagePrice);
-	    Assert.assertEquals(ExpectedAvg, Float.parseFloat(roundedAverage),"Verify Average Book Price");
-	    CommonLogger.log("--- Average Price of Book Details ---: " + roundedAverage);
+		float averagePrice = sum / totalElements; // Calculate average
+		String roundedAverage = String.format("%.2f", averagePrice);
+		Assert.assertEquals(ExpectedAvg, Float.parseFloat(roundedAverage),"Verify Average Book Price");
+		CommonLogger.log("--- Average Price of Book Details ---: " + roundedAverage);
+	}
+
+	public void verifyTabName(List<String> expectedTabNames) {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of Comparing the actual tabs with expected tab names list");
+
+		List<WebElement> onScreenTabList=obj.getAllTabNames;
+
+		List<String> actualTabNames=new ArrayList<String>();
+
+		for(WebElement onScreenTabListValues:onScreenTabList)
+		{
+			actualTabNames.add(onScreenTabListValues.getText());
+		}
+		Assert.assertEquals(expectedTabNames, actualTabNames,"Verify Actual Tab Names visibility");
+		
+		event.printSnap("Tab Names Correctness");
+		CommonLogger.log("The process of Comparing Tab Names has been completed.");
+
+
+
+	}
+
+	public void verifyTabNavigation(List<String> expectedTabs) throws InterruptedException {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of Navigating tabs with expected tab names list");
+
+		List<WebElement> onScreenTabList=obj.getAllTabNames;
+
+		List<String> actualTabNames=new ArrayList<String>();
+
+		for(WebElement onScreenTabListValues:onScreenTabList)
+		{
+			actualTabNames.add(onScreenTabListValues.getText());
+		}
+		Assert.assertEquals(expectedTabs, actualTabNames,"Verify Actual Tab Names visibility");
+		
+		
+		// Navigation to every tab and re-direct back to home
+		for(int i=0;i<obj.getAllTabNames.size();i++)
+		{
+			String tabName=obj.getAllTabNames.get(i).getText();
+	
+			if(actualTabNames.contains(tabName))
+			{
+				obj.getTabName(tabName).click();
+				event.printSnap("Tab Names Navigated Correctly on "+tabName);
+				driver.navigate().back();
+				wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
+				Assert.assertTrue(obj.getTabName(tabName).isDisplayed(), "Verify tab is visible: " + obj.getTabName(tabName).getText());
+				
+			}
+		}
+		
+	
+		CommonLogger.log("The process of Navigating of Expected Tabs has been completed.");
+
+		
 	}
 }

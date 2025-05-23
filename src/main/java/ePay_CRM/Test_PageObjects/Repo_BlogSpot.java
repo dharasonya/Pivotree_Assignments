@@ -80,6 +80,9 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//table[@name='BookTable']/tbody/tr/td[4]")
 	public List<WebElement> ListPrice;
 
+	@FindBy(xpath="//div[@id='crosscol']/div/div/ul/li/a")
+	public List<WebElement> getAllTabNames;
+	
 	public WebElement getGenderElement(String gender) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[3]/div/input[@value='" + gender + "']"));
 	}
@@ -102,5 +105,10 @@ public class Repo_BlogSpot {
 	{
 		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[3]")).getText();
 		
+	}
+	
+	public WebElement getTabName(String tabName)
+	{
+		return driver.findElement(By.xpath("//div[@id='crosscol']/div/div/ul/li/a[text()='"+tabName+"']"));
 	}
 }

@@ -162,56 +162,6 @@ public class BasePageSetup {
 
 	}
 
-	public Method_LoginWithCredentials GetLoginCredentials() throws Exception
-	{
-		Method_LoginWithCredentials login=new Method_LoginWithCredentials(driver);
-		return login;
-
-	}
-	
-	public Method_OrangeHRM_LoginWithCredentials GetOrangeHRMLoginCredentials() throws Exception
-	{
-		Method_OrangeHRM_LoginWithCredentials login=new Method_OrangeHRM_LoginWithCredentials(driver);
-		return login;
-
-	}
-	public Method_CRMBaseSteps CRMBaseStep() throws Exception
-	{
-		Method_CRMBaseSteps step=new Method_CRMBaseSteps(driver); 
-		return step;
-	}
-
-	public Method_OrangeHRM_BaseSteps Method_OrangeHRM_BaseSteps() throws Exception
-	{
-		Method_OrangeHRM_BaseSteps step=new Method_OrangeHRM_BaseSteps(driver); 
-		return step;
-	}
-	public Method_EpayPropertyConfig CRMCoreStep() throws Exception
-	{
-		Method_EpayPropertyConfig corestep=new Method_EpayPropertyConfig(driver);
-		return corestep;
-	}  
-	public Method_SpRspCodeMapping CRM_SpRspCodeMapping_CoreStep() throws Exception
-	{
-		Method_SpRspCodeMapping corestep=new Method_SpRspCodeMapping(driver);
-		return corestep;  
-	}
-	public Method_BillerConfigOnus CRM_BillerConfigOnus_CoreStep() throws Exception
-	{
-		Method_BillerConfigOnus corestep=new Method_BillerConfigOnus(driver);
-		return corestep;  
-	}
-	public Method_AirtelConfiguration CRM_AirtelConfiguration_CoreStep() throws Exception
-	{
-		Method_AirtelConfiguration corestep=new Method_AirtelConfiguration(driver);
-		return corestep;  
-	}
-	public Method_PIM_AddEmployee OrangeHRM_PIM_Admin() throws Exception
-	{
-		Method_PIM_AddEmployee corestep=new Method_PIM_AddEmployee(driver);
-		return corestep;  
-	}
-
 	public Method_BlogSpot Get_BlogSpot_Obj() throws Exception
 	{
 		Method_BlogSpot corestep=new Method_BlogSpot(driver);

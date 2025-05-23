@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T19:34:38 IST" name="TestAutomationPractive" finished-at="2025-05-23T19:34:52 IST" duration-ms="14547">
+  <suite started-at="2025-05-23T21:39:27 IST" name="TestAutomationPractive" finished-at="2025-05-23T21:40:05 IST" duration-ms="38702">
     <groups>
     </groups>
-    <test started-at="2025-05-23T19:34:38 IST" name="Blogspot" finished-at="2025-05-23T19:34:52 IST" duration-ms="14547">
-      <class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@5552768b]" started-at="2025-05-23T19:34:39 IST" name="BrowserIntilization" finished-at="2025-05-23T19:34:44 IST" duration-ms="5302" status="PASS">
+    <test started-at="2025-05-23T21:39:27 IST" name="Blogspot" finished-at="2025-05-23T21:40:05 IST" duration-ms="38702">
+      <class name="com.pivotree.auto.training.TC_DynamicTabNavigation">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:39:28 IST" name="BrowserIntilization" finished-at="2025-05-23T21:39:32 IST" duration-ms="4086" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@5552768b]" started-at="2025-05-23T19:34:44 IST" name="setup" finished-at="2025-05-23T19:34:44 IST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:39:32 IST" name="setup" finished-at="2025-05-23T21:39:32 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Validate_Average_PriceWiseBookDetails()[pri:3, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@5552768b]" started-at="2025-05-23T19:34:44 IST" name="Validate_Average_PriceWiseBookDetails" finished-at="2025-05-23T19:34:52 IST" duration-ms="7603" status="PASS">
+        <test-method signature="Validate_TabNamesNavigatedCorrectly()[pri:2, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:39:32 IST" name="Validate_TabNamesNavigatedCorrectly" finished-at="2025-05-23T21:40:05 IST" duration-ms="32792" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Average_PriceWiseBookDetails -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@5552768b]" started-at="2025-05-23T19:34:52 IST" name="TearDown" finished-at="2025-05-23T19:34:52 IST" duration-ms="671" status="PASS">
+        </test-method> <!-- Validate_TabNamesNavigatedCorrectly -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@71c3b41]" started-at="2025-05-23T21:40:05 IST" name="TearDown" finished-at="2025-05-23T21:40:05 IST" duration-ms="875" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails -->
+      </class> <!-- com.pivotree.auto.training.TC_DynamicTabNavigation -->
     </test> <!-- Blogspot -->
   </suite> <!-- TestAutomationPractive -->
 </testng-results>

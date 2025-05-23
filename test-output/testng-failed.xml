@@ -7,14 +7,14 @@
   <test thread-count="5" name="Blogspot(failed)">
     <parameter name="BrowserValue" value="chrome"/>
     <classes>
-      <class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails">
+      <class name="com.pivotree.auto.training.TC_DynamicTabNavigation">
         <methods>
-          <include name="setup"/>
+          <include name="Validate_TabNamesNavigatedCorrectly"/>
           <include name="TearDown"/>
-          <include name="Validate_Average_PriceWiseBookDetails"/>
+          <include name="setup"/>
           <include name="BrowserIntilization"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails -->
+      </class> <!-- com.pivotree.auto.training.TC_DynamicTabNavigation -->
     </classes>
   </test> <!-- Blogspot(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->
