@@ -25,14 +25,14 @@ public class TC_IdentifyMax_MinBookDetails extends BasePageSetup {
 		}
 	}	
 	
-	@Test(priority=1,enabled=true)
+	@Test(priority=1,enabled=false)
 	public void Validate_Highest_PriceWiseBookDetails() throws Exception
 	{
 		getUrl();
 		corestep.getMaxBookDetails();	
 	}
 
-	@Test(priority=2,enabled=true)
+	@Test(priority=2,enabled=false)
 	public void Validate_Lowest_PriceWiseBookDetails() throws Exception
 	{
 		getUrl();

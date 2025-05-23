@@ -306,18 +306,19 @@ public class Method_BlogSpot extends BasePageSetup{
 		return bookList;
 		
 	}
-
 	public void getAveragePriceBookDetails() {
-		// TODO Auto-generated method stub
-		int totalElements=0;
-		float sum=0;
-		for(int i=0;i<obj.ListPrice.size();i++)
-		{
-			totalElements++;
-			sum=sum+Integer.parseInt(obj.ListPrice.get(i).getText());
-			
-		}
-		CommonLogger.log("---Average Price of Book Details ---:"+sum/totalElements);
-	}
+	    int totalElements = 0;
+	    float sum = 0;
+	    float ExpectedAvg = 1183.33f;
 
+	    for (int i = 0; i < obj.ListPrice.size(); i++) {
+	        totalElements++;
+	        sum += Integer.parseInt(obj.ListPrice.get(i).getText());
+	    }
+
+	    float averagePrice = sum / totalElements; // Calculate average
+	    String roundedAverage = String.format("%.2f", averagePrice);
+	    Assert.assertEquals(ExpectedAvg, Float.parseFloat(roundedAverage),"Verify Average Book Price");
+	    CommonLogger.log("--- Average Price of Book Details ---: " + roundedAverage);
+	}
 }

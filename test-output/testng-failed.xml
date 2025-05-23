@@ -7,13 +7,14 @@
   <test thread-count="5" name="Blogspot(failed)">
     <parameter name="BrowserValue" value="chrome"/>
     <classes>
-      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes">
+      <class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails">
         <methods>
+          <include name="setup"/>
           <include name="TearDown"/>
-          <include name="Validate_DyanmicCheckBoxSelection"/>
+          <include name="Validate_Average_PriceWiseBookDetails"/>
           <include name="BrowserIntilization"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes -->
+      </class> <!-- com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails -->
     </classes>
   </test> <!-- Blogspot(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->
