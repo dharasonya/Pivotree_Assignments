@@ -1,0 +1,13 @@
+23:05:2025 18:03:38 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:155] - Browser Initilzation Started : chrome
+23:05:2025 18:03:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:106] - Browser Launched :- chrome
+23:05:2025 18:03:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+23:05:2025 18:03:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:244] - https://testautomationpractice.blogspot.com/
+23:05:2025 18:03:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMaxBookDetails [Line:248] - ----Highest Price Book Details ----: 3000
+23:05:2025 18:03:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMaxBookDetails [Line:249] - Highest Price Book BookName : [Master In Selenium]
+23:05:2025 18:03:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMaxBookDetails [Line:250] - Highest Price AuthorName : [Mukesh]
+23:05:2025 18:03:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMaxBookDetails [Line:251] - Highest Price Subject : [Selenium]
+23:05:2025 18:03:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMinBookDetails [Line:267] - ----Lowest Price Book Details ----: 300
+23:05:2025 18:03:48 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMinBookDetails [Line:268] - Lowest Price Book BookName : [Learn Selenium, Learn JS]
+23:05:2025 18:03:48 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMinBookDetails [Line:269] - Lowest Price AuthorName : [Amit, Animesh]
+23:05:2025 18:03:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getMinBookDetails [Line:270] - Loweser Price Subject : [Selenium, Javascript]
+23:05:2025 18:03:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

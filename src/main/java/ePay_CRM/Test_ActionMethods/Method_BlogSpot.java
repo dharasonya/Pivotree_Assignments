@@ -92,8 +92,7 @@ public class Method_BlogSpot extends BasePageSetup{
 		event.printSnap("Date Selection");
 		CommonLogger.log("The process of Date-Selection from Picker has been completed.");
 	}
-	
-	
+
 	public void selectDate(String dateToSelect) {
 		try {
 			Actions actions = new Actions(driver);
@@ -233,5 +232,116 @@ public class Method_BlogSpot extends BasePageSetup{
 		CommonLogger.log("The process of Dynamic Checkbox selection/deselection has been completed.");
 	}
 	
+	public void getMaxBookDetails() {
+
+		CommonLogger.log("Initiated the process of Finding HighestPrice Book details on Section-StaticWebTable-GUI Elements");
+
+		int maxPrice = Integer.parseInt(obj.ListPrice.get(0).getText()); // Initialize with first price
+
+	    // Loop to find max price and its index
+	    for (int i = 0; i < obj.ListPrice.size(); i++) {
+	        int currValue = Integer.parseInt(obj.ListPrice.get(i).getText());
+
+	        if (currValue > maxPrice) {
+	        	maxPrice = currValue;
+	        }
+	    }
+	    int expectedMinPrice=3000;
+		Assert.assertEquals(expectedMinPrice, maxPrice,"Verify Max Price of Book");
+	    CommonLogger.log("----Highest Price Book Details ----: "+maxPrice);
+	    CommonLogger.log("Highest Price Book BookName : "+getBookName(maxPrice));
+	    CommonLogger.log("Highest Price AuthorName : "+this.getAuthorName(maxPrice));
+	    CommonLogger.log("Highest Price Subject : "+this.getSubjectName(maxPrice));
+	    
+	    scroll.scrollToElement(obj.LabelStaticWebTable);
+	    event.printSnap("Static Web Table");
+		CommonLogger.log("The process of Finding HighestBookDetails has been completed.");
+	    
+	}
+	
+	public void getMinBookDetails() {
+	    
+		CommonLogger.log("Initiated the process of Finding LowestPrice Book details on Section-StaticWebTable-GUI Elements");
+
+		int minPrice = Integer.parseInt(obj.ListPrice.get(0).getText()); // Initialize with first price
+
+	    // Loop to find max price and its index
+	    for (int i = 0; i < obj.ListPrice.size(); i++) {
+	        int currValue = Integer.parseInt(obj.ListPrice.get(i).getText());
+
+	        if (currValue < minPrice) {
+	        	minPrice = currValue;
+	        }
+	    }
+	    int expectedMinPrice=300;
+		Assert.assertEquals(expectedMinPrice, minPrice,"Verify Min Price of Book");
+	    CommonLogger.log("----Lowest Price Book Details ----: "+minPrice);
+	    CommonLogger.log("Lowest Price Book BookName : "+getBookName(minPrice));
+	    CommonLogger.log("Lowest Price AuthorName : "+this.getAuthorName(minPrice));
+	    CommonLogger.log("Loweser Price Subject : "+this.getSubjectName(minPrice));
+	    scroll.scrollToElement(obj.LabelStaticWebTable);
+	    event.printSnap("Static Web Table");
+		CommonLogger.log("The process of Finding LowestBookDetails has been completed.");
+	}
+
+
+	private List<String> getBookName(int Price) {
+		// TODO Auto-generated method stub
+		
+		List<String> bookList=new ArrayList<String>();
+		for(int i=0;i<obj.ListBookName.size();i++)
+		{
+			if(Integer.parseInt(obj.ListPrice.get(i).getText())==Price)
+			{
+				bookList.add(obj.getBookName(i+2));
+			}
+		}
+		
+		return bookList;
+		
+	}
+	private List<String> getAuthorName(int Price) {
+		// TODO Auto-generated method stub
+		
+		List<String> bookList=new ArrayList<String>();
+		for(int i=0;i<obj.ListAuthor.size();i++)
+		{
+			if(Integer.parseInt(obj.ListPrice.get(i).getText())==Price)
+			{
+				bookList.add(obj.getAuthorName(i+2));
+			}
+		}
+		
+		return bookList;
+		
+	}
+	private List<String> getSubjectName(int Price) {
+		// TODO Auto-generated method stub
+		
+		List<String> bookList=new ArrayList<String>();
+		for(int i=0;i<obj.ListSubject.size();i++)
+		{
+			if(Integer.parseInt(obj.ListPrice.get(i).getText())==Price)
+			{
+				bookList.add(obj.getSubjectName(i+2));
+			}
+		}
+		
+		return bookList;
+		
+	}
+
+	public void getAveragePriceBookDetails() {
+		// TODO Auto-generated method stub
+		int totalElements=0;
+		float sum=0;
+		for(int i=0;i<obj.ListPrice.size();i++)
+		{
+			totalElements++;
+			sum=sum+Integer.parseInt(obj.ListPrice.get(i).getText());
+			
+		}
+		CommonLogger.log("---Average Price of Book Details ---:"+sum/totalElements);
+	}
 
 }

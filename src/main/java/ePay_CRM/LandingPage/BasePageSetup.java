@@ -219,8 +219,8 @@ public class BasePageSetup {
 	}
 
 	
-	//@Parameters("BrowserValue")
-	//@AfterMethod(alwaysRun=true)
+	@Parameters("BrowserValue")
+	@AfterMethod(alwaysRun=true)
 	public void TearDown(String BrowserValue)
 	{
 		if (driver != null) {

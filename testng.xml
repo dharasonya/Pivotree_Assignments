@@ -4,17 +4,22 @@
 	<listeners>
 		<listener class-name="ePay_CRM.Reusable_Utils.CallListeners" />
 	</listeners>
-	
-	
-  <test thread-count="5" name="Blogspot">
-  <parameter name="BrowserValue" value="chrome" />
-	
-    <classes>
-   <!--   <class name="com.pivotree.auto.training.TC_FillPersonalDetails" enabled=false/>-->
-      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes"/>
-     <!-- <class name="com.pivotree.auto.training.TC_SelectDateFromPicker"/> --> 
-      
-    </classes>
-  </test> <!-- Blogspot -->
+
+
+	<test thread-count="5" name="Blogspot">
+		<parameter name="BrowserValue" value="chrome" />
+
+		<classes>
+			<class 
+				name="com.pivotree.auto.training.TC_FillPersonalDetails" />
+			<class
+				name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" />
+			<class
+				name="com.pivotree.auto.training.TC_SelectDateFromPicker" />
+			<class
+				name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails" />
+
+		</classes>
+	</test> <!-- Blogspot -->
 </suite> <!-- TestAutomationPractive -->
 

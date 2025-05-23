@@ -38,7 +38,7 @@ public class Repo_BlogSpot {
 
 	@FindBy(xpath="//*[text()='Days:']")
 	public WebElement DaysLabel;
-	
+
 	@FindBy(id="country")
 	public WebElement selectCountry;
 
@@ -55,16 +55,31 @@ public class Repo_BlogSpot {
 
 	@FindBy(xpath="//input[@id='end-date']")
 	public WebElement SelectEndDatePicker3;
-	
+
 	@FindBy(xpath="//select[@data-handler='selectYear']")
 	public WebElement selectYear;
-	
+
 	@FindBy(xpath="//select[@data-handler='selectMonth']")
 	public WebElement selectMonth;
-	
+
 	@FindBy(xpath="//*[@data-handler='selectDay']")
 	public List<WebElement> selectDay;
 	
+	@FindBy(xpath="//*[text()='Static Web Table']")
+	public WebElement LabelStaticWebTable;
+	
+	@FindBy(xpath="//table[@name='BookTable']/tbody/tr/td[1]")
+	public List<WebElement> ListBookName;
+	
+	@FindBy(xpath="//table[@name='BookTable']/tbody/tr/td[2]")
+	public List<WebElement> ListAuthor;
+	
+	@FindBy(xpath="//table[@name='BookTable']/tbody/tr/td[3]")
+	public List<WebElement> ListSubject;
+	
+	@FindBy(xpath="//table[@name='BookTable']/tbody/tr/td[4]")
+	public List<WebElement> ListPrice;
+
 	public WebElement getGenderElement(String gender) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[3]/div/input[@value='" + gender + "']"));
 	}
@@ -72,16 +87,20 @@ public class Repo_BlogSpot {
 	public WebElement getValueElement(String days) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[4]/div/input[@value='" + days + "']"));
 	}
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	public String getBookName(int index)
+	{
+		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[1]")).getText();
+		
+	}
+	public String getAuthorName(int index)
+	{
+		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[2]")).getText();
+		
+	}
+	public String getSubjectName(int index)
+	{
+		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[3]")).getText();
+		
+	}
 }

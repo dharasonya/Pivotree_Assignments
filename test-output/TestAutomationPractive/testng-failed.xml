@@ -9,6 +9,7 @@
     <classes>
       <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes">
         <methods>
+          <include name="TearDown"/>
           <include name="Validate_DyanmicCheckBoxSelection"/>
           <include name="BrowserIntilization"/>
         </methods>
