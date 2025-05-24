@@ -232,7 +232,6 @@ public class Method_BlogSpot extends BasePageSetup{
 		scroll.scrollToElement(obj.LabelStaticWebTable);
 		event.printSnap("Static Web Table");
 		CommonLogger.log("The process of Finding HighestBookDetails has been completed.");
-
 	}
 
 	public void getMinBookDetails() {
@@ -260,7 +259,6 @@ public class Method_BlogSpot extends BasePageSetup{
 		CommonLogger.log("The process of Finding LowestBookDetails has been completed.");
 	}
 
-
 	private List<String> getBookName(int Price) {
 		// TODO Auto-generated method stub
 
@@ -272,10 +270,9 @@ public class Method_BlogSpot extends BasePageSetup{
 				bookList.add(obj.getBookName(i+2));
 			}
 		}
-
 		return bookList;
-
 	}
+
 	private List<String> getAuthorName(int Price) {
 		// TODO Auto-generated method stub
 
@@ -289,8 +286,8 @@ public class Method_BlogSpot extends BasePageSetup{
 		}
 
 		return bookList;
-
 	}
+
 	private List<String> getSubjectName(int Price) {
 		// TODO Auto-generated method stub
 
@@ -304,8 +301,8 @@ public class Method_BlogSpot extends BasePageSetup{
 		}
 
 		return bookList;
-
 	}
+
 	public void getAveragePriceBookDetails() {
 		int totalElements = 0;
 		float sum = 0;
@@ -338,16 +335,13 @@ public class Method_BlogSpot extends BasePageSetup{
 
 		event.printSnap("Tab Names Correctness");
 		CommonLogger.log("The process of Comparing Tab Names has been completed.");
-
-
-
 	}
 
 	public void verifyTabNavigation(List<String> expectedTabs) throws InterruptedException {
 		// TODO Auto-generated method stub
 		CommonLogger.log("Initiated the process of Navigating tabs with expected tab names list");
 
-		List<WebElement> onScreenTabList=obj.getAllTabNames;
+		List<WebElement> onScreenTabList=wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
 
 		List<String> actualTabNames=new ArrayList<String>();
 
@@ -365,12 +359,13 @@ public class Method_BlogSpot extends BasePageSetup{
 
 			if(actualTabNames.contains(tabName))
 			{
-				obj.getTabName(tabName).click();
+				action.clickOnButtonAndVerify(obj.getTabName(tabName), "tab");
 				event.printSnap("Tab Names Navigated Correctly on "+tabName);
 				driver.navigate().back();
-				wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
+				wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 20);
+				event.printSnap("Navigated back to Tab on "+tabName);
 				Assert.assertTrue(obj.getTabName(tabName).isDisplayed(), "Verify tab is visible: " + obj.getTabName(tabName).getText());
-
+				CommonLogger.log("On Tab :"+tabName+" - Get CurrentUrl :"+driver.getCurrentUrl());
 			}
 		}
 
@@ -379,9 +374,63 @@ public class Method_BlogSpot extends BasePageSetup{
 
 
 	}
+	
+	public void switchTabCaptureScreenShot(List<String> expectedTabs) throws InterruptedException {
+	    CommonLogger.log("Initiated the process of navigating tabs with expected tab names list.");
 
+	    List<String> switchedTabsList = new ArrayList<>();
+	    List<WebElement> onScreenTabList = wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
+	    List<String> actualTabNames = new ArrayList<>();
+
+	    // Fetch all tab names dynamically
+	    for (WebElement tab : onScreenTabList) {
+	        actualTabNames.add(tab.getText());
+	    }
+
+	    // Validate expected vs actual tab names
+	    Assert.assertEquals(actualTabNames, expectedTabs, "Verify actual tab names visibility");
+
+	    // Navigate each tab & capture screenshot
+	    for (String tabName : actualTabNames) {
+	        if (!switchedTabsList.contains(tabName)) {
+	           
+	        	if(tabName.equals("Home"))
+	        	{
+	        		event.printSnap("Tab navigated correctly " + tabName);
+	        		CommonLogger.log("On tab: " + tabName + " | Current URL: " + driver.getCurrentUrl());
+	        	}
+	        	else
+	        	{
+	        		action.clickOnButtonAndVerify(obj.getTabName(tabName), "tab");
+		            event.printSnap("Tab navigated correctly " + tabName);
+
+		            // Ensure navigation back to home when "Home" tab is available
+		            if (!tabName.equals("Home")) {
+		                driver.navigate().back();
+		                event.printSnap("Tab navigated back to " + obj.getTabName("Home").getText());
+		            }
+
+		            // Re-fetch elements before waiting
+		            onScreenTabList = wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 8);
+
+		            // Fix timeout issue by increasing wait time
+		            WebElement refreshedTab = wait.waitForElementToBeVisible(obj.getTabName(tabName), 10);
+		            Assert.assertTrue(refreshedTab.isDisplayed(), "Verify tab is visible: " + tabName);
+
+		            CommonLogger.log("On tab: " + tabName + " | Current URL: " + driver.getCurrentUrl());
+
+		            switchedTabsList.add(tabName);
+	        	}
+	        	
+	        }
+	    }
+
+	    CommonLogger.log("Completed navigation of expected tabs.");
+	}
 	public void validateDateErrors(String startDate, String endDate) {
 		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of validating Date Valdidation errors");
+
 		if(!startDate.isEmpty() && endDate.isEmpty())
 		{
 			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
@@ -414,6 +463,182 @@ public class Method_BlogSpot extends BasePageSetup{
 			String expectedError="End date must be after start date.";
 			Assert.assertEquals(expectedError,obj.Error_EndDateGreaterThanStartDate.getText(),"Verify On-Submit Error");				
 			event.printSnap("Validation Error");	
+			CommonLogger.log("Completed the process of validating Date Valdidation errors");
+
 		}
+	}
+	
+	public void validateFailDateErrors(String startDate, String endDate) {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of validating Date Valdidation errors");
+
+		if(!startDate.isEmpty() && endDate.isEmpty())
+		{
+			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError="Dummy-Please select both start and end dates.";
+			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");
+		}
+		else if(startDate.isEmpty() && !endDate.isEmpty())
+		{
+			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError="Dummy-Please select both start and end dates.";
+			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");
+		}
+		else if(startDate.isEmpty() && endDate.isEmpty())
+		{
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError="Dummy-Please select both start and end dates.";
+			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");
+		}
+		else if(!startDate.isEmpty() && !endDate.isEmpty())
+		{
+			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+
+			String expectedError="Dummy-End date must be after start date.";
+			Assert.assertEquals(expectedError,obj.Error_EndDateGreaterThanStartDate.getText(),"Verify On-Submit Error");				
+			event.printSnap("Validation Error");	
+			CommonLogger.log("Completed the process of validating Date Valdidation errors");
+
+		}
+	}
+
+	public void handleAutoSuggestDropdowns(String searchValue, int expectSuggestCount) {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of validating auto-suggest count");
+		List<String> matchedResults=new ArrayList<String>();
+
+		boolean matchFound=false;
+		action.enterAndVerify(obj.enterSearchInput, searchValue, "Search Value");
+		action.clickOnButtonAndVerify(obj.searchbutton, "Search Button");
+		int actualSuggestCount=wait.waitForListOfAllElementsToBeVisible(obj.getSearchResults, 5).size();
+		Assert.assertEquals(expectSuggestCount, actualSuggestCount,"Verify Suggest Count");
+		CommonLogger.log("Total Count of Search Results :"+actualSuggestCount);
+
+
+		for(WebElement suggestValues:obj.getSearchResults)
+		{
+			if(suggestValues.getText().toLowerCase().contains(searchValue))
+			{
+				//System.out.println("\n Value : "+suggestValues.getText());
+				matchFound=true;
+				matchedResults.add(suggestValues.getText());
+			}
+			else
+			{
+				matchFound=false;
+			}
+		}
+		CommonLogger.log("\n List of Suggested Results : "+matchedResults);
+		if(matchFound==true)
+		{
+
+			Assert.assertTrue(true, "Verify Search Result Match Found");
+		}
+		else
+		{
+			Assert.fail();
+		}
+
+
+		event.printSnap("Auto-SuggestCount");	
+		CommonLogger.log("Completed the process of validating auto-suggest count");
+
+	}
+
+	public void selectLongestAutoSuggestion(String searchValue) {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of select longest auto-suggest value");
+
+		int maxlenSearchIndex=0;
+		int maxLenValue=0;
+		String actualSearchValue="";
+
+		action.enterAndVerify(obj.enterSearchInput, searchValue, "Search Value");
+		action.clickOnButtonAndVerify(obj.searchbutton, "Search Button");
+		for(WebElement suggestValues:wait.waitForListOfAllElementsToBeVisible(obj.getSearchResults, 5))
+		{
+			actualSearchValue=suggestValues.getText().toLowerCase();
+			
+			if(actualSearchValue.toLowerCase().contains(searchValue))
+			{
+				int lenValue=actualSearchValue.length();
+				if(lenValue>maxLenValue)
+				{
+					maxLenValue=lenValue;
+				}
+			}
+		}
+		event.printSnap("Auto-SelectLongestSuggestValues");	
+		maxlenSearchIndex=longSearchValueName(maxLenValue);
+		action.clickOnButtonAndVerify(obj.getSuggestSearchResult(maxlenSearchIndex), "Search");
+		action.handleWindowSwitch(driver);
+		Assert.assertEquals(driver.getTitle(), "Automation Testing Practice","Verify Land to Home");
+		
+		CommonLogger.log("Completed the process of validating auto-suggest count");
+
+	}
+	
+	public int longSearchValueName(int maxLength) {
+	    int indexSearchName = 1; // Use -1 to indicate no match found
+	    WebElement searchValueName = null;
+
+	    // Check if there are search results
+	    if (obj.getSearchResults.size() == 1) {  
+	        // Directly check the only available record
+	        if (obj.getSearchResults.get(0).getText().length() == maxLength) {
+	            indexSearchName = 0;
+	            searchValueName = obj.getSuggestSearchResult(indexSearchName);
+	            CommonLogger.log("Longest Suggest Value : " + searchValueName.getText());
+	        }
+	    } else {  
+	        // Iterate over multiple search results
+	        for (int i = 0; i < obj.getSearchResults.size(); i++) {
+	            if (obj.getSearchResults.get(i).getText().length() == maxLength) {
+	                indexSearchName = i;
+	                indexSearchName++;
+	                searchValueName = obj.getSuggestSearchResult(indexSearchName);
+	                CommonLogger.log("Longest Suggest Value : " + searchValueName.getText());
+	            }
+	        }
+	    }
+
+	    return indexSearchName; // Return valid index or -1 if no match found
+	}
+
+	public void scrollToTopAndCapture() {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Started scrollToTopAndCapture process");
+		scroll.scrollToTop();
+		event.printSnap("scrollToTopAndCapture");
+		CommonLogger.log("Completed scrollToTopAndCapture process");
+	}
+
+	public void scrollToBottomAndCapture() {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Started scrollToBottomAndCapture process");
+		scroll.scrollToBottom();
+		event.printSnap("scrollToBottomAndCapture");
+		CommonLogger.log("Completed scrollToBottomAndCapture process");
+	}
+	public void scrollToElementAndCapture() {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Started scrollToElementAndCapture process");
+		scroll.scrollToElement(obj.LabelStaticWebTable);
+		event.printSnap("scrollToElementAndCapture");
+		CommonLogger.log("Completed scrollToElementAndCapture process");
+	}
+
+	public void captureFullScreen() {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Started captureFullScreen process");
+		event.fullprintSnap("captureFullScreen");
+		CommonLogger.log("Completed captureFullScreen process");
 	}
 }

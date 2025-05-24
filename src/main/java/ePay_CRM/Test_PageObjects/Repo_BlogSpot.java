@@ -8,13 +8,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import ePay_CRM.Reusable_Utils.WaitUtils;
+
 public class Repo_BlogSpot {
 
 	WebDriver driver;
+	WaitUtils wait;
 	public Repo_BlogSpot(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+		wait=new WaitUtils(driver);
 	}
 
 	@FindBy(id="name")
@@ -92,6 +96,15 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//*[text()='End date must be after start date.']")
 	public WebElement Error_EndDateGreaterThanStartDate;
 	
+	@FindBy(id="Wikipedia1_wikipedia-search-input")
+	public WebElement enterSearchInput;
+	
+	@FindBy(className="wikipedia-search-button")
+	public WebElement searchbutton;
+	
+	@FindBy(xpath="//div[@id='Wikipedia1_wikipedia-search-results']/div/a")
+	public List<WebElement> getSearchResults;
+	
 	public WebElement getGenderElement(String gender) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[3]/div/input[@value='" + gender + "']"));
 	}
@@ -103,21 +116,25 @@ public class Repo_BlogSpot {
 	public String getBookName(int index)
 	{
 		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[1]")).getText();
-		
 	}
+	
 	public String getAuthorName(int index)
 	{
 		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[2]")).getText();
-		
 	}
+	
 	public String getSubjectName(int index)
 	{
-		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[3]")).getText();
-		
+		return driver.findElement(By.xpath("//table[@name='BookTable']/tbody/tr["+index+"]/td[3]")).getText();	
 	}
 	
 	public WebElement getTabName(String tabName)
 	{
-		return driver.findElement(By.xpath("//div[@id='crosscol']/div/div/ul/li/a[text()='"+tabName+"']"));
+		return wait.waitForElementToBeVisible(driver.findElement(By.xpath("//div[@id='crosscol']/div/div/ul/li/a[text()='"+tabName+"']")), 20);
+	}
+	
+	public WebElement getSuggestSearchResult(int maxLength)
+	{
+		return driver.findElement(By.xpath("//div[@id='Wikipedia1_wikipedia-search-results']/div["+maxLength+"]/a"));
 	}
 }

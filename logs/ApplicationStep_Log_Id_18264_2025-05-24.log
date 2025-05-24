@@ -1,0 +1,27 @@
+24:05:2025 16:57:17 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+24:05:2025 16:57:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+24:05:2025 16:57:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+24:05:2025 16:57:28 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+24:05:2025 16:57:28 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:379] - Initiated the process of navigating tabs with expected tab names list.
+24:05:2025 16:57:32 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 16:57:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:411] - On tab: Home | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 16:57:38 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:300] - RunTime Exception Occurred: [[ChromeDriver: chrome on windows (b16a4a7031d58eb19f353b67e7761d7e)] -> xpath: //div[@id='crosscol']/div/div/ul/li/a[text()='Udemy Courses']] - org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 5.000
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b16a4a7031d58eb19f353b67e7761d7e, clickElement {id=f.09A328C6045FE481ECF5E331C3B9FD6D.d.EF39473AD46B4800154B352BEBA76A60.e.165}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49183/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b16a4a7031d58eb19f353b67e7761d7e)] -> xpath: //div[@id='crosscol']/div/div/ul/li/a[text()='Udemy Courses']]
+Session ID: b16a4a7031d58eb19f353b67e7761d7e
+24:05:2025 16:57:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:411] - On tab: Udemy Courses | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 16:57:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 16:57:48 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:411] - On tab: Online Trainings | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 16:57:52 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 16:57:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:411] - On tab: Blog | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 16:57:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 16:57:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:411] - On tab: PlaywrightPractice | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 16:57:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:417] - Completed navigation of expected tabs.
+24:05:2025 16:57:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+24:05:2025 16:57:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+24:05:2025 16:57:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

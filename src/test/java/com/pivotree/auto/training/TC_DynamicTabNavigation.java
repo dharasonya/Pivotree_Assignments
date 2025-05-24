@@ -28,7 +28,7 @@ public class TC_DynamicTabNavigation extends BasePageSetup {
 		}
 	}	
 	
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void Validate_TabNamesCorrectness() throws Exception
 	{
 		getUrl();

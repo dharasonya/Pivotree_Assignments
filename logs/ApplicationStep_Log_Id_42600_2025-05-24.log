@@ -1,0 +1,15 @@
+24:05:2025 13:04:51 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+24:05:2025 13:04:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+24:05:2025 13:04:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+24:05:2025 13:04:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+24:05:2025 13:04:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectLongestAutoSuggestion [Line:463] - Initiated the process of select longest auto-suggest value
+24:05:2025 13:04:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:47] - Field: Search Value is entered & verified.
+24:05:2025 13:04:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:290] - On Click :Search Button is Clicked & Verified.
+24:05:2025 13:05:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.longSearchValueName [Line:509] - Loggest Suggest Value : Dressed to Kill (1980 film)
+24:05:2025 13:05:01 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:290] - On Click :Search is Clicked & Verified.
+24:05:2025 13:05:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.switchToNewWindow [Line:307] - ? Switched to new window: Dressed to Kill (1980 film) - Wikipedia
+24:05:2025 13:05:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.closeAndSwitchBack [Line:332] - ? Main window not found, switched to another available window: Automation Testing Practice
+24:05:2025 13:05:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectLongestAutoSuggestion [Line:490] - Completed the process of validating auto-suggest count
+24:05:2025 13:05:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+24:05:2025 13:05:03 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+24:05:2025 13:05:03 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

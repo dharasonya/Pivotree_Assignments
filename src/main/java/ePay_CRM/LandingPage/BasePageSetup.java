@@ -1,3 +1,4 @@
+
 package ePay_CRM.LandingPage;
 
 import java.io.FileInputStream;
@@ -17,16 +18,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import ePay_CRM.LoginProcess.Method_LoginWithCredentials;
-import ePay_CRM.LoginProcess.Method_OrangeHRM_LoginWithCredentials;
 import ePay_CRM.Reusable_Utils.CallListeners;
 import ePay_CRM.Reusable_Utils.CommonLogger;
-import ePay_CRM.Test_ActionMethods.Method_AirtelConfiguration;
-import ePay_CRM.Test_ActionMethods.Method_BillerConfigOnus;
+
 import ePay_CRM.Test_ActionMethods.Method_BlogSpot;
-import ePay_CRM.Test_ActionMethods.Method_EpayPropertyConfig;
-import ePay_CRM.Test_ActionMethods.Method_PIM_AddEmployee;
-import ePay_CRM.Test_ActionMethods.Method_SpRspCodeMapping;
+
 
 
 public class BasePageSetup {

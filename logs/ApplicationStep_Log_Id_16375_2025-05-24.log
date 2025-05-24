@@ -1,0 +1,52 @@
+24:05:2025 17:36:05 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+24:05:2025 17:36:10 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+24:05:2025 17:36:10 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+24:05:2025 17:36:15 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:15 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabName [Line:324] - Initiated the process of Comparing the actual tabs with expected tab names list
+24:05:2025 17:36:16 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabName [Line:337] - The process of Comparing Tab Names has been completed.
+24:05:2025 17:36:16 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+24:05:2025 17:36:16 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+24:05:2025 17:36:16 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+24:05:2025 17:36:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+24:05:2025 17:36:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------2
+24:05:2025 17:36:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:342] - Initiated the process of Navigating tabs with expected tab names list
+24:05:2025 17:36:29 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:36:34 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:368] - On Tab :Home - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:36:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:368] - On Tab :Udemy Courses - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:36:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:368] - On Tab :Online Trainings - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:50 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:36:51 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:368] - On Tab :Blog - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:36:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:368] - On Tab :PlaywrightPractice - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+24:05:2025 17:36:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:373] - The process of Navigating of Expected Tabs has been completed.
+24:05:2025 17:36:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+24:05:2025 17:36:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+24:05:2025 17:36:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+24:05:2025 17:37:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+24:05:2025 17:37:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------3
+24:05:2025 17:37:07 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+24:05:2025 17:37:07 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:379] - Initiated the process of navigating tabs with expected tab names list.
+24:05:2025 17:37:08 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:400] - On tab: Home | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 17:37:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:302] - RunTime Exception Occurred: [[ChromeDriver: chrome on windows (7e2a2fe6e00cdc3cbb93a5ee12f45429)] -> xpath: //div[@id='crosscol']/div/div/ul/li/a[text()='Udemy Courses']] - org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 5.000
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e2a2fe6e00cdc3cbb93a5ee12f45429, clickElement {id=f.FDC083C4866E7DFF55B28F92B59E0CDF.d.1F27839C2AD2E47D65F39D4B206A5928.e.85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53141/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e2a2fe6e00cdc3cbb93a5ee12f45429)] -> xpath: //div[@id='crosscol']/div/div/ul/li/a[text()='Udemy Courses']]
+Session ID: 7e2a2fe6e00cdc3cbb93a5ee12f45429
+24:05:2025 17:37:16 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:420] - On tab: Udemy Courses | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 17:37:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:37:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:420] - On tab: Online Trainings | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 17:37:27 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:37:29 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:420] - On tab: Blog | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 17:37:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:295] - On Click :tab is Clicked & Verified.
+24:05:2025 17:37:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:420] - On tab: PlaywrightPractice | Current URL: https://testautomationpractice.blogspot.com/
+24:05:2025 17:37:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:428] - Completed navigation of expected tabs.
+24:05:2025 17:37:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+24:05:2025 17:37:33 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+24:05:2025 17:37:34 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

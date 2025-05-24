@@ -53,7 +53,7 @@ public class ScreenShot_Handle extends BasePageSetup{
 	}
 	public String takeFullPageScreenshot(String fileName) throws IOException {
         driver.manage().window().maximize();
-        ScreenShot_Handle screenshot = new AShot()
+        Screenshot screenshot = new AShot()
                 .shootingStrategy(ShootingStrategies.viewportPasting(2000))
                 .coordsProvider(new WebDriverCoordsProvider())
                 .takeScreenshot(driver);

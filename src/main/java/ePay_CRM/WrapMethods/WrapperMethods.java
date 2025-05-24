@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,17 +21,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import ePay_CRM.LandingPage.BasePageSetup;
+import ePay_CRM.Reusable_Utils.CallListeners;
 import ePay_CRM.Reusable_Utils.CommonLogger;
+import ePay_CRM.Reusable_Utils.ScrollHandler;
 import ePay_CRM.Reusable_Utils.WaitUtils;
 
 public class WrapperMethods extends BasePageSetup {
 
 	WebDriver driver;
 	WaitUtils wait;
+	CallListeners event=new CallListeners();
+	ScrollHandler scroll;
 	public WrapperMethods(WebDriver driver)
 	{
 		this.driver=driver;
 		wait=new WaitUtils(driver);	
+		scroll=new ScrollHandler(driver);
 	}
 
 	public void enterAndVerify(WebElement element, String value, String fieldName) {
@@ -228,7 +234,7 @@ public class WrapperMethods extends BasePageSetup {
 						elementValues.click();
 						CommonLogger.log("Checkbox selected: " + checkboxLabel);
 						selectedValues.add(elementValues.getText());
-						
+
 						if(attribute.isSelected())
 						{
 							Assert.assertTrue(attribute.isSelected(),"Verify Element is Selected");
@@ -237,8 +243,8 @@ public class WrapperMethods extends BasePageSetup {
 						{
 							Assert.assertFalse(attribute.isSelected(),"Verify Element is De-Selected");
 						}
-						
-						
+
+
 					} else {
 						CommonLogger.log("Checkbox already selected: " + checkboxLabel);
 					}
@@ -261,8 +267,8 @@ public class WrapperMethods extends BasePageSetup {
 			Assert.fail("Error selecting checkboxes: " + e.getMessage());
 		}
 	}
-	
-	
+
+
 
 	public String getTextAndVerify(WebElement element, String FieldName) throws Exception {
 		String value = "";
@@ -284,20 +290,58 @@ public class WrapperMethods extends BasePageSetup {
 	{
 		try
 		{
-			wait.waitforelementToBeClickable(element, 20);
+			wait.waitforelementToBeClickable(element, 60);
 			element.click();
 			CommonLogger.log("On Click :"+fieldName+" is Clicked & Verified.");
 		}
 		catch(Exception e)
 		{
 			//getLog().info("RunTime Exception Occurred: " + element+" - "+e);	
-			CommonLogger.log("RunTime Exception Occurred: " + element+" - "+e);
-
 			CommonLogger.errorLog(e);
+			CommonLogger.log("RunTime Exception Occurred: " + element+" - "+e);
+			
 		}
-
 	}
 
+	public void handleWindowSwitch(WebDriver driver) {
+	    String mainWindowHandle = driver.getWindowHandle(); // Store the main window
+	    
+	    // Get all window handles
+	    Set<String> allWindows = driver.getWindowHandles();
+	    Assert.assertTrue(allWindows.size() > 1, "Verify No new window opened!");
+
+	    String newWindowHandle = "";
+	    for (String window : allWindows) {
+	        if (!window.equals(mainWindowHandle)) {
+	            newWindowHandle = window;
+	            driver.switchTo().window(window);
+	            CommonLogger.log("Switched to new window: " + driver.getTitle());
+	            scroll.scrollToTop();
+	            event.printSnap("Switched to New Window");	
+	            break;
+	        }
+	    }
+	    // Perform actions in the new window (Modify based on test scenario)
+	    Assert.assertEquals(driver.getWindowHandle(), newWindowHandle, "Verify switch to new window!");
+
+	    // Close new window and switch back
+	    driver.close();
+
+	    /*// Wait for windows to update
+	    Set<String> remainingWindows = driver.getWindowHandles();
+	    while (remainingWindows.size() > 1) {
+	        remainingWindows = driver.getWindowHandles();
+	    }*/
+
+	    // Switch back to the main window
+	    driver.switchTo().window(mainWindowHandle);
+	    CommonLogger.log("🔄 Switched back to main window: " + driver.getTitle());
+	    
+	    // ✅ Verify correct switch back
+	    Assert.assertEquals(driver.getWindowHandle(), mainWindowHandle, "Verified switch back to main window!");
+	    event.printSnap("Switched to Main Window");	
+	}
+	
 	public String getAttributeValue(WebElement element, String attribute,String fieldName) {
 
 		String value="";
