@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-24T19:14:25 IST" name="TestAutomationPractive" finished-at="2025-05-24T19:14:59 IST" duration-ms="34004">
+  <suite started-at="2025-05-24T19:52:44 IST" name="TestAutomationPractive" finished-at="2025-05-24T19:53:12 IST" duration-ms="28037">
     <groups>
     </groups>
-    <test started-at="2025-05-24T19:14:25 IST" name="Blogspot" finished-at="2025-05-24T19:14:59 IST" duration-ms="34004">
-      <class name="com.pivotree.auto.training.TC_FailureTestCase">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:26 IST" name="BrowserIntilization" finished-at="2025-05-24T19:14:30 IST" duration-ms="4258" status="PASS">
+    <test started-at="2025-05-24T19:52:44 IST" name="Blogspot" finished-at="2025-05-24T19:53:12 IST" duration-ms="28037">
+      <class name="com.pivotree.auto.training.TC_LogSoftAssertFailures">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_LogSoftAssertFailures@236e3f4e]" started-at="2025-05-24T19:52:44 IST" name="BrowserIntilization" finished-at="2025-05-24T19:52:47 IST" duration-ms="3246" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,20 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_Enter_OnlyStartDate()[pri:1, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:30 IST" name="Validate_Enter_OnlyStartDate" finished-at="2025-05-24T19:14:35 IST" duration-ms="4784" status="FAIL">
+        <test-method signature="validate_UIElements()[pri:1, instance:com.pivotree.auto.training.TC_LogSoftAssertFailures@236e3f4e]" started-at="2025-05-24T19:52:47 IST" name="validate_UIElements" finished-at="2025-05-24T19:53:11 IST" duration-ms="23595" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]]]>
+              <![CDATA[The following asserts failed:
+Verify Label Name expected [Name1] but found [Name:],
+Verify Email Name expected [Email1] but found [Email:],
+Verify Phone Name expected [Phone2] but found [Phone:],
+Verify Address Name expected [Address1] but found [Address:],
+Verify Gender Name expected [Gender1] but found [Gender:]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:480)
-at com.pivotree.auto.training.TC_FailureTestCase.Validate_Enter_OnlyStartDate(TC_FailureTestCase.java:16)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Verify Label Name expected [Name1] but found [Name:],
+Verify Email Name expected [Email1] but found [Email:],
+Verify Phone Name expected [Phone2] but found [Phone:],
+Verify Address Name expected [Address1] but found [Address:],
+Verify Gender Name expected [Gender1] but found [Gender:]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at ePay_CRM.Test_ActionMethods.Method_BlogSpot.verify_PersonalDetailsLabelNames(Method_BlogSpot.java:660)
+at com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements(TC_LogSoftAssertFailures.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,8 +72,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Enter_OnlyStartDate -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:35 IST" name="TearDown" finished-at="2025-05-24T19:14:35 IST" duration-ms="331" status="PASS">
+        </test-method> <!-- validate_UIElements -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_LogSoftAssertFailures@236e3f4e]" started-at="2025-05-24T19:53:11 IST" name="TearDown" finished-at="2025-05-24T19:53:12 IST" duration-ms="421" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,217 +84,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:35 IST" name="BrowserIntilization" finished-at="2025-05-24T19:14:37 IST" duration-ms="2086" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_Enter_OnlyEndDate()[pri:2, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:37 IST" name="Validate_Enter_OnlyEndDate" finished-at="2025-05-24T19:14:42 IST" duration-ms="4766" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:488)
-at com.pivotree.auto.training.TC_FailureTestCase.Validate_Enter_OnlyEndDate(TC_FailureTestCase.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_Enter_OnlyEndDate -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:42 IST" name="TearDown" finished-at="2025-05-24T19:14:43 IST" duration-ms="287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:43 IST" name="BrowserIntilization" finished-at="2025-05-24T19:14:45 IST" duration-ms="2275" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_No_Value_Enter_StartEndDate()[pri:3, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:45 IST" name="Validate_No_Value_Enter_StartEndDate" finished-at="2025-05-24T19:14:50 IST" duration-ms="4939" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:495)
-at com.pivotree.auto.training.TC_FailureTestCase.Validate_No_Value_Enter_StartEndDate(TC_FailureTestCase.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_No_Value_Enter_StartEndDate -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:50 IST" name="TearDown" finished-at="2025-05-24T19:14:50 IST" duration-ms="264" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:50 IST" name="BrowserIntilization" finished-at="2025-05-24T19:14:53 IST" duration-ms="2081" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_StartDate_GreaterEndDate()[pri:3, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:53 IST" name="Validate_StartDate_GreaterEndDate" finished-at="2025-05-24T19:14:58 IST" duration-ms="5633" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verify On-Submit Error expected [End date must be after start date.] but found [Dummy-End date must be after start date.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify On-Submit Error expected [End date must be after start date.] but found [Dummy-End date must be after start date.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:505)
-at com.pivotree.auto.training.TC_FailureTestCase.Validate_StartDate_GreaterEndDate(TC_FailureTestCase.java:40)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Validate_StartDate_GreaterEndDate -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FailureTestCase@dd0c991]" started-at="2025-05-24T19:14:58 IST" name="TearDown" finished-at="2025-05-24T19:14:59 IST" duration-ms="285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.pivotree.auto.training.TC_FailureTestCase -->
+      </class> <!-- com.pivotree.auto.training.TC_LogSoftAssertFailures -->
     </test> <!-- Blogspot -->
   </suite> <!-- TestAutomationPractive -->
 </testng-results>

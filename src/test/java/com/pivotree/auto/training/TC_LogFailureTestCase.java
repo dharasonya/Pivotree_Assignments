@@ -39,7 +39,8 @@ public class TC_LogFailureTestCase extends BasePageSetup {
 		getUrl();
 		corestep.validateFailDateErrors("10-05-2023","10-05-2019");
 	}
-
+	
+	
 }
 
 

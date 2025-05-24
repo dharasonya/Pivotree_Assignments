@@ -27,9 +27,12 @@
 			<class
 				name="com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs" />
 			<class
-				name="com.pivotree.auto.training.TC_ScrollToElementAndCapture" /> -->
+				name="com.pivotree.auto.training.TC_ScrollToElementAndCapture" />
 			<class
-				name="com.pivotree.auto.training.TC_LogFailureTestCase" /> 
+				name="com.pivotree.auto.training.TC_LogFailureTestCase" />  -->
+			<class
+				name="com.pivotree.auto.training.TC_LogSoftAssertFailures" />
+				
 				
 				
 		</classes>

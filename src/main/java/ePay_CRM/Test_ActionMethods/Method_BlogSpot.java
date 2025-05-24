@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
 import ePay_CRM.LandingPage.BasePageSetup;
 import ePay_CRM.Reusable_Utils.CallListeners;
 import ePay_CRM.Reusable_Utils.ScrollHandler;
@@ -464,49 +466,49 @@ public class Method_BlogSpot extends BasePageSetup{
 			Assert.assertEquals(expectedError,obj.Error_EndDateGreaterThanStartDate.getText(),"Verify On-Submit Error");				
 			event.printSnap("Validation Error");	
 			CommonLogger.log("Completed the process of validating Date Valdidation errors");
-
 		}
 	}
 	
 	public void validateFailDateErrors(String startDate, String endDate) {
-		// TODO Auto-generated method stub
-		CommonLogger.log("Initiated the process of validating Date Valdidation errors");
+		CommonLogger.log("Initiated the process of validating Date Validation errors");
 
-		if(!startDate.isEmpty() && endDate.isEmpty())
-		{
-			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
-			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
-			String expectedError="Dummy-Please select both start and end dates.";
-			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
-			event.printSnap("Validation Error");
-		}
-		else if(startDate.isEmpty() && !endDate.isEmpty())
-		{
-			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
-			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
-			String expectedError="Dummy-Please select both start and end dates.";
-			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
-			event.printSnap("Validation Error");
-		}
-		else if(startDate.isEmpty() && endDate.isEmpty())
-		{
-			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
-			String expectedError="Dummy-Please select both start and end dates.";
-			Assert.assertEquals(expectedError,obj.Error_SelectBothStartEndDate.getText(),"Verify On-Submit Error");				
-			event.printSnap("Validation Error");
-		}
-		else if(!startDate.isEmpty() && !endDate.isEmpty())
-		{
-			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
-			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
-			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+	    SoftAssert softAssert = new SoftAssert(); // Initialize Soft Assertion
 
-			String expectedError="Dummy-End date must be after start date.";
-			Assert.assertEquals(expectedError,obj.Error_EndDateGreaterThanStartDate.getText(),"Verify On-Submit Error");				
-			event.printSnap("Validation Error");	
-			CommonLogger.log("Completed the process of validating Date Valdidation errors");
+	    if (!startDate.isEmpty() && endDate.isEmpty()) {
+	        action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+	        String expectedError = "Dummy-Please select both start and end dates.";
+	        softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
+	        event.printSnap("Validation Error");
+	    } 
+	    
+	    else if (startDate.isEmpty() && !endDate.isEmpty()) {
+	        action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+	        String expectedError = "Dummy-Please select both start and end dates.";
+	        softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
+	        event.printSnap("Validation Error");
+	    } 
+	    
+	    else if (startDate.isEmpty() && endDate.isEmpty()) {
+	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+	        String expectedError = "Dummy-Please select both start and end dates.";
+	        softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
+	        event.printSnap("Validation Error");
+	    } 
+	    
+	    else if (!startDate.isEmpty() && !endDate.isEmpty()) {
+	        action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+	        action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
 
-		}
+	        String expectedError = "Dummy-End date must be after start date.";
+	        softAssert.assertEquals(obj.Error_EndDateGreaterThanStartDate.getText(), expectedError, "Verify On-Submit Error");
+	        event.printSnap("Validation Error");
+	        CommonLogger.log("Completed the process of validating Date Validation errors");
+	    }
+
+	    softAssert.assertAll(); // ✅ Ensures all errors are displayed at the end
 	}
 
 	public void handleAutoSuggestDropdowns(String searchValue, int expectSuggestCount) {
@@ -640,5 +642,22 @@ public class Method_BlogSpot extends BasePageSetup{
 		CommonLogger.log("Started captureFullScreen process");
 		event.fullprintSnap("captureFullScreen");
 		CommonLogger.log("Completed captureFullScreen process");
+	}
+
+	public void verify_PersonalDetailsLabelNames() {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Started SoftAssertion Validation process");
+		SoftAssert softAssert=new SoftAssert();
+		
+		softAssert.assertEquals(obj.getNameLabel.getText(), "Name1","Verify Label Name");
+		softAssert.assertEquals(obj.getEmailLabel.getText(), "Email1","Verify Email Name");
+		softAssert.assertEquals(obj.getPhoneLabel.getText(), "Phone2","Verify Phone Name");
+		softAssert.assertEquals(obj.getAddressLabel.getText(), "Address1","Verify Address Name");
+		softAssert.assertEquals(obj.getGenderLabel.getText(), "Gender1","Verify Gender Name");
+	
+		event.fullprintSnap("verify_PersonalDetailsLabelNames_UI");
+		CommonLogger.log("Completed SoftAssertion Validation process");
+		softAssert.assertAll();
+		
 	}
 }

@@ -7,16 +7,13 @@
   <test thread-count="5" name="Blogspot(failed)">
     <parameter name="BrowserValue" value="chrome"/>
     <classes>
-      <class name="com.pivotree.auto.training.TC_FailureTestCase">
+      <class name="com.pivotree.auto.training.TC_LogSoftAssertFailures">
         <methods>
-          <include name="Validate_No_Value_Enter_StartEndDate"/>
-          <include name="Validate_Enter_OnlyEndDate"/>
+          <include name="validate_UIElements"/>
           <include name="TearDown"/>
-          <include name="Validate_StartDate_GreaterEndDate"/>
-          <include name="Validate_Enter_OnlyStartDate"/>
           <include name="BrowserIntilization"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.TC_FailureTestCase -->
+      </class> <!-- com.pivotree.auto.training.TC_LogSoftAssertFailures -->
     </classes>
   </test> <!-- Blogspot(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->

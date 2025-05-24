@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,22 +103,7 @@
                     <div class="method-list-content failed suite-TestAutomationPractive">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_FailureTestCase" class="method navigator-link" hash-for-method="Validate_Enter_OnlyEndDate">Validate_Enter_OnlyEndDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_FailureTestCase" class="method navigator-link" hash-for-method="Validate_Enter_OnlyStartDate">Validate_Enter_OnlyStartDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_FailureTestCase" class="method navigator-link" hash-for-method="Validate_No_Value_Enter_StartEndDate">Validate_No_Value_Enter_StartEndDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_FailureTestCase" class="method navigator-link" hash-for-method="Validate_StartDate_GreaterEndDate">Validate_StartDate_GreaterEndDate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_LogSoftAssertFailures" class="method navigator-link" hash-for-method="validate_UIElements">validate_UIElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestAutomationPractive -->
@@ -136,58 +121,24 @@
           <div class="suite-TestAutomationPractive-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.pivotree.auto.training.TC_FailureTestCase</span>
+              <span class="class-name">com.pivotree.auto.training.TC_LogSoftAssertFailures</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Validate_Enter_OnlyEndDate">
-                  </a> <!-- Validate_Enter_OnlyEndDate -->
-                  <span class="method-name">Validate_Enter_OnlyEndDate</span>
-                  <div class="stack-trace">java.lang.AssertionError: Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]
-	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:488)
-	at com.pivotree.auto.training.TC_FailureTestCase.Validate_Enter_OnlyEndDate(TC_FailureTestCase.java:24)
+                  <a name="validate_UIElements">
+                  </a> <!-- validate_UIElements -->
+                  <span class="method-name">validate_UIElements</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verify Label Name expected [Name1] but found [Name:],
+	Verify Email Name expected [Email1] but found [Email:],
+	Verify Phone Name expected [Phone2] but found [Phone:],
+	Verify Address Name expected [Address1] but found [Address:],
+	Verify Gender Name expected [Gender1] but found [Gender:]
+	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.verify_PersonalDetailsLabelNames(Method_BlogSpot.java:660)
+	at com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements(TC_LogSoftAssertFailures.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Validate_Enter_OnlyStartDate">
-                  </a> <!-- Validate_Enter_OnlyStartDate -->
-                  <span class="method-name">Validate_Enter_OnlyStartDate</span>
-                  <div class="stack-trace">java.lang.AssertionError: Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]
-	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:480)
-	at com.pivotree.auto.training.TC_FailureTestCase.Validate_Enter_OnlyStartDate(TC_FailureTestCase.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Validate_No_Value_Enter_StartEndDate">
-                  </a> <!-- Validate_No_Value_Enter_StartEndDate -->
-                  <span class="method-name">Validate_No_Value_Enter_StartEndDate</span>
-                  <div class="stack-trace">java.lang.AssertionError: Verify On-Submit Error expected [Please select both start and end dates.] but found [Dummy-Please select both start and end dates.]
-	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:495)
-	at com.pivotree.auto.training.TC_FailureTestCase.Validate_No_Value_Enter_StartEndDate(TC_FailureTestCase.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Validate_StartDate_GreaterEndDate">
-                  </a> <!-- Validate_StartDate_GreaterEndDate -->
-                  <span class="method-name">Validate_StartDate_GreaterEndDate</span>
-                  <div class="stack-trace">java.lang.AssertionError: Verify On-Submit Error expected [End date must be after start date.] but found [Dummy-End date must be after start date.]
-	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateFailDateErrors(Method_BlogSpot.java:505)
-	at com.pivotree.auto.training.TC_FailureTestCase.Validate_StartDate_GreaterEndDate(TC_FailureTestCase.java:40)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -209,7 +160,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Blogspot&quot;&gt;
     &lt;parameter name=&quot;BrowserValue&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pivotree.auto.training.TC_FailureTestCase&quot;/&gt;
+      &lt;class name=&quot;com.pivotree.auto.training.TC_LogSoftAssertFailures&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Blogspot --&gt;
 &lt;/suite&gt; &lt;!-- TestAutomationPractive --&gt;
@@ -249,28 +200,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Validate_StartDate_GreaterEndDate')
-data.setCell(0, 2, 'com.pivotree.auto.training.TC_FailureTestCase')
-data.setCell(0, 3, 5633);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Validate_No_Value_Enter_StartEndDate')
-data.setCell(1, 2, 'com.pivotree.auto.training.TC_FailureTestCase')
-data.setCell(1, 3, 4939);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Validate_Enter_OnlyStartDate')
-data.setCell(2, 2, 'com.pivotree.auto.training.TC_FailureTestCase')
-data.setCell(2, 3, 4784);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Validate_Enter_OnlyEndDate')
-data.setCell(3, 2, 'com.pivotree.auto.training.TC_FailureTestCase')
-data.setCell(3, 3, 4766);
+data.setCell(0, 1, 'validate_UIElements')
+data.setCell(0, 2, 'com.pivotree.auto.training.TC_LogSoftAssertFailures')
+data.setCell(0, 3, 23595);
 window.suiteTableData['TestAutomationPractive']= { tableData: data, tableDiv: 'times-div-TestAutomationPractive'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-TestAutomationPractive">
               </div> <!-- times-div-TestAutomationPractive -->
             </div> <!-- times-div -->
@@ -296,7 +235,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pivotree.auto.training.TC_FailureTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pivotree.auto.training.TC_LogSoftAssertFailures</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">BrowserIntilization(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -304,54 +243,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Validate_Enter_OnlyStartDate</span>
-                <span class="method-start">4260 ms</span>
+                <span class="method-name">validate_UIElements</span>
+                <span class="method-start">3250 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown(chrome)</span>
-                <span class="method-start">9301 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BrowserIntilization(chrome)</span>
-                <span class="method-start">9635 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Validate_Enter_OnlyEndDate</span>
-                <span class="method-start">11721 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown(chrome)</span>
-                <span class="method-start">16784 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BrowserIntilization(chrome)</span>
-                <span class="method-start">17073 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Validate_No_Value_Enter_StartEndDate</span>
-                <span class="method-start">19348 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown(chrome)</span>
-                <span class="method-start">24660 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BrowserIntilization(chrome)</span>
-                <span class="method-start">24925 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Validate_StartDate_GreaterEndDate</span>
-                <span class="method-start">27006 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown(chrome)</span>
-                <span class="method-start">32869 ms</span>
+                <span class="method-start">27083 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

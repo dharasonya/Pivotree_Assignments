@@ -105,6 +105,22 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//div[@id='Wikipedia1_wikipedia-search-results']/div/a")
 	public List<WebElement> getSearchResults;
 	
+	//--Personal Details label names
+	@FindBy(xpath="//label[text()='Name:']")
+	public WebElement getNameLabel;
+	
+	@FindBy(xpath="//label[text()='Email:']")
+	public WebElement getEmailLabel;
+	
+	@FindBy(xpath="//label[text()='Phone:']")
+	public WebElement getPhoneLabel;
+	
+	@FindBy(xpath="//label[text()='Address:']")
+	public WebElement getAddressLabel;
+
+	@FindBy(xpath="//label[text()='Gender:']")
+	public WebElement getGenderLabel;
+	
 	public WebElement getGenderElement(String gender) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[3]/div/input[@value='" + gender + "']"));
 	}
