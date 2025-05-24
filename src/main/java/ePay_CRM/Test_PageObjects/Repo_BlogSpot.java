@@ -121,6 +121,31 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//label[text()='Gender:']")
 	public WebElement getGenderLabel;
 	
+	@FindBy(xpath="//*[text()='Pagination Web Table']")
+	public WebElement getPaginationWebTableName;
+	
+	@FindBy(xpath="//table[@id='productTable']/tbody/tr/td[2]")
+	public List<WebElement> getProductName;
+	
+	@FindBy(xpath="//table[@id='productTable']/tbody/tr/td[3]")
+	public List<WebElement> getProductPrice;
+	
+	@FindBy(xpath="//table[@id='productTable']/tbody/tr/td[4]")
+	public List<WebElement> getProductSelectCheckBoxList;
+	
+	@FindBy(xpath="//*[@id='pagination']/li/a")
+	public List<WebElement> getPaginationList;
+	
+	public WebElement getPageNumber(int index)
+	{
+		return driver.findElement(By.xpath("//*[@id='pagination']/li["+index+"]/a"));
+	}
+	
+	public WebElement getProductSelectCheckBox(int index)
+	{
+		return driver.findElement(By.xpath("//table[@id='productTable']/tbody/tr["+index+"]/td[4]/input"));
+	}
+	
 	public WebElement getGenderElement(String gender) {
 		return driver.findElement(By.xpath("(//div[@class='form-group'])[3]/div/input[@value='" + gender + "']"));
 	}

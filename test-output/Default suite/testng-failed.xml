@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pivotree.auto.training.Case_ValidatePageTitle">
+      <class name="com.pivotree.auto.training.TC_LogFailureTestCase">
         <methods>
-          <include name="ValidatePageTitle"/>
+          <include name="Validate_Enter_OnlyStartDate"/>
+          <include name="TearDown"/>
+          <include name="Validate_No_Value_Enter_StartEndDate"/>
+          <include name="Validate_Enter_OnlyEndDate"/>
           <include name="BrowserIntilization"/>
+          <include name="Validate_StartDate_GreaterEndDate"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.Case_ValidatePageTitle -->
+      </class> <!-- com.pivotree.auto.training.TC_LogFailureTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

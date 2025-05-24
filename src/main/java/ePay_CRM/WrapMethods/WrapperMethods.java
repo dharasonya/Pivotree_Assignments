@@ -297,7 +297,7 @@ public class WrapperMethods extends BasePageSetup {
 		catch(Exception e)
 		{
 			//getLog().info("RunTime Exception Occurred: " + element+" - "+e);	
-			CommonLogger.errorLog(e);
+			//CommonLogger.errorLog(e);
 			CommonLogger.log("RunTime Exception Occurred: " + element+" - "+e);
 			
 		}

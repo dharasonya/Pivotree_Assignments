@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestAutomationPractive" class="navigator-link">
-              <span class="suite-name border-failed">TestAutomationPractive</span>
+              <span class="suite-name border-passed">TestAutomationPractive</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestAutomationPractive" class="hide-methods failed suite-TestAutomationPractive"> (hide)</a> <!-- hide-methods failed suite-TestAutomationPractive -->
-                      <a href="#" panel-name="suite-TestAutomationPractive" class="show-methods failed suite-TestAutomationPractive"> (show)</a> <!-- show-methods failed suite-TestAutomationPractive -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestAutomationPractive" class="hide-methods passed suite-TestAutomationPractive"> (hide)</a> <!-- hide-methods passed suite-TestAutomationPractive -->
+                      <a href="#" panel-name="suite-TestAutomationPractive" class="show-methods passed suite-TestAutomationPractive"> (show)</a> <!-- show-methods passed suite-TestAutomationPractive -->
                     </span>
-                    <div class="method-list-content failed suite-TestAutomationPractive">
+                    <div class="method-list-content passed suite-TestAutomationPractive">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_LogSoftAssertFailures" class="method navigator-link" hash-for-method="validate_UIElements">validate_UIElements</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_ProductSelectionAutomation" class="method navigator-link" hash-for-method="validate_MatchedProductSelection">validate_MatchedProductSelection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-TestAutomationPractive -->
+                    </div> <!-- method-list-content passed suite-TestAutomationPractive -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,32 +118,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestAutomationPractive" class="panel TestAutomationPractive">
-          <div class="suite-TestAutomationPractive-class-failed">
+          <div class="suite-TestAutomationPractive-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.pivotree.auto.training.TC_LogSoftAssertFailures</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.pivotree.auto.training.TC_ProductSelectionAutomation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validate_UIElements">
-                  </a> <!-- validate_UIElements -->
-                  <span class="method-name">validate_UIElements</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Verify Label Name expected [Name1] but found [Name:],
-	Verify Email Name expected [Email1] but found [Email:],
-	Verify Phone Name expected [Phone2] but found [Phone:],
-	Verify Address Name expected [Address1] but found [Address:],
-	Verify Gender Name expected [Gender1] but found [Gender:]
-	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.verify_PersonalDetailsLabelNames(Method_BlogSpot.java:660)
-	at com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements(TC_LogSoftAssertFailures.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="validate_MatchedProductSelection">
+                  </a> <!-- validate_MatchedProductSelection -->
+                  <span class="method-name">validate_MatchedProductSelection</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestAutomationPractive-class-failed -->
+          </div> <!-- suite-TestAutomationPractive-class-passed -->
         </div> <!-- panel TestAutomationPractive -->
         <div panel-name="test-xml-TestAutomationPractive" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -160,7 +149,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Blogspot&quot;&gt;
     &lt;parameter name=&quot;BrowserValue&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pivotree.auto.training.TC_LogSoftAssertFailures&quot;/&gt;
+      &lt;class name=&quot;com.pivotree.auto.training.TC_ProductSelectionAutomation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Blogspot --&gt;
 &lt;/suite&gt; &lt;!-- TestAutomationPractive --&gt;
@@ -202,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validate_UIElements')
-data.setCell(0, 2, 'com.pivotree.auto.training.TC_LogSoftAssertFailures')
-data.setCell(0, 3, 23595);
+data.setCell(0, 1, 'validate_MatchedProductSelection')
+data.setCell(0, 2, 'com.pivotree.auto.training.TC_ProductSelectionAutomation')
+data.setCell(0, 3, 8267);
 window.suiteTableData['TestAutomationPractive']= { tableData: data, tableDiv: 'times-div-TestAutomationPractive'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-TestAutomationPractive">
               </div> <!-- times-div-TestAutomationPractive -->
             </div> <!-- times-div -->
@@ -235,20 +224,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pivotree.auto.training.TC_LogSoftAssertFailures</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pivotree.auto.training.TC_ProductSelectionAutomation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">BrowserIntilization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validate_UIElements</span>
-                <span class="method-start">3250 ms</span>
+                <span class="method-name">validate_MatchedProductSelection</span>
+                <span class="method-start">4326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown(chrome)</span>
-                <span class="method-start">27083 ms</span>
+                <span class="method-start">12599 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

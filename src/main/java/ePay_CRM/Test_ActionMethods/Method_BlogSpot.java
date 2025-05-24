@@ -376,59 +376,60 @@ public class Method_BlogSpot extends BasePageSetup{
 
 
 	}
-	
+
 	public void switchTabCaptureScreenShot(List<String> expectedTabs) throws InterruptedException {
-	    CommonLogger.log("Initiated the process of navigating tabs with expected tab names list.");
+		CommonLogger.log("Initiated the process of navigating tabs with expected tab names list.");
 
-	    List<String> switchedTabsList = new ArrayList<>();
-	    List<WebElement> onScreenTabList = wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
-	    List<String> actualTabNames = new ArrayList<>();
+		List<String> switchedTabsList = new ArrayList<>();
+		List<WebElement> onScreenTabList = wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 6);
+		List<String> actualTabNames = new ArrayList<>();
 
-	    // Fetch all tab names dynamically
-	    for (WebElement tab : onScreenTabList) {
-	        actualTabNames.add(tab.getText());
-	    }
+		// Fetch all tab names dynamically
+		for (WebElement tab : onScreenTabList) {
+			actualTabNames.add(tab.getText());
+		}
 
-	    // Validate expected vs actual tab names
-	    Assert.assertEquals(actualTabNames, expectedTabs, "Verify actual tab names visibility");
+		// Validate expected vs actual tab names
+		Assert.assertEquals(actualTabNames, expectedTabs, "Verify actual tab names visibility");
 
-	    // Navigate each tab & capture screenshot
-	    for (String tabName : actualTabNames) {
-	        if (!switchedTabsList.contains(tabName)) {
-	           
-	        	if(tabName.equals("Home"))
-	        	{
-	        		event.printSnap("Tab navigated correctly " + tabName);
-	        		CommonLogger.log("On tab: " + tabName + " | Current URL: " + driver.getCurrentUrl());
-	        	}
-	        	else
-	        	{
-	        		action.clickOnButtonAndVerify(obj.getTabName(tabName), "tab");
-		            event.printSnap("Tab navigated correctly " + tabName);
+		// Navigate each tab & capture screenshot
+		for (String tabName : actualTabNames) {
+			if (!switchedTabsList.contains(tabName)) {
 
-		            // Ensure navigation back to home when "Home" tab is available
-		            if (!tabName.equals("Home")) {
-		                driver.navigate().back();
-		                event.printSnap("Tab navigated back to " + obj.getTabName("Home").getText());
-		            }
+				if(tabName.equals("Home"))
+				{
+					event.printSnap("Tab navigated correctly " + tabName);
+					CommonLogger.log("On tab: " + tabName + " | Current URL: " + driver.getCurrentUrl());
+				}
+				else
+				{
+					action.clickOnButtonAndVerify(obj.getTabName(tabName), "tab");
+					event.printSnap("Tab navigated correctly " + tabName);
 
-		            // Re-fetch elements before waiting
-		            onScreenTabList = wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 8);
+					// Ensure navigation back to home when "Home" tab is available
+					if (!tabName.equals("Home")) {
+						driver.navigate().back();
+						event.printSnap("Tab navigated back to " + obj.getTabName("Home").getText());
+					}
 
-		            // Fix timeout issue by increasing wait time
-		            WebElement refreshedTab = wait.waitForElementToBeVisible(obj.getTabName(tabName), 10);
-		            Assert.assertTrue(refreshedTab.isDisplayed(), "Verify tab is visible: " + tabName);
+					// Re-fetch elements before waiting
+					onScreenTabList = wait.waitForListOfAllElementsToBeVisible(obj.getAllTabNames, 8);
 
-		            CommonLogger.log("On tab: " + tabName + " | Current URL: " + driver.getCurrentUrl());
+					// Fix timeout issue by increasing wait time
+					WebElement refreshedTab = wait.waitForElementToBeVisible(obj.getTabName(tabName), 10);
+					Assert.assertTrue(refreshedTab.isDisplayed(), "Verify tab is visible: " + tabName);
 
-		            switchedTabsList.add(tabName);
-	        	}
-	        	
-	        }
-	    }
+					CommonLogger.log("On tab: " + tabName + " | Current URL: " + driver.getCurrentUrl());
 
-	    CommonLogger.log("Completed navigation of expected tabs.");
+					switchedTabsList.add(tabName);
+				}
+
+			}
+		}
+
+		CommonLogger.log("Completed navigation of expected tabs.");
 	}
+
 	public void validateDateErrors(String startDate, String endDate) {
 		// TODO Auto-generated method stub
 		CommonLogger.log("Initiated the process of validating Date Valdidation errors");
@@ -468,47 +469,47 @@ public class Method_BlogSpot extends BasePageSetup{
 			CommonLogger.log("Completed the process of validating Date Valdidation errors");
 		}
 	}
-	
+
 	public void validateFailDateErrors(String startDate, String endDate) {
 		CommonLogger.log("Initiated the process of validating Date Validation errors");
 
-	    SoftAssert softAssert = new SoftAssert(); // Initialize Soft Assertion
+		SoftAssert softAssert = new SoftAssert(); // Initialize Soft Assertion
 
-	    if (!startDate.isEmpty() && endDate.isEmpty()) {
-	        action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
-	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
-	        String expectedError = "Dummy-Please select both start and end dates.";
-	        softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
-	        event.printSnap("Validation Error");
-	    } 
-	    
-	    else if (startDate.isEmpty() && !endDate.isEmpty()) {
-	        action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
-	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
-	        String expectedError = "Dummy-Please select both start and end dates.";
-	        softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
-	        event.printSnap("Validation Error");
-	    } 
-	    
-	    else if (startDate.isEmpty() && endDate.isEmpty()) {
-	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
-	        String expectedError = "Dummy-Please select both start and end dates.";
-	        softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
-	        event.printSnap("Validation Error");
-	    } 
-	    
-	    else if (!startDate.isEmpty() && !endDate.isEmpty()) {
-	        action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
-	        action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
-	        action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+		if (!startDate.isEmpty() && endDate.isEmpty()) {
+			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError = "Dummy-Please select both start and end dates.";
+			softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
+			event.printSnap("Validation Error");
+		} 
 
-	        String expectedError = "Dummy-End date must be after start date.";
-	        softAssert.assertEquals(obj.Error_EndDateGreaterThanStartDate.getText(), expectedError, "Verify On-Submit Error");
-	        event.printSnap("Validation Error");
-	        CommonLogger.log("Completed the process of validating Date Validation errors");
-	    }
+		else if (startDate.isEmpty() && !endDate.isEmpty()) {
+			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError = "Dummy-Please select both start and end dates.";
+			softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
+			event.printSnap("Validation Error");
+		} 
 
-	    softAssert.assertAll(); // ✅ Ensures all errors are displayed at the end
+		else if (startDate.isEmpty() && endDate.isEmpty()) {
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+			String expectedError = "Dummy-Please select both start and end dates.";
+			softAssert.assertEquals(obj.Error_SelectBothStartEndDate.getText(), expectedError, "Verify On-Submit Error");
+			event.printSnap("Validation Error");
+		} 
+
+		else if (!startDate.isEmpty() && !endDate.isEmpty()) {
+			action.enterAndVerify(obj.SelectStartDatePicker3, startDate, "StartDate");
+			action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+			action.clickOnButtonAndVerify(obj.onSubmitOfDates, "Submit");
+
+			String expectedError = "Dummy-End date must be after start date.";
+			softAssert.assertEquals(obj.Error_EndDateGreaterThanStartDate.getText(), expectedError, "Verify On-Submit Error");
+			event.printSnap("Validation Error");
+			CommonLogger.log("Completed the process of validating Date Validation errors");
+		}
+
+		softAssert.assertAll(); // ✅ Ensures all errors are displayed at the end
 	}
 
 	public void handleAutoSuggestDropdowns(String searchValue, int expectSuggestCount) {
@@ -567,7 +568,7 @@ public class Method_BlogSpot extends BasePageSetup{
 		for(WebElement suggestValues:wait.waitForListOfAllElementsToBeVisible(obj.getSearchResults, 5))
 		{
 			actualSearchValue=suggestValues.getText().toLowerCase();
-			
+
 			if(actualSearchValue.toLowerCase().contains(searchValue))
 			{
 				int lenValue=actualSearchValue.length();
@@ -582,36 +583,36 @@ public class Method_BlogSpot extends BasePageSetup{
 		action.clickOnButtonAndVerify(obj.getSuggestSearchResult(maxlenSearchIndex), "Search");
 		action.handleWindowSwitch(driver);
 		Assert.assertEquals(driver.getTitle(), "Automation Testing Practice","Verify Land to Home");
-		
+
 		CommonLogger.log("Completed the process of validating auto-suggest count");
 
 	}
-	
+
 	public int longSearchValueName(int maxLength) {
-	    int indexSearchName = 1; // Use -1 to indicate no match found
-	    WebElement searchValueName = null;
+		int indexSearchName = 1; // Use -1 to indicate no match found
+		WebElement searchValueName = null;
 
-	    // Check if there are search results
-	    if (obj.getSearchResults.size() == 1) {  
-	        // Directly check the only available record
-	        if (obj.getSearchResults.get(0).getText().length() == maxLength) {
-	            indexSearchName = 0;
-	            searchValueName = obj.getSuggestSearchResult(indexSearchName);
-	            CommonLogger.log("Longest Suggest Value : " + searchValueName.getText());
-	        }
-	    } else {  
-	        // Iterate over multiple search results
-	        for (int i = 0; i < obj.getSearchResults.size(); i++) {
-	            if (obj.getSearchResults.get(i).getText().length() == maxLength) {
-	                indexSearchName = i;
-	                indexSearchName++;
-	                searchValueName = obj.getSuggestSearchResult(indexSearchName);
-	                CommonLogger.log("Longest Suggest Value : " + searchValueName.getText());
-	            }
-	        }
-	    }
+		// Check if there are search results
+		if (obj.getSearchResults.size() == 1) {  
+			// Directly check the only available record
+			if (obj.getSearchResults.get(0).getText().length() == maxLength) {
+				indexSearchName = 0;
+				searchValueName = obj.getSuggestSearchResult(indexSearchName);
+				CommonLogger.log("Longest Suggest Value : " + searchValueName.getText());
+			}
+		} else {  
+			// Iterate over multiple search results
+			for (int i = 0; i < obj.getSearchResults.size(); i++) {
+				if (obj.getSearchResults.get(i).getText().length() == maxLength) {
+					indexSearchName = i;
+					indexSearchName++;
+					searchValueName = obj.getSuggestSearchResult(indexSearchName);
+					CommonLogger.log("Longest Suggest Value : " + searchValueName.getText());
+				}
+			}
+		}
 
-	    return indexSearchName; // Return valid index or -1 if no match found
+		return indexSearchName; // Return valid index or -1 if no match found
 	}
 
 	public void scrollToTopAndCapture() {
@@ -629,6 +630,7 @@ public class Method_BlogSpot extends BasePageSetup{
 		event.printSnap("scrollToBottomAndCapture");
 		CommonLogger.log("Completed scrollToBottomAndCapture process");
 	}
+
 	public void scrollToElementAndCapture() {
 		// TODO Auto-generated method stub
 		CommonLogger.log("Started scrollToElementAndCapture process");
@@ -648,16 +650,48 @@ public class Method_BlogSpot extends BasePageSetup{
 		// TODO Auto-generated method stub
 		CommonLogger.log("Started SoftAssertion Validation process");
 		SoftAssert softAssert=new SoftAssert();
-		
+
 		softAssert.assertEquals(obj.getNameLabel.getText(), "Name1","Verify Label Name");
 		softAssert.assertEquals(obj.getEmailLabel.getText(), "Email1","Verify Email Name");
 		softAssert.assertEquals(obj.getPhoneLabel.getText(), "Phone2","Verify Phone Name");
 		softAssert.assertEquals(obj.getAddressLabel.getText(), "Address1","Verify Address Name");
 		softAssert.assertEquals(obj.getGenderLabel.getText(), "Gender1","Verify Gender Name");
-	
+
 		event.fullprintSnap("verify_PersonalDetailsLabelNames_UI");
 		CommonLogger.log("Completed SoftAssertion Validation process");
 		softAssert.assertAll();
+
+	}
+
+	public void selectMatchedProduct(String productName) throws InterruptedException {
+		// TODO Auto-generated method stub
 		
+		CommonLogger.log("Product Verification process started");
+		scroll.scrollToElement(obj.getPaginationWebTableName);
+		int tempIndex=0;
+		int prodNameIndex=0;
+		for(int i=0;i<obj.getPaginationList.size();i++)
+		{
+			tempIndex++;
+			obj.getPageNumber(tempIndex).click();
+			
+			for(WebElement prodValues:obj.getProductName)
+			{
+				prodNameIndex++;
+				String actualProdName=prodValues.getText();
+
+				if(actualProdName.toLowerCase().contains(productName.toLowerCase()))
+				{
+					WebElement chkBox=obj.getProductSelectCheckBox(prodNameIndex);
+					chkBox.click();
+					Assert.assertTrue(chkBox.isSelected(), "Match Product Checkbox selected");
+					
+				}
+			}
+			event.printSnap("Pagination "+tempIndex);
+			prodNameIndex=0;
+		}
+		
+		CommonLogger.log("Product Verification process completed");
 	}
 }
