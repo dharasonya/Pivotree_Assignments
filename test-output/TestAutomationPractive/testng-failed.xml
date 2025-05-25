@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="ePay_CRM.Reusable_Utils.CallListeners"/>
   </listeners>
-  <test thread-count="5" name="Blogspot(failed)">
+  <test thread-count="5" name="DataDrivenTests(failed)">
     <parameter name="BrowserValue" value="chrome"/>
     <classes>
-      <class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues">
+      <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
         <methods>
-          <include name="Validate_SelectDuplicateValuesInDropdown"/>
+          <include name="validateListAgainstExpectedValues"/>
           <include name="TearDown"/>
           <include name="BrowserIntilization"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues -->
+      </class> <!-- com.pivotree.auto.training.TC_ValidateExpectedListValues -->
     </classes>
-  </test> <!-- Blogspot(failed) -->
+  </test> <!-- DataDrivenTests(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->

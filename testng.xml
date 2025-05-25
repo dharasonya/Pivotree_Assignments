@@ -8,39 +8,33 @@
 
 	<test thread-count="5" name="Blogspot">
 		<parameter name="BrowserValue" value="chrome" />
-
+		
 		<classes>
-			<!-- <class 
-				name="com.pivotree.auto.training.TC_FillPersonalDetails" />
-			<class
-				name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" />
-			<class
-				name="com.pivotree.auto.training.TC_SelectDateFromPicker" />
-			<class
-				name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails" />
-			<class
-				name="com.pivotree.auto.training.TC_ValidateDateErros" />
-			<class
-				name="com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns" />
-			<class
-				name="com.pivotree.auto.training.TC_DynamicTabNavigation" />
-			<class
-				name="com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs" />
-			<class
-				name="com.pivotree.auto.training.TC_ScrollToElementAndCapture" />
-			<class
-				name="com.pivotree.auto.training.TC_LogFailureTestCase" />
-			<class
-				name="com.pivotree.auto.training.TC_LogSoftAssertFailures" />
-			<class
-				name="com.pivotree.auto.training.TC_ProductSelectionAutomation" />
-			<class
-				name="com.pivotree.auto.training.TC_ValidateBrokenLinks" /> -->
-			<class
-				name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" />	
-				
-				
+			<class name="com.pivotree.auto.training.TC_FillPersonalDetails" /> 
+			<class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" /> 
+			<class name="com.pivotree.auto.training.TC_SelectDateFromPicker" /> 
+			<class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails" /> 
+			<class name="com.pivotree.auto.training.TC_ValidateDateErros" /> 
+			<class name="com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns" /> 
+			<class name="com.pivotree.auto.training.TC_DynamicTabNavigation" /> 
+			<class name="com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs" /> 
+			<class name="com.pivotree.auto.training.TC_ScrollToElementAndCapture" /> 
+			<class name="com.pivotree.auto.training.TC_LogFailureTestCase" /> 
+			<class name="com.pivotree.auto.training.TC_LogSoftAssertFailures" /> 
+			<class name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> 
+			<class name="com.pivotree.auto.training.TC_ValidateBrokenLinks" /> 
+			<class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" />
+			
 		</classes>
-		</test> <!-- Blogspot -->
+	</test> <!-- Blogspot -->
+	
+	<test thread-count="5" name="DataDrivenTests">
+		<parameter name="BrowserValue" value="chrome" />
+		
+		<classes>
+			<class name="com.pivotree.auto.training.TC_ValidateExpectedListValues" />
+		</classes>
+	</test> <!-- DataDrivenTests -->
+
 </suite> <!-- TestAutomationPractive -->
 
