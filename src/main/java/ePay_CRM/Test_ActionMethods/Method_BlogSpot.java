@@ -718,15 +718,14 @@ public class Method_BlogSpot extends BasePageSetup{
 			action.clickOnButtonAndVerify(linkName, "Broken Link :"+linkNameValue);
 
 			// Wait for the new page to load completely
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete'"));
-
+			wait.waitForPageToLoad(10);
 			// Capture screenshot **before navigating back**
 			event.printSnap("Captured Screenshot for Broken Link " + linkNameValue);
 
 			// Navigate back to the main page
 			driver.navigate().back();
-			wait.until(ExpectedConditions.visibilityOfAllElements(obj.getBrokenLinksUrl));
+			wait.waitForListOfAllElementsToBeVisible(obj.getFooterLinksUrl,10);
+			//.
 		}
 		CommonLogger.log("✅ Completed verification of all broken links.");
 	}
