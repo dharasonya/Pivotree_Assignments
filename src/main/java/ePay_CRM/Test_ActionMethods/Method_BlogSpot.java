@@ -3,6 +3,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +21,7 @@ import ePay_CRM.Reusable_Utils.WaitUtils;
 import ePay_CRM.Test_PageObjects.Repo_BlogSpot;
 import ePay_CRM.WrapMethods.WrapperMethods;
 import ePay_CRM.Reusable_Utils.CommonLogger;
+import ePay_CRM.Reusable_Utils.ExcelColumnReader;
 
 public class Method_BlogSpot extends BasePageSetup{
 
@@ -716,15 +718,14 @@ public class Method_BlogSpot extends BasePageSetup{
 			action.clickOnButtonAndVerify(linkName, "Broken Link :"+linkNameValue);
 
 			// Wait for the new page to load completely
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete'"));
-
+			wait.waitForPageToLoad(10);
 			// Capture screenshot **before navigating back**
 			event.printSnap("Captured Screenshot for Broken Link " + linkNameValue);
 
 			// Navigate back to the main page
 			driver.navigate().back();
-			wait.until(ExpectedConditions.visibilityOfAllElements(obj.getBrokenLinksUrl));
+			wait.waitForListOfAllElementsToBeVisible(obj.getFooterLinksUrl,10);
+			//.
 		}
 		CommonLogger.log("✅ Completed verification of all broken links.");
 	}
@@ -733,7 +734,7 @@ public class Method_BlogSpot extends BasePageSetup{
 		// TODO Auto-generated method stub
 
 		CommonLogger.log("Starting verification of Footer links");
-		
+
 		// Scroll to the section containing broken links
 		scroll.scrollToElement(obj.getFooterLinkLabelName);
 
@@ -787,11 +788,11 @@ public class Method_BlogSpot extends BasePageSetup{
 		int duplicateCounterchk=0;
 		List<String> dupValues=new ArrayList<String>();
 		List<String> uniqueValues=new ArrayList<String>();
-		
+
 		event.printSnap("Color List");
 		Select select=new Select(obj.getColorsList);
 		List<WebElement> getColorsList=select.getOptions();
-		
+
 		for(int i=0;i<getColorsList.size();i++)
 		{
 			String tempColor1=getColorsList.get(i).getText();
@@ -804,7 +805,7 @@ public class Method_BlogSpot extends BasePageSetup{
 					//select.selectByVisibleText(tempColor1);
 				}
 			}
-			
+
 			if(duplicateCounterchk>1)
 			{
 				dupValues.add(tempColor1);
@@ -815,16 +816,55 @@ public class Method_BlogSpot extends BasePageSetup{
 			}
 			duplicateCounterchk=0;
 		}
-		
+
 		// Code to select only Duplicate Items
 		for(String colorValues:dupValues)
 		{
 			select.selectByVisibleText(colorValues);	
+			Assert.assertTrue(select.getFirstSelectedOption().isSelected(), "Verify Option is selected");// to check
 		}
-		
+
 		scroll.scrollToDropdownOption(obj.getColorsList);
 		CommonLogger.log("\n List of Duplicate values : "+dupValues);
 		CommonLogger.log("\n List of unique values : "+uniqueValues);
 		CommonLogger.log("Completed the process of Idenitfying Duplicate Values");
+	}
+
+	public void validateListExpectedValues(String fileName, String sheetName,String ColumnNames) {
+		// TODO Auto-generated method stub
+
+		scroll.scrollToElement(obj.getSortListLabelName);
+		ExcelColumnReader reader = new ExcelColumnReader();
+		Map<String, List<String>> extractedData = reader.readColumnWiseData(fileName, sheetName);
+		List<String> webList=new ArrayList<String>();
+
+		/*
+		// Print extracted column-wise data
+		extractedData.forEach((columnName, values) -> {
+		if(columnName.equalsIgnoreCase("ListValue_Animals"))
+		{
+			System.out.println("✅ ---EXTRACT--" + columnName + ": " + values);
+		}
+		});
+		 */
+
+		// Get expected values from Excel
+		List<String> expectedValues = extractedData.get(ColumnNames); // Column Name from Excel
+		System.out.println("✅ Expected Values from Excel: " + expectedValues);
+
+		// Get values from web dropdown
+		Select select=new Select(obj.getAnimalsList);
+		List<WebElement> webDerivedList=select.getOptions();
+
+		for(WebElement webDerviedListValues:webDerivedList)
+		{
+			webList.add(webDerviedListValues.getText());
+		}
+		System.out.println("✅ Web Extracted Values: " + webList);
+
+		// Assertion: Check if both lists are equal
+		Assert.assertEquals(webList, expectedValues, "❌ Mismatch between Web dropdown values and Excel data!");
+
+		System.out.println("✅ Assertion passed: Web values match expected values.");
 	}
 }

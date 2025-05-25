@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T15:25:54 IST" name="TestAutomationPractive" finished-at="2025-05-25T15:26:32 IST" duration-ms="38198">
+  <suite started-at="2025-05-25T18:28:48 IST" name="Failed suite [TestAutomationPractive]" finished-at="2025-05-25T18:29:09 IST" duration-ms="21322">
     <groups>
     </groups>
-    <test started-at="2025-05-25T15:25:54 IST" name="Blogspot" finished-at="2025-05-25T15:26:32 IST" duration-ms="38198">
-      <class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@236e3f4e]" started-at="2025-05-25T15:25:55 IST" name="BrowserIntilization" finished-at="2025-05-25T15:26:03 IST" duration-ms="8531" status="PASS">
+    <test started-at="2025-05-25T18:28:48 IST" name="DataDrivenTests(failed)" finished-at="2025-05-25T18:29:09 IST" duration-ms="21322">
+      <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@5f16132a]" started-at="2025-05-25T18:28:49 IST" name="BrowserIntilization" finished-at="2025-05-25T18:28:58 IST" duration-ms="8873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method signature="Validate_SelectDuplicateValuesInDropdown()[pri:1, instance:com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@236e3f4e]" started-at="2025-05-25T15:26:03 IST" name="Validate_SelectDuplicateValuesInDropdown" finished-at="2025-05-25T15:26:31 IST" duration-ms="27898" status="PASS">
+        <test-method signature="validateListAgainstExpectedValues()[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@5f16132a]" started-at="2025-05-25T18:28:58 IST" name="validateListAgainstExpectedValues" finished-at="2025-05-25T18:29:08 IST" duration-ms="10647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_SelectDuplicateValuesInDropdown -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@236e3f4e]" started-at="2025-05-25T15:26:31 IST" name="TearDown" finished-at="2025-05-25T15:26:32 IST" duration-ms="678" status="PASS">
+        </test-method> <!-- validateListAgainstExpectedValues -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@5f16132a]" started-at="2025-05-25T18:29:08 IST" name="TearDown" finished-at="2025-05-25T18:29:09 IST" duration-ms="620" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues -->
-    </test> <!-- Blogspot -->
-  </suite> <!-- TestAutomationPractive -->
+      </class> <!-- com.pivotree.auto.training.TC_ValidateExpectedListValues -->
+    </test> <!-- DataDrivenTests(failed) -->
+  </suite> <!-- Failed suite [TestAutomationPractive] -->
 </testng-results>

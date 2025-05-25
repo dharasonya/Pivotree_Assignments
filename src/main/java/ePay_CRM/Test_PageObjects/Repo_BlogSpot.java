@@ -133,6 +133,9 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//*[text()='Colors:']")
 	public WebElement getColorsLabelName;
 	
+	@FindBy(xpath="//*[text()='Sorted List:']")
+	public WebElement getSortListLabelName;
+	
 	@FindBy(xpath="//table[@id='productTable']/tbody/tr/td[2]")
 	public List<WebElement> getProductName;
 	
@@ -153,6 +156,9 @@ public class Repo_BlogSpot {
 	
 	@FindBy(id="colors")
 	public WebElement getColorsList;
+	
+	@FindBy(id="animals")
+	public WebElement getAnimalsList;	
 	
 	public WebElement getPageNumber(int index)
 	{

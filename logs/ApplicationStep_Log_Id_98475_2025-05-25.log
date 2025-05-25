@@ -1,0 +1,262 @@
+25:05:2025 18:48:30 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:48:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:48:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+25:05:2025 18:48:42 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:48:42 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:48:43 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:48:43 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:48:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:48:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------2
+25:05:2025 18:48:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:48:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.addPersonalDetails [Line:46] - Initiated the process of filling in details on Section-PersonalDetails-GUI Elements
+25:05:2025 18:48:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Name is entered & verified.
+25:05:2025 18:48:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Email is entered & verified.
+25:05:2025 18:48:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Phone is entered & verified.
+25:05:2025 18:48:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Address is entered & verified.
+25:05:2025 18:48:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectRadioButton [Line:210] - For Radio: Gender : Values: male is selected & Verified.
+25:05:2025 18:48:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Sunday
+25:05:2025 18:48:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Monday
+25:05:2025 18:48:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Tuesday
+25:05:2025 18:48:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Wednesday
+25:05:2025 18:48:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Thursday
+25:05:2025 18:49:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Friday
+25:05:2025 18:49:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Saturday
+25:05:2025 18:49:01 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Date 1 is entered & verified.
+25:05:2025 18:49:04 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectDate [Line:135] - Date selected successfully: 22/06/2023
+25:05:2025 18:49:04 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: StartDate is entered & verified.
+25:05:2025 18:49:05 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: EndDate is entered & verified.
+25:05:2025 18:49:05 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.addPersonalDetails [Line:68] - The process of adding Personal details has been completed.
+25:05:2025 18:49:05 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:49:06 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:49:06 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:49:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:49:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------3
+25:05:2025 18:49:15 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:49:15 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.select_deselect_Checkboxes [Line:204] - Initiated the process of Dynamic checkbox selection/De-selection -Section-PersonalDetails-GUI Elements
+25:05:2025 18:49:16 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Sunday
+25:05:2025 18:49:17 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Tuesday
+25:05:2025 18:49:18 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Wednesday
+25:05:2025 18:49:18 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Monday
+25:05:2025 18:49:19 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Thursday
+25:05:2025 18:49:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Friday
+25:05:2025 18:49:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.selectCheckBoxes [Line:237] - Checkbox selected: Saturday
+25:05:2025 18:49:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.select_deselect_Checkboxes [Line:215] - The process of Dynamic Checkbox selection/deselection has been completed.
+25:05:2025 18:49:21 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:49:22 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:49:22 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:49:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:49:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------4
+25:05:2025 18:49:32 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:49:32 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectDateFromPicker [Line:72] - Initiated the process of Date Section-PersonalDetails-GUI Elements
+25:05:2025 18:49:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectDate [Line:135] - Date selected successfully: 22/06/2023
+25:05:2025 18:49:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectDateFromPicker [Line:76] - The process of Date-Selection from Picker has been completed.
+25:05:2025 18:49:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:49:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:49:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:49:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:49:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------5
+25:05:2025 18:49:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:49:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.getAveragePriceBookDetails [Line:326] - --- Average Price of Book Details ---: 1183.33
+25:05:2025 18:49:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:49:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:49:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:49:50 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:49:50 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------6
+25:05:2025 18:49:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:49:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateDateErrors [Line:440] - Initiated the process of validating Date Valdidation errors
+25:05:2025 18:49:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: StartDate is entered & verified.
+25:05:2025 18:49:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Submit is Clicked & Verified.
+25:05:2025 18:49:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:49:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:49:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:50:01 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:50:01 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------7
+25:05:2025 18:50:07 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:50:07 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateDateErrors [Line:440] - Initiated the process of validating Date Valdidation errors
+25:05:2025 18:50:08 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: EndDate is entered & verified.
+25:05:2025 18:50:08 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Submit is Clicked & Verified.
+25:05:2025 18:50:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:50:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:50:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:50:12 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:50:12 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------8
+25:05:2025 18:50:19 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:50:19 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateDateErrors [Line:440] - Initiated the process of validating Date Valdidation errors
+25:05:2025 18:50:19 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Submit is Clicked & Verified.
+25:05:2025 18:50:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:50:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:50:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:50:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:50:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------9
+25:05:2025 18:50:30 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:50:30 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateDateErrors [Line:440] - Initiated the process of validating Date Valdidation errors
+25:05:2025 18:50:30 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: StartDate is entered & verified.
+25:05:2025 18:50:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: EndDate is entered & verified.
+25:05:2025 18:50:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Submit is Clicked & Verified.
+25:05:2025 18:50:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.validateDateErrors [Line:474] - Completed the process of validating Date Valdidation errors
+25:05:2025 18:50:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:50:32 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:50:32 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:50:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:50:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------10
+25:05:2025 18:50:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:50:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectLongestAutoSuggestion [Line:565] - Initiated the process of select longest auto-suggest value
+25:05:2025 18:50:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Search Value is entered & verified.
+25:05:2025 18:50:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Search Button is Clicked & Verified.
+25:05:2025 18:50:42 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Search is Clicked & Verified.
+25:05:2025 18:50:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.handleWindowSwitch [Line:320] - Switched to new window: Aquatic feeding mechanisms - Wikipedia
+25:05:2025 18:50:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.handleWindowSwitch [Line:340] - ? Switched back to main window: Automation Testing Practice
+25:05:2025 18:50:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectLongestAutoSuggestion [Line:592] - Completed the process of validating auto-suggest count
+25:05:2025 18:50:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:50:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:50:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:50:48 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:50:48 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------11
+25:05:2025 18:50:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:50:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabName [Line:331] - Initiated the process of Comparing the actual tabs with expected tab names list
+25:05:2025 18:50:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabName [Line:344] - The process of Comparing Tab Names has been completed.
+25:05:2025 18:50:53 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:50:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:50:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:50:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:50:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------12
+25:05:2025 18:51:04 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:04 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:349] - Initiated the process of Navigating tabs with expected tab names list
+25:05:2025 18:51:08 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:51:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:375] - On Tab :Home - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:19 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:303] - RunTime Exception Occurred: [[ChromeDriver: chrome on windows (1a4c4e28c7d9c66c0d71f91098566e47)] -> xpath: //div[@id='crosscol']/div/div/ul/li/a[text()='Udemy Courses']] - org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 5.000
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a4c4e28c7d9c66c0d71f91098566e47, clickElement {id=f.7D212DA661F967758F657400E4DFC4FE.d.437A436C69891FF7D0FDBB6ECB0C35A3.e.235}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53327/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1a4c4e28c7d9c66c0d71f91098566e47)] -> xpath: //div[@id='crosscol']/div/div/ul/li/a[text()='Udemy Courses']]
+Session ID: 1a4c4e28c7d9c66c0d71f91098566e47
+25:05:2025 18:51:20 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:375] - On Tab :Udemy Courses - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:51:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:375] - On Tab :Online Trainings - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:35 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:51:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:375] - On Tab :Blog - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:51:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:375] - On Tab :PlaywrightPractice - Get CurrentUrl :https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyTabNavigation [Line:380] - The process of Navigating of Expected Tabs has been completed.
+25:05:2025 18:51:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:51:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:51:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:51:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:51:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------13
+25:05:2025 18:51:50 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:50 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:386] - Initiated the process of navigating tabs with expected tab names list.
+25:05:2025 18:51:51 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:407] - On tab: Home | Current URL: https://testautomationpractice.blogspot.com/
+25:05:2025 18:51:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:51:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:427] - On tab: Udemy Courses | Current URL: https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:03 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:52:04 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:427] - On tab: Online Trainings | Current URL: https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:08 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:52:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:427] - On tab: Blog | Current URL: https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :tab is Clicked & Verified.
+25:05:2025 18:52:14 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:427] - On tab: PlaywrightPractice | Current URL: https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:14 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.switchTabCaptureScreenShot [Line:435] - Completed navigation of expected tabs.
+25:05:2025 18:52:14 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:52:15 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:52:15 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:52:18 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:52:18 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------14
+25:05:2025 18:52:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.scrollToTopAndCapture [Line:625] - Started scrollToTopAndCapture process
+25:05:2025 18:52:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.scrollToTopAndCapture [Line:628] - Completed scrollToTopAndCapture process
+25:05:2025 18:52:25 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:52:26 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:52:26 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:52:29 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:52:29 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------15
+25:05:2025 18:52:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.scrollToBottomAndCapture [Line:633] - Started scrollToBottomAndCapture process
+25:05:2025 18:52:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.scrollToBottomAndCapture [Line:636] - Completed scrollToBottomAndCapture process
+25:05:2025 18:52:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:52:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:52:36 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:52:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:52:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------16
+25:05:2025 18:52:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.scrollToElementAndCapture [Line:641] - Started scrollToElementAndCapture process
+25:05:2025 18:52:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.scrollToElementAndCapture [Line:644] - Completed scrollToElementAndCapture process
+25:05:2025 18:52:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:52:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:52:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:52:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:52:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------17
+25:05:2025 18:52:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:52:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.captureFullScreen [Line:649] - Started captureFullScreen process
+25:05:2025 18:53:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.captureFullScreen [Line:651] - Completed captureFullScreen process
+25:05:2025 18:53:13 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:53:14 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:53:14 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:53:17 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:53:17 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------18
+25:05:2025 18:53:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:53:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectMatchedProduct [Line:674] - Product Verification process started
+25:05:2025 18:53:26 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.selectMatchedProduct [Line:701] - Product Verification process completed
+25:05:2025 18:53:26 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:53:27 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:53:27 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:53:30 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:53:30 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------19
+25:05:2025 18:53:37 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:53:37 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyBrokenLinks [Line:705] - Starting verification of broken links
+25:05:2025 18:53:38 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=400 | Status Code: 400
+25:05:2025 18:53:38 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=401 | Status Code: 401
+25:05:2025 18:53:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=403 | Status Code: 403
+25:05:2025 18:53:39 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=404 | Status Code: 404
+25:05:2025 18:53:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=408 | Status Code: 408
+25:05:2025 18:53:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=500 | Status Code: 500
+25:05:2025 18:53:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=502 | Status Code: 502
+25:05:2025 18:53:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=503 | Status Code: 503
+25:05:2025 18:53:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyBrokenLinks [Line:712] - Found 8 broken links to verify.
+25:05:2025 18:53:43 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 400 is Clicked & Verified.
+25:05:2025 18:53:45 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 401 is Clicked & Verified.
+25:05:2025 18:53:46 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 403 is Clicked & Verified.
+25:05:2025 18:53:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 404 is Clicked & Verified.
+25:05:2025 18:53:49 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 408 is Clicked & Verified.
+25:05:2025 18:53:51 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 500 is Clicked & Verified.
+25:05:2025 18:53:52 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 502 is Clicked & Verified.
+25:05:2025 18:53:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link :Errorcode 503 is Clicked & Verified.
+25:05:2025 18:53:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyBrokenLinks [Line:730] - ? Completed verification of all broken links.
+25:05:2025 18:53:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:53:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:53:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:53:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:53:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------20
+25:05:2025 18:54:05 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:54:05 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyFooterLinks [Line:736] - Starting verification of Footer links
+25:05:2025 18:54:06 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:437] - Valid Link: http://testautomationpractice.blogspot.com/ | Status Code: 301
+25:05:2025 18:54:08 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:437] - Valid Link: https://testautomationpractice.blogspot.com/p/gui-elements-ajax-hidden.html | Status Code: 200
+25:05:2025 18:54:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:437] - Valid Link: https://testautomationpractice.blogspot.com/p/download-files_25.html | Status Code: 200
+25:05:2025 18:54:09 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyFooterLinks [Line:743] - Found 0 broken links to verify.
+25:05:2025 18:54:12 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Valid Link :Home is Clicked & Verified.
+25:05:2025 18:54:19 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Valid Link :Hidden Elements & AJAX is Clicked & Verified.
+25:05:2025 18:54:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Valid Link :Download Files is Clicked & Verified.
+25:05:2025 18:54:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyFooterLinks [Line:781] - Completed verification of all Broken/Valid links.
+25:05:2025 18:54:23 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:54:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:54:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:54:27 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:54:27 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------21
+25:05:2025 18:54:34 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:54:34 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.identifyDuplicateItems [Line:786] - Initiated the process of Idenitfying Duplicate Values
+25:05:2025 18:54:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.identifyDuplicateItems [Line:828] - 
+ List of Duplicate values : [Red, Green]
+25:05:2025 18:54:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.identifyDuplicateItems [Line:829] - 
+ List of unique values : [Blue, Yellow, White]
+25:05:2025 18:54:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.identifyDuplicateItems [Line:830] - Completed the process of Idenitfying Duplicate Values
+25:05:2025 18:54:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:54:40 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:54:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed
+25:05:2025 18:54:41 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 18:54:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 18:54:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+25:05:2025 18:54:50 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 18:54:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 18:54:54 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 18:54:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed
