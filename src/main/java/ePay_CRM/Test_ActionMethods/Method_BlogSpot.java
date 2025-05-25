@@ -779,4 +779,52 @@ public class Method_BlogSpot extends BasePageSetup{
 		}
 		CommonLogger.log("Completed verification of all Broken/Valid links.");
 	}
+
+	public void identifyDuplicateItems() {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of Idenitfying Duplicate Values");
+		scroll.scrollToElement(obj.getColorsLabelName);
+		int duplicateCounterchk=0;
+		List<String> dupValues=new ArrayList<String>();
+		List<String> uniqueValues=new ArrayList<String>();
+		
+		event.printSnap("Color List");
+		Select select=new Select(obj.getColorsList);
+		List<WebElement> getColorsList=select.getOptions();
+		
+		for(int i=0;i<getColorsList.size();i++)
+		{
+			String tempColor1=getColorsList.get(i).getText();
+			for(int j=0;j<getColorsList.size();j++)
+			{
+				String tempColor2=getColorsList.get(j).getText();	
+				if(tempColor1.equals(tempColor2) && !dupValues.contains(tempColor2))
+				{
+					duplicateCounterchk++;
+					//select.selectByVisibleText(tempColor1);
+				}
+			}
+			
+			if(duplicateCounterchk>1)
+			{
+				dupValues.add(tempColor1);
+			}
+			else if(duplicateCounterchk==1)
+			{
+				uniqueValues.add(tempColor1);
+			}
+			duplicateCounterchk=0;
+		}
+		
+		// Code to select only Duplicate Items
+		for(String colorValues:dupValues)
+		{
+			select.selectByVisibleText(colorValues);	
+		}
+		
+		scroll.scrollToDropdownOption(obj.getColorsList);
+		CommonLogger.log("\n List of Duplicate values : "+dupValues);
+		CommonLogger.log("\n List of unique values : "+uniqueValues);
+		CommonLogger.log("Completed the process of Idenitfying Duplicate Values");
+	}
 }

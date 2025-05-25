@@ -33,10 +33,11 @@
 			<class
 				name="com.pivotree.auto.training.TC_LogSoftAssertFailures" />
 			<class
-				name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> -->
+				name="com.pivotree.auto.training.TC_ProductSelectionAutomation" />
 			<class
-				name="com.pivotree.auto.training.TC_ValidateBrokenLinks" />
-				
+				name="com.pivotree.auto.training.TC_ValidateBrokenLinks" /> -->
+			<class
+				name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" />	
 				
 				
 		</classes>

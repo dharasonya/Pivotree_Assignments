@@ -8,6 +8,8 @@ public class ScrollHandler {
 	private WebDriver driver;
     private JavascriptExecutor js;
 
+	CallListeners event=new CallListeners();
+
     public ScrollHandler(WebDriver driver) {
         this.driver = driver;
         this.js = (JavascriptExecutor) driver;
@@ -42,5 +44,24 @@ public class ScrollHandler {
     public void scrollLeft(int pixels) {
         js.executeScript("window.scrollBy(arguments[0], 0);", -pixels);
     }
+    
+    // Scroll inside dropdown using JavaScriptExecutor
+    public void scrollToDropdownOption(WebElement dropdownElement) {
+        // Get current scroll position
+        long scrollHeight = (long) js.executeScript("return arguments[0].scrollHeight", dropdownElement);
+        
+        for (int i = 0; i < scrollHeight; i += 80) { // Slow down by scrolling in small steps
+            js.executeScript("arguments[0].scrollTop = arguments[1]", dropdownElement, i);
+            
+            // ✅ Capture screenshot after each small scroll movement
+            event.printSnap("Scrolling inside dropdown  Position " + i);
 
+            try {
+                Thread.sleep(500); // Slow down scrolling
+            } catch (InterruptedException e) {
+                System.out.println("Error in sleep: " + e.getMessage());
+            }
+        }
+    }
+ 
 }

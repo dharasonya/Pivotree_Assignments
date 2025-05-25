@@ -130,6 +130,9 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//*[text()='Pagination Web Table']")
 	public WebElement getPaginationWebTableName;
 	
+	@FindBy(xpath="//*[text()='Colors:']")
+	public WebElement getColorsLabelName;
+	
 	@FindBy(xpath="//table[@id='productTable']/tbody/tr/td[2]")
 	public List<WebElement> getProductName;
 	
@@ -148,6 +151,8 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="(//div[@class='widget-content'])[19]/ul/li/a")
 	public List<WebElement> getFooterLinksUrl;
 	
+	@FindBy(id="colors")
+	public WebElement getColorsList;
 	
 	public WebElement getPageNumber(int index)
 	{
