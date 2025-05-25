@@ -7,13 +7,13 @@
   <test thread-count="5" name="Blogspot(failed)">
     <parameter name="BrowserValue" value="chrome"/>
     <classes>
-      <class name="com.pivotree.auto.training.TC_ProductSelectionAutomation">
+      <class name="com.pivotree.auto.training.TC_ValidateBrokenLinks">
         <methods>
+          <include name="Validate_Label_FooterLink"/>
           <include name="TearDown"/>
           <include name="BrowserIntilization"/>
-          <include name="validate_MatchedProductSelection"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.TC_ProductSelectionAutomation -->
+      </class> <!-- com.pivotree.auto.training.TC_ValidateBrokenLinks -->
     </classes>
   </test> <!-- Blogspot(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->

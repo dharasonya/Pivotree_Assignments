@@ -10,7 +10,7 @@
 		<parameter name="BrowserValue" value="chrome" />
 
 		<classes>
-		<class 
+			<!-- <class 
 				name="com.pivotree.auto.training.TC_FillPersonalDetails" />
 			<class
 				name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" />
@@ -33,7 +33,9 @@
 			<class
 				name="com.pivotree.auto.training.TC_LogSoftAssertFailures" />
 			<class
-				name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> 
+				name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> -->
+			<class
+				name="com.pivotree.auto.training.TC_ValidateBrokenLinks" />
 				
 				
 				

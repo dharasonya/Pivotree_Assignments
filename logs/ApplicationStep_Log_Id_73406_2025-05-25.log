@@ -1,0 +1,28 @@
+25:05:2025 11:40:42 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:151] - Browser Initilzation Started : chrome
+25:05:2025 11:40:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+25:05:2025 11:40:47 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+25:05:2025 11:40:52 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:190] - https://testautomationpractice.blogspot.com/
+25:05:2025 11:40:52 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyBrokenLinks [Line:703] - ? Starting verification of broken links
+25:05:2025 11:40:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=400 | Status Code: 400
+25:05:2025 11:40:55 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=401 | Status Code: 401
+25:05:2025 11:40:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=403 | Status Code: 403
+25:05:2025 11:40:56 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=404 | Status Code: 404
+25:05:2025 11:40:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=408 | Status Code: 408
+25:05:2025 11:40:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=500 | Status Code: 500
+25:05:2025 11:40:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=502 | Status Code: 502
+25:05:2025 11:40:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.checkBrokenLinks [Line:432] - Broken Link: http://www.deadlinkcity.com/error-page.asp?e=503 | Status Code: 503
+25:05:2025 11:40:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyBrokenLinks [Line:710] - ? Found 8 broken links to verify.
+25:05:2025 11:41:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:297] - On Click :Broken Link is Clicked & Verified.
+25:05:2025 11:41:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.verifyBrokenLinks [Line:729] - ? Error occurred while verifying link: stale element reference: stale element not found
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [443c1d6d8dfa8ba07ceafcb90ae22399, getElementText {id=f.604084CF2E1C2B5041E064D037B52673.d.996D0BFEDA9056D987B1A58BC66E8A3F.e.83}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65302/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (443c1d6d8dfa8ba07ceafcb90ae22399)] -> xpath: //*[@id='broken-links']/a[1]]
+Session ID: 443c1d6d8dfa8ba07ceafcb90ae22399 | Retrying...
+25:05:2025 11:41:00 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:174] - Closing Browser: chrome
+25:05:2025 11:41:01 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:178] - -------Execution Completed---
+25:05:2025 11:41:02 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

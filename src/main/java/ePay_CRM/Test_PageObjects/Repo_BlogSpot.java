@@ -121,6 +121,12 @@ public class Repo_BlogSpot {
 	@FindBy(xpath="//label[text()='Gender:']")
 	public WebElement getGenderLabel;
 	
+	@FindBy(xpath="//*[text()='Broken Links']")
+	public WebElement getBrokenLinkLabelName;
+
+	@FindBy(xpath="//*[text()='Footer Links']")
+	public WebElement getFooterLinkLabelName;
+	
 	@FindBy(xpath="//*[text()='Pagination Web Table']")
 	public WebElement getPaginationWebTableName;
 	
@@ -135,6 +141,13 @@ public class Repo_BlogSpot {
 	
 	@FindBy(xpath="//*[@id='pagination']/li/a")
 	public List<WebElement> getPaginationList;
+	
+	@FindBy(xpath="//*[@id='broken-links']/a")
+	public List<WebElement> getBrokenLinksUrl;
+
+	@FindBy(xpath="(//div[@class='widget-content'])[19]/ul/li/a")
+	public List<WebElement> getFooterLinksUrl;
+	
 	
 	public WebElement getPageNumber(int index)
 	{
@@ -178,4 +191,14 @@ public class Repo_BlogSpot {
 	{
 		return driver.findElement(By.xpath("//div[@id='Wikipedia1_wikipedia-search-results']/div["+maxLength+"]/a"));
 	}
+
+	public WebElement getLinkName(int index)
+	{
+		return driver.findElement(By.xpath("//*[@id='broken-links']/a["+index+"]"));
+	}
+	public WebElement getFooterLinkName(int index)
+	{
+		return driver.findElement(By.xpath("(//div[@class='widget-content'])[19]/ul/li["+index+"]/a"));
+	}
+
 }

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-TestAutomationPractive">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_ProductSelectionAutomation" class="method navigator-link" hash-for-method="validate_MatchedProductSelection">validate_MatchedProductSelection</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_ValidateBrokenLinks" class="method navigator-link" hash-for-method="Validate_Label_BrokenLinks">Validate_Label_BrokenLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestAutomationPractive" title="com.pivotree.auto.training.TC_ValidateBrokenLinks" class="method navigator-link" hash-for-method="Validate_Label_FooterLink">Validate_Label_FooterLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestAutomationPractive -->
@@ -121,14 +126,21 @@
           <div class="suite-TestAutomationPractive-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.pivotree.auto.training.TC_ProductSelectionAutomation</span>
+              <span class="class-name">com.pivotree.auto.training.TC_ValidateBrokenLinks</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validate_MatchedProductSelection">
-                  </a> <!-- validate_MatchedProductSelection -->
-                  <span class="method-name">validate_MatchedProductSelection</span>
+                  <a name="Validate_Label_BrokenLinks">
+                  </a> <!-- Validate_Label_BrokenLinks -->
+                  <span class="method-name">Validate_Label_BrokenLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_Label_FooterLink">
+                  </a> <!-- Validate_Label_FooterLink -->
+                  <span class="method-name">Validate_Label_FooterLink</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +161,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Blogspot&quot;&gt;
     &lt;parameter name=&quot;BrowserValue&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pivotree.auto.training.TC_ProductSelectionAutomation&quot;/&gt;
+      &lt;class name=&quot;com.pivotree.auto.training.TC_ValidateBrokenLinks&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Blogspot --&gt;
 &lt;/suite&gt; &lt;!-- TestAutomationPractive --&gt;
@@ -189,16 +201,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validate_MatchedProductSelection')
-data.setCell(0, 2, 'com.pivotree.auto.training.TC_ProductSelectionAutomation')
-data.setCell(0, 3, 8267);
+data.setCell(0, 1, 'Validate_Label_FooterLink')
+data.setCell(0, 2, 'com.pivotree.auto.training.TC_ValidateBrokenLinks')
+data.setCell(0, 3, 22594);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Validate_Label_BrokenLinks')
+data.setCell(1, 2, 'com.pivotree.auto.training.TC_ValidateBrokenLinks')
+data.setCell(1, 3, 20828);
 window.suiteTableData['TestAutomationPractive']= { tableData: data, tableDiv: 'times-div-TestAutomationPractive'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-TestAutomationPractive">
               </div> <!-- times-div-TestAutomationPractive -->
             </div> <!-- times-div -->
@@ -224,18 +240,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pivotree.auto.training.TC_ProductSelectionAutomation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pivotree.auto.training.TC_ValidateBrokenLinks</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">BrowserIntilization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validate_MatchedProductSelection</span>
-                <span class="method-start">4326 ms</span>
+                <span class="method-name">Validate_Label_BrokenLinks</span>
+                <span class="method-start">4138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown(chrome)</span>
-                <span class="method-start">12599 ms</span>
+                <span class="method-start">24973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BrowserIntilization(chrome)</span>
+                <span class="method-start">25523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_Label_FooterLink</span>
+                <span class="method-start">28047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown(chrome)</span>
+                <span class="method-start">50643 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

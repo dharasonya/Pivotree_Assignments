@@ -1,4 +1,5 @@
 package ePay_CRM.Test_ActionMethods;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +7,9 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -665,7 +668,7 @@ public class Method_BlogSpot extends BasePageSetup{
 
 	public void selectMatchedProduct(String productName) throws InterruptedException {
 		// TODO Auto-generated method stub
-		
+
 		CommonLogger.log("Product Verification process started");
 		scroll.scrollToElement(obj.getPaginationWebTableName);
 		int tempIndex=0;
@@ -674,7 +677,7 @@ public class Method_BlogSpot extends BasePageSetup{
 		{
 			tempIndex++;
 			obj.getPageNumber(tempIndex).click();
-			
+
 			for(WebElement prodValues:obj.getProductName)
 			{
 				prodNameIndex++;
@@ -685,13 +688,95 @@ public class Method_BlogSpot extends BasePageSetup{
 					WebElement chkBox=obj.getProductSelectCheckBox(prodNameIndex);
 					chkBox.click();
 					Assert.assertTrue(chkBox.isSelected(), "Match Product Checkbox selected");
-					
+
 				}
+
 			}
 			event.printSnap("Pagination "+tempIndex);
 			prodNameIndex=0;
 		}
-		
+
 		CommonLogger.log("Product Verification process completed");
+	}
+
+	public void verifyBrokenLinks() throws InterruptedException {
+		CommonLogger.log("Starting verification of broken links");
+
+		// Scroll to the section containing broken links
+		scroll.scrollToElement(obj.getBrokenLinkLabelName);
+
+		List<String> brokenLinkList = action.checkBrokenLinks(obj.getBrokenLinksUrl);
+		int totalBrokenLinks = brokenLinkList.size();
+		CommonLogger.log("Found " + totalBrokenLinks + " broken links to verify.");
+
+		for (int i = 0; i < totalBrokenLinks; i++) {
+			WebElement linkName = obj.getLinkName(i + 1); // Ensure correct indexing
+			String linkNameValue = linkName.getText();
+
+			action.clickOnButtonAndVerify(linkName, "Broken Link :"+linkNameValue);
+
+			// Wait for the new page to load completely
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete'"));
+
+			// Capture screenshot **before navigating back**
+			event.printSnap("Captured Screenshot for Broken Link " + linkNameValue);
+
+			// Navigate back to the main page
+			driver.navigate().back();
+			wait.until(ExpectedConditions.visibilityOfAllElements(obj.getBrokenLinksUrl));
+		}
+		CommonLogger.log("✅ Completed verification of all broken links.");
+	}
+
+	public void verifyFooterLinks() {
+		// TODO Auto-generated method stub
+
+		CommonLogger.log("Starting verification of Footer links");
+		
+		// Scroll to the section containing broken links
+		scroll.scrollToElement(obj.getFooterLinkLabelName);
+
+		List<String> brokenLinkList = action.checkBrokenLinks(obj.getFooterLinksUrl);
+		int totalBrokenLinks = brokenLinkList.size();
+		CommonLogger.log("Found " + totalBrokenLinks + " broken links to verify.");
+
+		if(totalBrokenLinks>0)
+		{
+			for (int i = 0; i < totalBrokenLinks; i++) {
+				WebElement linkName = obj.getLinkName(i + 1); // Ensure correct indexing
+				String linkNameValue = linkName.getText();
+
+				action.clickOnButtonAndVerify(linkName, "Broken Link :"+linkNameValue);
+
+				wait.waitForPageToLoad(10);
+				// Capture screenshot **before navigating back**
+				event.printSnap("Captured Screenshot for Broken Link " + linkNameValue);
+
+				// Navigate back to the main page
+				driver.navigate().back();
+				wait.waitForListOfAllElementsToBeVisible(obj.getFooterLinksUrl,5);
+			}
+		}
+		else
+		{
+			for (int i = 0; i < obj.getFooterLinksUrl.size(); i++) {
+				WebElement linkName = obj.getFooterLinkName(i + 1); // Ensure correct indexing
+				String linkNameValue = linkName.getText();
+
+				action.clickOnButtonAndVerify(linkName, "Valid Link :"+linkNameValue);
+
+				// Wait for the new page to load completely
+				wait.waitForPageToLoad(10);
+
+				// Capture screenshot **before navigating back**
+				event.printSnap("Captured Screenshot for Valid Link " + linkNameValue);
+
+				// Navigate back to the main page
+				driver.navigate().back();
+				wait.waitForListOfAllElementsToBeVisible(obj.getFooterLinksUrl,5);
+			}
+		}
+		CommonLogger.log("Completed verification of all Broken/Valid links.");
 	}
 }

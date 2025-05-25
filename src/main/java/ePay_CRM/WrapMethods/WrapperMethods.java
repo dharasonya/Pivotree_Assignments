@@ -6,6 +6,8 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -403,6 +405,46 @@ public class WrapperMethods extends BasePageSetup {
 			CommonLogger.errorLog(e);
 		}	
 	}
+
+	
+	 // Wrapper method to find all broken links
+    public List<String> checkBrokenLinks(List<WebElement> element) {
+        List<WebElement> links = element;
+        		//driver.findElements(By.tagName("a"));
+       // System.out.println("Found " + links.size() + " links to verify.");
+
+        List<String> listOfBrokenLinks=new ArrayList<String>();
+        for (WebElement link : links) {
+            String url = link.getAttribute("href");
+
+            if (url == null || url.isEmpty()) {
+                System.out.println("Empty or Null URL Found: " + link.getText());
+                continue;
+            }
+
+            try {
+                HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+                connection.setRequestMethod("HEAD");
+                connection.connect();
+
+                int responseCode = connection.getResponseCode();
+                if (responseCode >= 400) {
+                   CommonLogger.log("Broken Link: " + url + " | Status Code: " + responseCode);
+                   listOfBrokenLinks.add(url);
+                  // event.printSnap("Broken Link :"+url);
+                   
+                } else {
+                	CommonLogger.log("Valid Link: " + url + " | Status Code: " + responseCode);
+                	//event.printSnap("Valid Link :"+url);
+                }
+
+                connection.disconnect();
+            } catch (Exception e) {
+                System.out.println("Error Checking Link: " + url + " | Exception: " + e.getMessage());
+            }
+        }
+		return listOfBrokenLinks;
+    }
 
 }
 

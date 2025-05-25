@@ -83,6 +83,13 @@ public class WaitUtils {
 	        return wait.until(ExpectedConditions.visibilityOfElementLocated(value));
 	    }
 	    
+	 // Wrapper method to wait for the page to fully load
+	    public void waitForPageToLoad(int timeoutInSeconds) {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	        wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete'"));
+	    }
+
+	    
 	   
 }
 
