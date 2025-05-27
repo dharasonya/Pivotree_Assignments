@@ -4,16 +4,17 @@
   <listeners>
     <listener class-name="ePay_CRM.Reusable_Utils.CallListeners"/>
   </listeners>
-  <test thread-count="5" name="DataDrivenTests(failed)">
+  <test thread-count="5" name="DataDrivenTests_2(failed)">
     <parameter name="BrowserValue" value="chrome"/>
+    <parameter name="Url" value="https://www.aldoshoes.in/"/>
     <classes>
       <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
         <methods>
-          <include name="validateListAgainstExpectedValues"/>
           <include name="TearDown"/>
+          <include name="validateListAgainstExpectedValues_aldo" invocation-numbers="0"/>
           <include name="BrowserIntilization"/>
         </methods>
       </class> <!-- com.pivotree.auto.training.TC_ValidateExpectedListValues -->
     </classes>
-  </test> <!-- DataDrivenTests(failed) -->
+  </test> <!-- DataDrivenTests_2(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->

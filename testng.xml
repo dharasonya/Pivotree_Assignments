@@ -5,11 +5,10 @@
 		<listener class-name="ePay_CRM.Reusable_Utils.CallListeners" />
 	</listeners>
 
-
 	<test thread-count="5" name="Blogspot">
 		<parameter name="BrowserValue" value="chrome" />
-		
-		<classes>
+		 <parameter name="Url" value="https://testautomationpractice.blogspot.com/" />
+		<!--  <classes>
 			<class name="com.pivotree.auto.training.TC_FillPersonalDetails" /> 
 			<class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" /> 
 			<class name="com.pivotree.auto.training.TC_SelectDateFromPicker" /> 
@@ -24,17 +23,32 @@
 			<class name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> 
 			<class name="com.pivotree.auto.training.TC_ValidateBrokenLinks" /> 
 			<class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" />
-			
-		</classes>
-	</test> <!-- Blogspot -->
+		</classes>-->
+	</test> <!-- Blogspot-->
 	
-	<test thread-count="5" name="DataDrivenTests">
-		<parameter name="BrowserValue" value="chrome" />
-		
-		<classes>
-			<class name="com.pivotree.auto.training.TC_ValidateExpectedListValues" />
-		</classes>
-	</test> <!-- DataDrivenTests -->
-
+	<test name="DataDrivenTests_1">
+    <parameter name="BrowserValue" value="chrome" />
+    <parameter name="Url" value="https://testautomationpractice.blogspot.com/" />
+    <!-- <classes>
+        <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
+            <methods>
+                <include name="validateListAgainstExpectedValues_blogspot" /> 
+            </methods>
+        </class>
+    </classes> -->
+</test> <!-- DataDrivenTests -->
+	
+	<test name="DataDrivenTests_2">
+    <parameter name="BrowserValue" value="chrome" />
+    <parameter name="Url" value="https://www.aldoshoes.in/" />
+    <classes>
+        <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
+            <methods>
+                <include name="validateListAgainstExpectedValues_aldo" /> <!-- Specific method name -->
+            </methods>
+        </class>
+    </classes>
+</test> <!-- DataDrivenTests -->
+	
 </suite> <!-- TestAutomationPractive -->
 

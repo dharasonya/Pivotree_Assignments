@@ -1,6 +1,7 @@
 package com.pivotree.auto.training;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ePay_CRM.LandingPage.BasePageSetup;
@@ -10,10 +11,11 @@ public class TC_ProductSelectionAutomation extends BasePageSetup {
 
 	
 	@Test(priority=1,enabled=true)
-	public void validate_MatchedProductSelection() throws Exception
+	@Parameters("Url")
+	public void validate_MatchedProductSelection(String url) throws Exception
 	{		
 		Method_BlogSpot corestep=Get_BlogSpot_Obj();
-		getUrl();
+		getUrl(url);
 		corestep.selectMatchedProduct("smart");
 	}
 }

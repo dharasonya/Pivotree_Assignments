@@ -850,7 +850,7 @@ public class Method_BlogSpot extends BasePageSetup{
 
 		// Get expected values from Excel
 		List<String> expectedValues = extractedData.get(ColumnNames); // Column Name from Excel
-		System.out.println("✅ Expected Values from Excel: " + expectedValues);
+		System.out.println("Expected Values from Excel: " + expectedValues);
 
 		// Get values from web dropdown
 		Select select=new Select(obj.getAnimalsList);
@@ -860,11 +860,11 @@ public class Method_BlogSpot extends BasePageSetup{
 		{
 			webList.add(webDerviedListValues.getText());
 		}
-		System.out.println("✅ Web Extracted Values: " + webList);
+		System.out.println("Web Extracted Values: " + webList);
 
 		// Assertion: Check if both lists are equal
-		Assert.assertEquals(webList, expectedValues, "❌ Mismatch between Web dropdown values and Excel data!");
+		Assert.assertEquals(webList, expectedValues, "//div[@id='aldo_handbags']/div[2]/div/div[3]/aMismatch between Web dropdown values and Excel data!");
 
-		System.out.println("✅ Assertion passed: Web values match expected values.");
+		System.out.println("Assertion passed: Web values match expected values.");
 	}
 }

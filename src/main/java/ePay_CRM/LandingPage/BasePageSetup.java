@@ -20,7 +20,7 @@ import org.testng.annotations.Parameters;
 
 import ePay_CRM.Reusable_Utils.CallListeners;
 import ePay_CRM.Reusable_Utils.CommonLogger;
-
+import ePay_CRM.Test_ActionMethods.Method_Aldo;
 import ePay_CRM.Test_ActionMethods.Method_BlogSpot;
 
 
@@ -98,9 +98,9 @@ public class BasePageSetup {
 		default:
 			throw new IllegalArgumentException("Unsupported Browser :- " + BrowserValue);
 		}
-		//getLog().info("Browser Launched :- "+BrowserValue);
+		
 		CommonLogger.log("Browser Launched :- "+BrowserValue);
-		//this.getUrl();
+	
 		return getDriver();
 
 
@@ -123,8 +123,6 @@ public class BasePageSetup {
 		this.driver = driver;
 		event=new CallListeners();
 		event.setDriver(getDriver());  
-
-
 		// Initialize Listeners with driver   
 	}
 
@@ -136,18 +134,12 @@ public class BasePageSetup {
 	public void setCount(int count) {
 		this.count = count;
 	}
-	/*public void getUrl()
-	{
-		getDriver().manage().window().maximize();
-		getDriver().get(getProp().getProperty("URL"));
-	}*/
+	
 
 	@Parameters("BrowserValue")
 	@BeforeMethod(alwaysRun=true)
 	public void BrowserIntilization(String LaunchBrowserValue) throws Exception
 	{
-		//getLog().info("----Browser Initilzation Started : "+LaunchBrowserValue);
-		
 		CommonLogger.log("Browser Initilzation Started : "+LaunchBrowserValue);
 		driver=LoadConfigFile(LaunchBrowserValue);
 		event.setBrowservalue(LaunchBrowserValue);
@@ -161,6 +153,11 @@ public class BasePageSetup {
 	public Method_BlogSpot Get_BlogSpot_Obj() throws Exception
 	{
 		Method_BlogSpot corestep=new Method_BlogSpot(driver);
+		return corestep;  
+	}
+	public Method_Aldo Get_Aldo_Obj() throws Exception
+	{
+		Method_Aldo corestep=new Method_Aldo(driver);
 		return corestep;  
 	}
 
@@ -179,12 +176,13 @@ public class BasePageSetup {
 		}
 	}
 	
-	public void getUrl()
+	public void getUrl(String url)
 	{
 		driver.manage().window().maximize();
 		try
 		{
-			driver.navigate().to(prop.getProperty("URL"));
+			driver.navigate().to(url);
+			//driver.navigate().to(prop.getProperty("URL"));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));// newly added
 			event.printSnap("Navigated to URL");
 			CommonLogger.log(driver.getCurrentUrl());
@@ -194,12 +192,14 @@ public class BasePageSetup {
 			//getLog().info("Got RunTime Error-on Page Load, Retrying !!..");
 			CommonLogger.log("Got RunTime Error-on Page Load, Retrying !!..");
 			driver.navigate().refresh();
-			driver.navigate().to(prop.getProperty("URL"));
+			//driver.navigate().to(prop.getProperty("URL"));
+			driver.navigate().to(url);
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));// newly added
 			event.printSnap("Navigated to URL");
 			CommonLogger.log(driver.getCurrentUrl());
 		}
 	}
+
 
 }
 
