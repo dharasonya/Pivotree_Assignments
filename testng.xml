@@ -5,10 +5,12 @@
 		<listener class-name="ePay_CRM.Reusable_Utils.CallListeners" />
 	</listeners>
 
-	<test thread-count="5" name="Blogspot">
+	 <test thread-count="5" name="Blogspot">
 		<parameter name="BrowserValue" value="chrome" />
 		 <parameter name="Url" value="https://testautomationpractice.blogspot.com/" />
-		<!--  <classes>
+		<parameter name="sheetName" value="Add" />
+		<parameter name="fileName" value="blogspot_PersonalDetails_Data" />
+		<classes>
 			<class name="com.pivotree.auto.training.TC_FillPersonalDetails" /> 
 			<class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" /> 
 			<class name="com.pivotree.auto.training.TC_SelectDateFromPicker" /> 
@@ -23,32 +25,34 @@
 			<class name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> 
 			<class name="com.pivotree.auto.training.TC_ValidateBrokenLinks" /> 
 			<class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" />
-		</classes>-->
-	</test> <!-- Blogspot-->
+		</classes>
+	</test> 
 	
 	<test name="DataDrivenTests_1">
     <parameter name="BrowserValue" value="chrome" />
     <parameter name="Url" value="https://testautomationpractice.blogspot.com/" />
-    <!-- <classes>
+    <classes>
         <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
             <methods>
                 <include name="validateListAgainstExpectedValues_blogspot" /> 
             </methods>
         </class>
-    </classes> -->
-</test> <!-- DataDrivenTests -->
+    </classes>
+	</test>
+	
 	
 	<test name="DataDrivenTests_2">
     <parameter name="BrowserValue" value="chrome" />
     <parameter name="Url" value="https://www.aldoshoes.in/" />
-    <classes>
+  	<classes>
         <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
             <methods>
-                <include name="validateListAgainstExpectedValues_aldo" /> <!-- Specific method name -->
+                <include name="validateListAgainstExpectedValues_aldo_Women" /> 
+                <include name="validateListAgainstExpectedValues_aldo_Collections" /> 
             </methods>
         </class>
     </classes>
-</test> <!-- DataDrivenTests -->
+	</test>
 	
 </suite> <!-- TestAutomationPractive -->
 

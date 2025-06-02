@@ -41,16 +41,27 @@ public class Method_BlogSpot extends BasePageSetup{
 		scroll=new ScrollHandler(driver);
 	}  
 
-	public void addPersonalDetails(String Name, String Email, String Phone, String Address,
-			String Gender, String Days, String Date1, String Date2, String StartDate, String endDate) {
+	public void addPersonalDetails(String Name, String Email, String Phone, String Address,String Gender, String Days, String Country,
+			String Colors,String SelectAnimal,String Date1, String Date2, String StartDate, String endDate) {
+
+
 		CommonLogger.log("Initiated the process of filling in details on Section-PersonalDetails-GUI Elements");
 
 		action.enterAndVerify(obj.EnterName, Name, "Name");
+		event.printSnap("Name Entered");
+		
 		action.enterAndVerify(obj.EnterEmail, Email, "Email");
+		event.printSnap("Email Entered");
+		
 		action.enterAndVerify(obj.EnterPhone, Phone, "Phone");
+		event.printSnap("Phone No. Entered");
+		
 		action.enterAndVerify(obj.EnterAddress, Address, "Address");
+		event.printSnap("Address Entered");
+		
 		action.selectRadioButton(obj.selectGender, obj.getGenderElement(Gender), Gender, "Gender");
-
+		event.printSnap("Gender Selected");
+		
 		//Convert comma-separated Days into a List
 		List<String> daysList = Arrays.asList(Days.split(",")); // Splitting by ',' 
 
@@ -58,13 +69,20 @@ public class Method_BlogSpot extends BasePageSetup{
 		{ 
 			action.selectCheckBoxes(obj.chooseMultipleDays, daysList.get(i),obj.getValueElement(daysList.get(i).toLowerCase()), "Days"); 
 		}
-
-		action.enterAndVerify(obj.enterDatePicker1, "05/03/2025", "Date 1");
+		action.selectValueAndVerify(obj.selectCountry, Country, "Country Selection");
+		event.printSnap("Country Selected");
+		
+		this.selectColors(Colors);
+		event.printSnap("Colors Selected");
+		
+		action.selectValueAndVerify(obj.getAnimalsList, SelectAnimal, "Select Sorted List Animals");
+	
+		action.enterAndVerify(obj.enterDatePicker1, Date1, "Date 1");
 		this.selectDate(Date2);
 		action.enterAndVerify(obj.SelectStartDatePicker3, StartDate, "StartDate");
 		action.enterAndVerify(obj.SelectEndDatePicker3, endDate, "EndDate");
+		event.printSnap("Dates Entered/Selected");
 
-		event.printSnap("Personal Details Added");
 		CommonLogger.log("The process of adding Personal details has been completed.");
 	}
 
@@ -656,11 +674,11 @@ public class Method_BlogSpot extends BasePageSetup{
 		CommonLogger.log("Started SoftAssertion Validation process");
 		SoftAssert softAssert=new SoftAssert();
 
-		softAssert.assertEquals(obj.getNameLabel.getText(), "Name1","Verify Label Name");
-		softAssert.assertEquals(obj.getEmailLabel.getText(), "Email1","Verify Email Name");
-		softAssert.assertEquals(obj.getPhoneLabel.getText(), "Phone2","Verify Phone Name");
-		softAssert.assertEquals(obj.getAddressLabel.getText(), "Address1","Verify Address Name");
-		softAssert.assertEquals(obj.getGenderLabel.getText(), "Gender1","Verify Gender Name");
+		softAssert.assertEquals(obj.getNameLabel.getText(), "Name:","Verify Label Name");
+		softAssert.assertEquals(obj.getEmailLabel.getText(), "Email:","Verify Email Name");
+		softAssert.assertEquals(obj.getPhoneLabel.getText(), "Phone:","Verify Phone Name");
+		softAssert.assertEquals(obj.getAddressLabel.getText(), "Address:","Verify Address Name");
+		softAssert.assertEquals(obj.getGenderLabel.getText(), "Gender:","Verify Gender Name");
 
 		event.fullprintSnap("verify_PersonalDetailsLabelNames_UI");
 		CommonLogger.log("Completed SoftAssertion Validation process");
@@ -781,6 +799,27 @@ public class Method_BlogSpot extends BasePageSetup{
 		CommonLogger.log("Completed verification of all Broken/Valid links.");
 	}
 
+	public void selectColors(String Colors) {
+		// TODO Auto-generated method stub
+		CommonLogger.log("Initiated the process of Selecting Color Values");
+		scroll.scrollToElement(obj.getColorsLabelName);
+		event.printSnap("Color List");
+		Select select=new Select(obj.getColorsList);
+		List<WebElement> getColorsList=select.getOptions();
+
+		for(int i=0;i<getColorsList.size();i++)
+		{
+				String tempColor=getColorsList.get(i).getText();	
+				if(tempColor.equals(Colors))
+				{
+					select.selectByVisibleText(tempColor);
+				}
+		
+		}
+		scroll.scrollToDropdownOption(obj.getColorsList);
+		CommonLogger.log("Completed the process of Color Selection");
+	}
+	
 	public void identifyDuplicateItems() {
 		// TODO Auto-generated method stub
 		CommonLogger.log("Initiated the process of Idenitfying Duplicate Values");

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Blogspot</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 27 23:50:08 IST 2025</td>
+<td>Started on:</td><td>Mon Jun 02 21:03:05 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1087 ms)</td>
+<tr><td>Total time:</td><td>377 seconds (377664 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,201 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements()'><b>validate_UIElements</b><br>Test class: com.pivotree.auto.training.TC_LogSoftAssertFailures<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Verify Label Name expected [Name1] but found [Name:],
+	Verify Email Name expected [Email1] but found [Email:],
+	Verify Phone Name expected [Phone2] but found [Phone:],
+	Verify Address Name expected [Address1] but found [Address:],
+	Verify Gender Name expected [Gender1] but found [Gender:]
+	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.verify_PersonalDetailsLabelNames(Method_BlogSpot.java:685)
+	at com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements(TC_LogSoftAssertFailures.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1151309352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1151309352'><pre>java.lang.AssertionError: The following asserts failed:
+	Verify Label Name expected [Name1] but found [Name:],
+	Verify Email Name expected [Email1] but found [Email:],
+	Verify Phone Name expected [Phone2] but found [Phone:],
+	Verify Address Name expected [Address1] but found [Address:],
+	Verify Gender Name expected [Gender1] but found [Gender:]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at ePay_CRM.Test_ActionMethods.Method_BlogSpot.verify_PersonalDetailsLabelNames(Method_BlogSpot.java:685)
+	at com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements(TC_LogSoftAssertFailures.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.pivotree.auto.training.TC_LogSoftAssertFailures@b62d79</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ValidateDateErros.Validate_Enter_OnlyEndDate()'><b>Validate_Enter_OnlyEndDate</b><br>Test class: com.pivotree.auto.training.TC_ValidateDateErros<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>5</td>
+<td>com.pivotree.auto.training.TC_ValidateDateErros@120f102b</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ScrollToElementAndCapture.Validate_scrollToElementAndCapture()'><b>Validate_scrollToElementAndCapture</b><br>Test class: com.pivotree.auto.training.TC_ScrollToElementAndCapture<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>5</td>
+<td>com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ValidateBrokenLinks.Validate_Label_BrokenLinks()'><b>Validate_Label_BrokenLinks</b><br>Test class: com.pivotree.auto.training.TC_ValidateBrokenLinks<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>18</td>
+<td>com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails.Validate_Average_PriceWiseBookDetails()'><b>Validate_Average_PriceWiseBookDetails</b><br>Test class: com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>4</td>
+<td>com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ScrollToElementAndCapture.Validate_scrollToBottomAndCapture()'><b>Validate_scrollToBottomAndCapture</b><br>Test class: com.pivotree.auto.training.TC_ScrollToElementAndCapture<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>6</td>
+<td>com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ScrollToElementAndCapture.Validate_captureFullPageScreen()'><b>Validate_captureFullPageScreen</b><br>Test class: com.pivotree.auto.training.TC_ScrollToElementAndCapture<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>20</td>
+<td>com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails.Validate_Lowest_PriceWiseBookDetails()'><b>Validate_Lowest_PriceWiseBookDetails</b><br>Test class: com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>6</td>
+<td>com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails.Validate_Highest_PriceWiseBookDetails()'><b>Validate_Highest_PriceWiseBookDetails</b><br>Test class: com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>6</td>
+<td>com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_SelectDateFromPicker.Validate_DyanmicCheckBoxSelection()'><b>Validate_DyanmicCheckBoxSelection</b><br>Test class: com.pivotree.auto.training.TC_SelectDateFromPicker<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>6</td>
+<td>com.pivotree.auto.training.TC_SelectDateFromPicker@346d61be</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_FillPersonalDetails.FillPersonalDetails()'><b>FillPersonalDetails</b><br>Test class: com.pivotree.auto.training.TC_FillPersonalDetails<br>Parameters: [Ljava.lang.String;@29483d10</td>
+<td></td>
+<td>18</td>
+<td>com.pivotree.auto.training.TC_FillPersonalDetails@52102734</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues.Validate_SelectDuplicateValuesInDropdown()'><b>Validate_SelectDuplicateValuesInDropdown</b><br>Test class: com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>8</td>
+<td>com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@1613674b</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_DynamicTabNavigation.Validate_TabNamesNavigatedCorrectly()'><b>Validate_TabNamesNavigatedCorrectly</b><br>Test class: com.pivotree.auto.training.TC_DynamicTabNavigation<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>31</td>
+<td>com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_FillPersonalDetails.FillPersonalDetails()'><b>FillPersonalDetails</b><br>Test class: com.pivotree.auto.training.TC_FillPersonalDetails<br>Parameters: [Ljava.lang.String;@601c953c</td>
+<td></td>
+<td>16</td>
+<td>com.pivotree.auto.training.TC_FillPersonalDetails@52102734</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ProductSelectionAutomation.validate_MatchedProductSelection()'><b>validate_MatchedProductSelection</b><br>Test class: com.pivotree.auto.training.TC_ProductSelectionAutomation<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>7</td>
+<td>com.pivotree.auto.training.TC_ProductSelectionAutomation@6631f5ca</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns.selectLongestAutoSuggestion()'><b>selectLongestAutoSuggestion</b><br>Test class: com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>10</td>
+<td>com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ScrollToElementAndCapture.Validate_scrollToTopAndCapture()'><b>Validate_scrollToTopAndCapture</b><br>Test class: com.pivotree.auto.training.TC_ScrollToElementAndCapture<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>4</td>
+<td>com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_DynamicTabNavigation.Validate_TabNamesCorrectness()'><b>Validate_TabNamesCorrectness</b><br>Test class: com.pivotree.auto.training.TC_DynamicTabNavigation<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>5</td>
+<td>com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs.captureScreenshotsWhileSwitchingTabs()'><b>captureScreenshotsWhileSwitchingTabs</b><br>Test class: com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>18</td>
+<td>com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ValidateDateErros.Validate_No_Value_Enter_StartEndDate()'><b>Validate_No_Value_Enter_StartEndDate</b><br>Test class: com.pivotree.auto.training.TC_ValidateDateErros<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>5</td>
+<td>com.pivotree.auto.training.TC_ValidateDateErros@120f102b</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ValidateBrokenLinks.Validate_Label_FooterLink()'><b>Validate_Label_FooterLink</b><br>Test class: com.pivotree.auto.training.TC_ValidateBrokenLinks<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>20</td>
+<td>com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ValidateDateErros.Validate_Enter_OnlyStartDate()'><b>Validate_Enter_OnlyStartDate</b><br>Test class: com.pivotree.auto.training.TC_ValidateDateErros<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>4</td>
+<td>com.pivotree.auto.training.TC_ValidateDateErros@120f102b</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes.Validate_DyanmicCheckBoxSelection()'><b>Validate_DyanmicCheckBoxSelection</b><br>Test class: com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>9</td>
+<td>com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@3e6ef8ad</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_ValidateDateErros.Validate_StartDate_GreaterEndDate()'><b>Validate_StartDate_GreaterEndDate</b><br>Test class: com.pivotree.auto.training.TC_ValidateDateErros<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>35</td>
+<td>com.pivotree.auto.training.TC_ValidateDateErros@120f102b</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns.Validate_SuggestCount()'><b>Validate_SuggestCount</b><br>Test class: com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>7</td>
+<td>com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732</td></tr>
+<tr>
+<td title='com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs.Validate_TabNamesCorrectness()'><b>Validate_TabNamesCorrectness</b><br>Test class: com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs<br>Parameters: https://testautomationpractice.blogspot.com/</td>
+<td></td>
+<td>4</td>
+<td>com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326</td></tr>
+</table><p>
 </body>
 </html>

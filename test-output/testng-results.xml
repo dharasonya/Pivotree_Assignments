@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="28" passed="27" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-27T23:50:08 IST" name="TestAutomationPractive" finished-at="2025-05-27T23:50:30 IST" duration-ms="21456">
+  <suite started-at="2025-06-02T21:03:05 IST" name="TestAutomationPractive" finished-at="2025-06-02T21:09:43 IST" duration-ms="398248">
     <groups>
     </groups>
-    <test started-at="2025-05-27T23:50:08 IST" name="Blogspot" finished-at="2025-05-27T23:50:09 IST" duration-ms="1087">
-    </test> <!-- Blogspot -->
-    <test started-at="2025-05-27T23:50:10 IST" name="DataDrivenTests_1" finished-at="2025-05-27T23:50:10 IST" duration-ms="4">
-    </test> <!-- DataDrivenTests_1 -->
-    <test started-at="2025-05-27T23:50:11 IST" name="DataDrivenTests_2" finished-at="2025-05-27T23:50:30 IST" duration-ms="19056">
-      <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
-        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@482bce4f]" started-at="2025-05-27T23:50:11 IST" name="BrowserIntilization" finished-at="2025-05-27T23:50:16 IST" duration-ms="5154" status="PASS">
+    <test started-at="2025-06-02T21:03:05 IST" name="Blogspot" finished-at="2025-06-02T21:09:23 IST" duration-ms="377664">
+      <class name="com.pivotree.auto.training.TC_DynamicTabNavigation">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:05:58 IST" name="BrowserIntilization" finished-at="2025-06-02T21:06:01 IST" duration-ms="2730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +18,990 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserIntilization -->
-        <test-method signature="validateListAgainstExpectedValues_aldo(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@482bce4f]" started-at="2025-05-27T23:50:16 IST" name="validateListAgainstExpectedValues_aldo" finished-at="2025-05-27T23:50:29 IST" duration-ms="13283" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:01 IST" name="setup" finished-at="2025-06-02T21:06:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_TabNamesCorrectness(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:01 IST" name="Validate_TabNamesCorrectness" finished-at="2025-06-02T21:06:06 IST" duration-ms="5013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_TabNamesCorrectness -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:06 IST" name="TearDown" finished-at="2025-06-02T21:06:06 IST" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:06 IST" name="BrowserIntilization" finished-at="2025-06-02T21:06:09 IST" duration-ms="2616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:09 IST" name="setup" finished-at="2025-06-02T21:06:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_TabNamesNavigatedCorrectly(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:09 IST" name="Validate_TabNamesNavigatedCorrectly" finished-at="2025-06-02T21:06:40 IST" duration-ms="31079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_TabNamesNavigatedCorrectly -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicTabNavigation@51dcb805]" started-at="2025-06-02T21:06:40 IST" name="TearDown" finished-at="2025-06-02T21:06:40 IST" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_DynamicTabNavigation -->
+      <class name="com.pivotree.auto.training.TC_ValidateBrokenLinks">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4]" started-at="2025-06-02T21:08:28 IST" name="BrowserIntilization" finished-at="2025-06-02T21:08:30 IST" duration-ms="2229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_Label_BrokenLinks(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4]" started-at="2025-06-02T21:08:30 IST" name="Validate_Label_BrokenLinks" finished-at="2025-06-02T21:08:49 IST" duration-ms="18720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Label_BrokenLinks -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4]" started-at="2025-06-02T21:08:49 IST" name="TearDown" finished-at="2025-06-02T21:08:49 IST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4]" started-at="2025-06-02T21:08:49 IST" name="BrowserIntilization" finished-at="2025-06-02T21:08:51 IST" duration-ms="1894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_Label_FooterLink(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4]" started-at="2025-06-02T21:08:51 IST" name="Validate_Label_FooterLink" finished-at="2025-06-02T21:09:11 IST" duration-ms="20211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Label_FooterLink -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateBrokenLinks@5ace1ed4]" started-at="2025-06-02T21:09:11 IST" name="TearDown" finished-at="2025-06-02T21:09:11 IST" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_ValidateBrokenLinks -->
+      <class name="com.pivotree.auto.training.TC_ProductSelectionAutomation">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ProductSelectionAutomation@6631f5ca]" started-at="2025-06-02T21:08:18 IST" name="BrowserIntilization" finished-at="2025-06-02T21:08:20 IST" duration-ms="2337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="validate_MatchedProductSelection(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_ProductSelectionAutomation@6631f5ca]" started-at="2025-06-02T21:08:20 IST" name="validate_MatchedProductSelection" finished-at="2025-06-02T21:08:27 IST" duration-ms="7147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_MatchedProductSelection -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ProductSelectionAutomation@6631f5ca]" started-at="2025-06-02T21:08:27 IST" name="TearDown" finished-at="2025-06-02T21:08:28 IST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_ProductSelectionAutomation -->
+      <class name="com.pivotree.auto.training.TC_SelectDateFromPicker">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@346d61be]" started-at="2025-06-02T21:04:00 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:03 IST" duration-ms="2684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_DyanmicCheckBoxSelection(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@346d61be]" started-at="2025-06-02T21:04:03 IST" name="Validate_DyanmicCheckBoxSelection" finished-at="2025-06-02T21:04:09 IST" duration-ms="6799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_DyanmicCheckBoxSelection -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_SelectDateFromPicker@346d61be]" started-at="2025-06-02T21:04:09 IST" name="TearDown" finished-at="2025-06-02T21:04:10 IST" duration-ms="296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_SelectDateFromPicker -->
+      <class name="com.pivotree.auto.training.TC_ScrollToElementAndCapture">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:09 IST" name="BrowserIntilization" finished-at="2025-06-02T21:07:11 IST" duration-ms="1870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:11 IST" name="setup" finished-at="2025-06-02T21:07:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_scrollToTopAndCapture(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:11 IST" name="Validate_scrollToTopAndCapture" finished-at="2025-06-02T21:07:15 IST" duration-ms="4216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_scrollToTopAndCapture -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:15 IST" name="TearDown" finished-at="2025-06-02T21:07:15 IST" duration-ms="280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:15 IST" name="BrowserIntilization" finished-at="2025-06-02T21:07:17 IST" duration-ms="1931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:17 IST" name="setup" finished-at="2025-06-02T21:07:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_scrollToBottomAndCapture(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:17 IST" name="Validate_scrollToBottomAndCapture" finished-at="2025-06-02T21:07:23 IST" duration-ms="6064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_scrollToBottomAndCapture -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:23 IST" name="TearDown" finished-at="2025-06-02T21:07:23 IST" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:23 IST" name="BrowserIntilization" finished-at="2025-06-02T21:07:25 IST" duration-ms="1824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:25 IST" name="setup" finished-at="2025-06-02T21:07:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_scrollToElementAndCapture(java.lang.String)[pri:3, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:25 IST" name="Validate_scrollToElementAndCapture" finished-at="2025-06-02T21:07:31 IST" duration-ms="5924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_scrollToElementAndCapture -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:31 IST" name="TearDown" finished-at="2025-06-02T21:07:31 IST" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:31 IST" name="BrowserIntilization" finished-at="2025-06-02T21:07:33 IST" duration-ms="2029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:33 IST" name="setup" finished-at="2025-06-02T21:07:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_captureFullPageScreen(java.lang.String)[pri:4, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:33 IST" name="Validate_captureFullPageScreen" finished-at="2025-06-02T21:07:54 IST" duration-ms="20639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_captureFullPageScreen -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ScrollToElementAndCapture@cad498c]" started-at="2025-06-02T21:07:54 IST" name="TearDown" finished-at="2025-06-02T21:07:54 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_ScrollToElementAndCapture -->
+      <class name="com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732]" started-at="2025-06-02T21:05:35 IST" name="BrowserIntilization" finished-at="2025-06-02T21:05:38 IST" duration-ms="2077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_SuggestCount(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732]" started-at="2025-06-02T21:05:38 IST" name="Validate_SuggestCount" finished-at="2025-06-02T21:05:45 IST" duration-ms="7032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_SuggestCount -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732]" started-at="2025-06-02T21:05:45 IST" name="TearDown" finished-at="2025-06-02T21:05:45 IST" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732]" started-at="2025-06-02T21:05:45 IST" name="BrowserIntilization" finished-at="2025-06-02T21:05:47 IST" duration-ms="2152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="selectLongestAutoSuggestion(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732]" started-at="2025-06-02T21:05:47 IST" name="selectLongestAutoSuggestion" finished-at="2025-06-02T21:05:58 IST" duration-ms="10591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLongestAutoSuggestion -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns@625732]" started-at="2025-06-02T21:05:58 IST" name="TearDown" finished-at="2025-06-02T21:05:58 IST" duration-ms="485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_HandlingAutoSuggestDropdowns -->
+      <class name="com.pivotree.auto.training.TC_ValidateDateErros">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:35 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:37 IST" duration-ms="2537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_Enter_OnlyStartDate(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:37 IST" name="Validate_Enter_OnlyStartDate" finished-at="2025-06-02T21:04:42 IST" duration-ms="4990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Enter_OnlyStartDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:42 IST" name="TearDown" finished-at="2025-06-02T21:04:43 IST" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:43 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:45 IST" duration-ms="2033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_Enter_OnlyEndDate(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:45 IST" name="Validate_Enter_OnlyEndDate" finished-at="2025-06-02T21:04:50 IST" duration-ms="5316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Enter_OnlyEndDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:50 IST" name="TearDown" finished-at="2025-06-02T21:04:50 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:50 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:53 IST" duration-ms="2162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_No_Value_Enter_StartEndDate(java.lang.String)[pri:3, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:53 IST" name="Validate_No_Value_Enter_StartEndDate" finished-at="2025-06-02T21:04:58 IST" duration-ms="5232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_No_Value_Enter_StartEndDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:58 IST" name="TearDown" finished-at="2025-06-02T21:04:58 IST" duration-ms="340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:04:58 IST" name="BrowserIntilization" finished-at="2025-06-02T21:05:00 IST" duration-ms="2102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_StartDate_GreaterEndDate(java.lang.String)[pri:3, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:05:00 IST" name="Validate_StartDate_GreaterEndDate" finished-at="2025-06-02T21:05:35 IST" duration-ms="35019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_StartDate_GreaterEndDate -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateDateErros@120f102b]" started-at="2025-06-02T21:05:35 IST" name="TearDown" finished-at="2025-06-02T21:05:35 IST" duration-ms="290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_ValidateDateErros -->
+      <class name="com.pivotree.auto.training.TC_FillPersonalDetails">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@52102734]" started-at="2025-06-02T21:03:07 IST" name="BrowserIntilization" finished-at="2025-06-02T21:03:10 IST" duration-ms="3044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="FillPersonalDetails([Ljava.lang.String;)[pri:3, instance:com.pivotree.auto.training.TC_FillPersonalDetails@52102734]" started-at="2025-06-02T21:03:10 IST" name="FillPersonalDetails" data-provider="ExcelDataProvider" finished-at="2025-06-02T21:03:27 IST" duration-ms="16376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@601c953c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillPersonalDetails -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@52102734]" started-at="2025-06-02T21:03:27 IST" name="TearDown" finished-at="2025-06-02T21:03:27 IST" duration-ms="330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@52102734]" started-at="2025-06-02T21:03:27 IST" name="BrowserIntilization" finished-at="2025-06-02T21:03:29 IST" duration-ms="2475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="FillPersonalDetails([Ljava.lang.String;)[pri:3, instance:com.pivotree.auto.training.TC_FillPersonalDetails@52102734]" started-at="2025-06-02T21:03:29 IST" name="FillPersonalDetails" data-provider="ExcelDataProvider" finished-at="2025-06-02T21:03:47 IST" duration-ms="18064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@29483d10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillPersonalDetails -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_FillPersonalDetails@52102734]" started-at="2025-06-02T21:03:47 IST" name="TearDown" finished-at="2025-06-02T21:03:48 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_FillPersonalDetails -->
+      <class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@1613674b]" started-at="2025-06-02T21:09:11 IST" name="BrowserIntilization" finished-at="2025-06-02T21:09:13 IST" duration-ms="2137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_SelectDuplicateValuesInDropdown(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@1613674b]" started-at="2025-06-02T21:09:13 IST" name="Validate_SelectDuplicateValuesInDropdown" finished-at="2025-06-02T21:09:22 IST" duration-ms="8826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_SelectDuplicateValuesInDropdown -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues@1613674b]" started-at="2025-06-02T21:09:22 IST" name="TearDown" finished-at="2025-06-02T21:09:23 IST" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues -->
+      <class name="com.pivotree.auto.training.TC_LogSoftAssertFailures">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_LogSoftAssertFailures@b62d79]" started-at="2025-06-02T21:07:54 IST" name="BrowserIntilization" finished-at="2025-06-02T21:07:57 IST" duration-ms="2655" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="validate_UIElements(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_LogSoftAssertFailures@b62d79]" started-at="2025-06-02T21:07:57 IST" name="validate_UIElements" finished-at="2025-06-02T21:08:17 IST" duration-ms="20465" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Verify Label Name expected [Name1] but found [Name:],
+Verify Email Name expected [Email1] but found [Email:],
+Verify Phone Name expected [Phone2] but found [Phone:],
+Verify Address Name expected [Address1] but found [Address:],
+Verify Gender Name expected [Gender1] but found [Gender:]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Verify Label Name expected [Name1] but found [Name:],
+Verify Email Name expected [Email1] but found [Email:],
+Verify Phone Name expected [Phone2] but found [Phone:],
+Verify Address Name expected [Address1] but found [Address:],
+Verify Gender Name expected [Gender1] but found [Gender:]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at ePay_CRM.Test_ActionMethods.Method_BlogSpot.verify_PersonalDetailsLabelNames(Method_BlogSpot.java:685)
+at com.pivotree.auto.training.TC_LogSoftAssertFailures.validate_UIElements(TC_LogSoftAssertFailures.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_UIElements -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_LogSoftAssertFailures@b62d79]" started-at="2025-06-02T21:08:18 IST" name="TearDown" finished-at="2025-06-02T21:08:18 IST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_LogSoftAssertFailures -->
+      <class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:10 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:12 IST" duration-ms="2225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:12 IST" name="setup" finished-at="2025-06-02T21:04:12 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_Highest_PriceWiseBookDetails(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:12 IST" name="Validate_Highest_PriceWiseBookDetails" finished-at="2025-06-02T21:04:18 IST" duration-ms="6334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Highest_PriceWiseBookDetails -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:18 IST" name="TearDown" finished-at="2025-06-02T21:04:19 IST" duration-ms="313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:19 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:21 IST" duration-ms="2490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:21 IST" name="setup" finished-at="2025-06-02T21:04:21 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_Lowest_PriceWiseBookDetails(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:21 IST" name="Validate_Lowest_PriceWiseBookDetails" finished-at="2025-06-02T21:04:28 IST" duration-ms="6765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Lowest_PriceWiseBookDetails -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:28 IST" name="TearDown" finished-at="2025-06-02T21:04:28 IST" duration-ms="297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:28 IST" name="BrowserIntilization" finished-at="2025-06-02T21:04:30 IST" duration-ms="2198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:30 IST" name="setup" finished-at="2025-06-02T21:04:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_Average_PriceWiseBookDetails(java.lang.String)[pri:3, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:30 IST" name="Validate_Average_PriceWiseBookDetails" finished-at="2025-06-02T21:04:34 IST" duration-ms="4050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Average_PriceWiseBookDetails -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails@55536d9e]" started-at="2025-06-02T21:04:34 IST" name="TearDown" finished-at="2025-06-02T21:04:35 IST" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails -->
+      <class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@3e6ef8ad]" started-at="2025-06-02T21:03:48 IST" name="BrowserIntilization" finished-at="2025-06-02T21:03:51 IST" duration-ms="2753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="Validate_DyanmicCheckBoxSelection(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@3e6ef8ad]" started-at="2025-06-02T21:03:51 IST" name="Validate_DyanmicCheckBoxSelection" finished-at="2025-06-02T21:04:00 IST" duration-ms="9007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_DyanmicCheckBoxSelection -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes@3e6ef8ad]" started-at="2025-06-02T21:04:00 IST" name="TearDown" finished-at="2025-06-02T21:04:00 IST" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes -->
+      <class name="com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:40 IST" name="BrowserIntilization" finished-at="2025-06-02T21:06:42 IST" duration-ms="2239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:42 IST" name="setup" finished-at="2025-06-02T21:06:42 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validate_TabNamesCorrectness(java.lang.String)[pri:1, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:42 IST" name="Validate_TabNamesCorrectness" finished-at="2025-06-02T21:06:47 IST" duration-ms="4790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_TabNamesCorrectness -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:47 IST" name="TearDown" finished-at="2025-06-02T21:06:47 IST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:47 IST" name="BrowserIntilization" finished-at="2025-06-02T21:06:50 IST" duration-ms="2213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:50 IST" name="setup" finished-at="2025-06-02T21:06:50 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="captureScreenshotsWhileSwitchingTabs(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:06:50 IST" name="captureScreenshotsWhileSwitchingTabs" finished-at="2025-06-02T21:07:08 IST" duration-ms="18680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotsWhileSwitchingTabs -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs@66498326]" started-at="2025-06-02T21:07:08 IST" name="TearDown" finished-at="2025-06-02T21:07:09 IST" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.pivotree.auto.training.TC_captureScreenshotsWhileNavigatingTabs -->
+    </test> <!-- Blogspot -->
+    <test started-at="2025-06-02T21:09:23 IST" name="DataDrivenTests_1" finished-at="2025-06-02T21:09:23 IST" duration-ms="3">
+    </test> <!-- DataDrivenTests_1 -->
+    <test started-at="2025-06-02T21:09:23 IST" name="DataDrivenTests_2" finished-at="2025-06-02T21:09:43 IST" duration-ms="20005">
+      <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@483f6d77]" started-at="2025-06-02T21:09:23 IST" name="BrowserIntilization" finished-at="2025-06-02T21:09:25 IST" duration-ms="1850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="validateListAgainstExpectedValues_aldo_Women(java.lang.String)[pri:2, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@483f6d77]" started-at="2025-06-02T21:09:25 IST" name="validateListAgainstExpectedValues_aldo_Women" finished-at="2025-06-02T21:09:31 IST" duration-ms="6450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,8 +1011,41 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateListAgainstExpectedValues_aldo -->
-        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@482bce4f]" started-at="2025-05-27T23:50:29 IST" name="TearDown" finished-at="2025-05-27T23:50:30 IST" duration-ms="556" status="PASS">
+        </test-method> <!-- validateListAgainstExpectedValues_aldo_Women -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@483f6d77]" started-at="2025-06-02T21:09:31 IST" name="TearDown" finished-at="2025-06-02T21:09:32 IST" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="BrowserIntilization(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@483f6d77]" started-at="2025-06-02T21:09:32 IST" name="BrowserIntilization" finished-at="2025-06-02T21:09:34 IST" duration-ms="2120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserIntilization -->
+        <test-method signature="validateListAgainstExpectedValues_aldo_Collections(java.lang.String)[pri:3, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@483f6d77]" started-at="2025-06-02T21:09:34 IST" name="validateListAgainstExpectedValues_aldo_Collections" finished-at="2025-06-02T21:09:43 IST" duration-ms="8802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.aldoshoes.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateListAgainstExpectedValues_aldo_Collections -->
+        <test-method is-config="true" signature="TearDown(java.lang.String)[pri:0, instance:com.pivotree.auto.training.TC_ValidateExpectedListValues@483f6d77]" started-at="2025-06-02T21:09:43 IST" name="TearDown" finished-at="2025-06-02T21:09:43 IST" duration-ms="398" status="PASS">
           <params>
             <param index="0">
               <value>

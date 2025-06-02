@@ -30,12 +30,24 @@ public class TC_ValidateExpectedListValues extends BasePageSetup {
 	@Test(priority=2,enabled=true)
 	@Parameters("Url")
 	//(priority=1,dataProvider="ExcelDataProvider",dataProviderClass=ExcelDataExtractor.class,enabled=true)///Working	
-	public void validateListAgainstExpectedValues_aldo(String url) throws Exception
+	public void validateListAgainstExpectedValues_aldo_Women(String url) throws Exception
 	{		
 		System.out.println("---- URL---:"+url);
 		Method_Aldo corestep=Get_Aldo_Obj();
 		getUrl(url);
-		corestep.validateListExpectedValues_Handbags("MenuList_aldo","Handbags","Womens","Handbags","Women,Collections");
+		corestep.validateListExpectedValues_Handbags("MenuList_aldo","Handbags","Womens","Handbags","Women");
+		
+	}
+	
+	@Test(priority=3,enabled=true)
+	@Parameters("Url")
+	//(priority=1,dataProvider="ExcelDataProvider",dataProviderClass=ExcelDataExtractor.class,enabled=true)///Working	
+	public void validateListAgainstExpectedValues_aldo_Collections(String url) throws Exception
+	{		
+		System.out.println("---- URL---:"+url);
+		Method_Aldo corestep=Get_Aldo_Obj();
+		getUrl(url);
+		corestep.validateListExpectedValues_Handbags("MenuList_aldo","Handbags_Collections","Collections","Handbags","Collections");
 	}
 }
 

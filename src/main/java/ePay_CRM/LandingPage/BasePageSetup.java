@@ -200,6 +200,28 @@ public class BasePageSetup {
 		}
 	}
 
+	public void getUrl()
+	{
+		driver.manage().window().maximize();
+		try
+		{
+			driver.navigate().to(prop.getProperty("URL"));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));// newly added
+			event.printSnap("Navigated to URL");
+			CommonLogger.log(driver.getCurrentUrl());
+		}
+		catch(Exception e)
+		{
+			//getLog().info("Got RunTime Error-on Page Load, Retrying !!..");
+			CommonLogger.log("Got RunTime Error-on Page Load, Retrying !!..");
+			driver.navigate().refresh();
+			driver.navigate().to(prop.getProperty("URL"));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));// newly added
+			event.printSnap("Navigated to URL");
+			CommonLogger.log(driver.getCurrentUrl());
+		}
+	}
+
 
 }
 

@@ -178,23 +178,19 @@ public class WrapperMethods extends BasePageSetup {
 	}
 
 	public void selectValueAndVerify(WebElement element, String value,String FieldName) {
-
 		try
 		{
 			Select select = new Select(element);
 			select.selectByVisibleText(value);
-			Assert.assertEquals(select.getFirstSelectedOption().getText(),value.toUpperCase(), "Verify "+FieldName+" is selected");
+			Assert.assertEquals(select.getFirstSelectedOption().getText().toUpperCase(),value.toUpperCase(), "Verify "+FieldName+" is selected");
 			CommonLogger.log("Field :"+FieldName+" is Selected & Verified.");
 		}
 		catch(Exception e)
 		{
-
 			CommonLogger.log("RunTime Exception Occurred: " + element+" - "+e);
 			CommonLogger.errorLog(e);
-
 		}
 	}
-
 
 	public void selectRadioButton(List<WebElement> elements, WebElement attribute, String value, String FieldName) {
 		try {

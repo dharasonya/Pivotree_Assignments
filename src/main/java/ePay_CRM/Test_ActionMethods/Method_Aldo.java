@@ -47,62 +47,58 @@ public class Method_Aldo extends BasePageSetup{
 
 	public void validateListExpectedValues_Handbags(String fileName, String sheetName,String ColumnName,String Category,
 			String SubCategory) throws Exception {
-		// TODO Auto-generated method stub
 		
 		List<String> getTotalHandBagItemList_Women=new ArrayList<String>();
 		List<String> getTotalHandBagItemList_Collection=new ArrayList<String>();
-		List<String> subCategoryList = Arrays.asList(SubCategory.split(",")); // Splitting by ',' 
-		
-		for(String subCatValues:subCategoryList)
-		{
-			System.out.println("-----subCatValues--------:"+subCatValues);
-		}
-		
-		boolean areListsEqual=false;
-		int subCategoryCount=0;
 
 		int index=0;
 		for(WebElement menuValues:wait.waitForListOfAllElementsToBeVisible(obj.getMenuList,5))
 		{
 			String menuName=menuValues.getText();
+
 			index++;
-			//System.out.println("--- menu name--:"+menuName);
 			if(menuName.equalsIgnoreCase(Category))
 			{
 				// Create Actions object
 				Actions actions = new Actions(driver);
 				// Perform hover action
 				actions.moveToElement(obj.getMenuName(index)).perform();
-
-				for(int i=0;i<wait.waitForListOfAllElementsToBeVisible(obj.getCountOfSubMenuCategory, 15).size();i++)
-				{
-					subCategoryCount++;
-					String subCategoryName=obj.getHangBagsItem_SubCategory(subCategoryCount).getText();
-
-					if(subCategoryName.equals(subCategoryList.get(i)))
+				
+				switch(SubCategory)
 					{
-						for(WebElement getItemCategory_Women:wait.waitForListOfAllElementsToBeVisible(obj.getHangListBagsItem_Women, 5))
+						case "Women":
 						{
-							getTotalHandBagItemList_Women.add(getItemCategory_Women.getText());
+							Assert.assertEquals(SubCategory, "Women");
+							for(WebElement getItemCategory_Women:wait.waitForListOfAllElementsToBeVisible(obj.getHangListBagsItem_Women, 5))
+							{
+								getTotalHandBagItemList_Women.add(getItemCategory_Women.getText());
+							}
+							this.ExcelReader(fileName, sheetName, ColumnName, getTotalHandBagItemList_Women);
+							break;
 						}
-					}
-					else if (subCategoryName.equals(subCategoryList.get(i)))
-					{
-						for(WebElement getItemCategory_Collection:wait.waitForListOfAllElementsToBeVisible(obj.getHangListBagsItem_Collections, 5))	
+						case "Collections":
 						{
-							getTotalHandBagItemList_Collection.add(getItemCategory_Collection.getText());
-						}
+							Assert.assertEquals(SubCategory, "Collections");
+							for(WebElement getItemCategory_Women:wait.waitForListOfAllElementsToBeVisible(obj.getHangListBagsItem_Collections, 5))
+							{
+								getTotalHandBagItemList_Collection.add(getItemCategory_Women.getText());
+							}
+							this.ExcelReader(fileName, sheetName, ColumnName, getTotalHandBagItemList_Collection);
+							break;
+						}		
 					}	
-				}
-				break;
 			}
 		}
-		//System.out.println("---LIST OF ITEMS IN WOMEN  :----:"+getTotalHandBagItemList_Women);
-		//System.out.println("---LIST OF ITEMS IN COLLECTION  :----:"+getTotalHandBagItemList_Collection);
-		
+	}
+	
+	public void ExcelReader(String fileName,String sheetName,String ColumnName,List<String> listOfCatValues)
+	{
+		boolean areListsEqual=false;
 		ExcelColumnReader reader = new ExcelColumnReader();
+		//Map<String, List<String>> extractedData = reader.readColumnWiseData(fileName, sheetName);
 		Map<String, List<String>> extractedData = reader.readColumnWiseData(fileName, sheetName);
 
+		//System.out.println("--FILENAME : "+fileName + " _SheetName : "+sheetName);
 		List<String> expectedValues = extractedData.get(ColumnName); // Get expected values from Excel  
 
 		if (expectedValues == null || expectedValues.isEmpty()) {
@@ -111,12 +107,13 @@ public class Method_Aldo extends BasePageSetup{
 		}
 		
 		// Print column-wise data
-		System.out.println("Column: " + ColumnName);
+		/*System.out.println("Column: " + ColumnName);
 		for (int j = 0; j < expectedValues.size(); j++) {  
 			System.out.println("  - " + expectedValues.get(j)); // Using simple loop instead of foreach
-		}
+		}*/
+		
 		// Convert lists to Sets for comparison
-		Set<String> webValuesSet = new HashSet<>(getTotalHandBagItemList_Women);
+		Set<String> webValuesSet = new HashSet<>(listOfCatValues);
 		Set<String> expectedValuesSet = new HashSet<>(expectedValues);
 
 		// Find missing & extra values
@@ -125,7 +122,9 @@ public class Method_Aldo extends BasePageSetup{
 
 		Set<String> extraInWeb = new HashSet<>(webValuesSet);
 		extraInWeb.removeAll(expectedValuesSet);
-
+		
+		
+		
 		if (webValuesSet.equals(expectedValuesSet)) {
 			CommonLogger.log("Both lists contain the same elements (order ignored)!");
 			areListsEqual=true;
@@ -136,6 +135,7 @@ public class Method_Aldo extends BasePageSetup{
 			CommonLogger.log("Extra in Web dropdown (Found but not expected): " + extraInWeb);
 			areListsEqual=false;
 		}
+		
 		CommonLogger.log("-----------------------------------------------------"); // Separator for readability
 		if(areListsEqual==true)
 		{
