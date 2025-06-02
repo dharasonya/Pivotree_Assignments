@@ -2,6 +2,7 @@ package com.pivotree.auto.training;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ePay_CRM.LandingPage.BasePageSetup;
@@ -29,29 +30,33 @@ public class TC_ScrollToElementAndCapture extends BasePageSetup {
 	}	
 	
 	@Test(priority=1,enabled=true)
-	public void Validate_scrollToTopAndCapture() throws Exception
+	@Parameters("Url")
+	public void Validate_scrollToTopAndCapture(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.scrollToTopAndCapture();	
 	}
 
 	@Test(priority=2,enabled=true)
-	public void Validate_scrollToBottomAndCapture() throws Exception
+	@Parameters("Url")
+	public void Validate_scrollToBottomAndCapture(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.scrollToBottomAndCapture();
 	}
 
 	@Test(priority=3,enabled=true)
-	public void Validate_scrollToElementAndCapture() throws Exception
+	@Parameters("Url")
+	public void Validate_scrollToElementAndCapture(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.scrollToElementAndCapture();
 	}
 	@Test(priority=4,enabled=true)
-	public void Validate_captureFullPageScreen() throws Exception
+	@Parameters("Url")
+	public void Validate_captureFullPageScreen(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.captureFullScreen();
 	}
 }

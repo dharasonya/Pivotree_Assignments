@@ -4,16 +4,19 @@
   <listeners>
     <listener class-name="ePay_CRM.Reusable_Utils.CallListeners"/>
   </listeners>
-  <test thread-count="5" name="DataDrivenTests(failed)">
+  <test thread-count="5" name="Blogspot(failed)">
+    <parameter name="fileName" value="blogspot_PersonalDetails_Data"/>
     <parameter name="BrowserValue" value="chrome"/>
+    <parameter name="sheetName" value="Add"/>
+    <parameter name="Url" value="https://testautomationpractice.blogspot.com/"/>
     <classes>
-      <class name="com.pivotree.auto.training.TC_ValidateExpectedListValues">
+      <class name="com.pivotree.auto.training.TC_LogSoftAssertFailures">
         <methods>
-          <include name="validateListAgainstExpectedValues"/>
+          <include name="validate_UIElements" invocation-numbers="0"/>
           <include name="TearDown"/>
           <include name="BrowserIntilization"/>
         </methods>
-      </class> <!-- com.pivotree.auto.training.TC_ValidateExpectedListValues -->
+      </class> <!-- com.pivotree.auto.training.TC_LogSoftAssertFailures -->
     </classes>
-  </test> <!-- DataDrivenTests(failed) -->
+  </test> <!-- Blogspot(failed) -->
 </suite> <!-- Failed suite [TestAutomationPractive] -->
