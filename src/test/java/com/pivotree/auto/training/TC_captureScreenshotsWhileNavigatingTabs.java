@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ePay_CRM.LandingPage.BasePageSetup;
@@ -28,18 +29,20 @@ public class TC_captureScreenshotsWhileNavigatingTabs extends BasePageSetup {
 		}
 	}	
 	
-	@Test(priority=1,enabled=false)
-	public void Validate_TabNamesCorrectness() throws Exception
+	@Parameters("Url")
+	@Test(priority=1,enabled=true)
+	public void Validate_TabNamesCorrectness(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		List<String> expectedTabs = Arrays.asList("Home", "Udemy Courses", "Online Trainings", "Blog","PlaywrightPractice");
 		corestep.verifyTabName(expectedTabs);	
 	}
 	
 	@Test(priority=2,enabled=true)
-	public void captureScreenshotsWhileSwitchingTabs() throws Exception
+	@Parameters("Url")
+	public void captureScreenshotsWhileSwitchingTabs(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		List<String> expectedTabs = Arrays.asList("Home", "Udemy Courses", "Online Trainings", "Blog","PlaywrightPractice");
 		corestep.switchTabCaptureScreenShot(expectedTabs);	
 	}

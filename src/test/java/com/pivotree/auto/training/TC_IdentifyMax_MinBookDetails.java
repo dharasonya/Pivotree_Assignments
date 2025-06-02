@@ -2,6 +2,7 @@ package com.pivotree.auto.training;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ePay_CRM.LandingPage.BasePageSetup;
@@ -24,25 +25,27 @@ public class TC_IdentifyMax_MinBookDetails extends BasePageSetup {
 			Assert.fail("Setup failed due to exception: " + e.getMessage());
 		}
 	}	
-	
-	@Test(priority=1,enabled=false)
-	public void Validate_Highest_PriceWiseBookDetails() throws Exception
+	@Parameters("Url")
+	@Test(priority=1,enabled=true)
+	public void Validate_Highest_PriceWiseBookDetails(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.getMaxBookDetails();	
 	}
 
-	@Test(priority=2,enabled=false)
-	public void Validate_Lowest_PriceWiseBookDetails() throws Exception
+	@Test(priority=2,enabled=true)
+	@Parameters("Url")
+	public void Validate_Lowest_PriceWiseBookDetails(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.getMinBookDetails();
 	}
 
 	@Test(priority=3,enabled=true)
-	public void Validate_Average_PriceWiseBookDetails() throws Exception
+	@Parameters("Url")
+	public void Validate_Average_PriceWiseBookDetails(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		corestep.getAveragePriceBookDetails();
 	}
 }

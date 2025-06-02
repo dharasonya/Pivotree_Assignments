@@ -1,0 +1,7 @@
+02:06:2025 13:51:52 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:141] - Browser Initilzation Started : chrome
+02:06:2025 13:51:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:100] - Browser Launched :- chrome
+02:06:2025 13:51:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+02:06:2025 13:51:57 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:191] - Got RunTime Error-on Page Load, Retrying !!..
+02:06:2025 13:51:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:169] - Closing Browser: chrome
+02:06:2025 13:51:58 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:173] - -------Execution Completed---
+02:06:2025 13:51:59 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed

@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ePay_CRM.LandingPage.BasePageSetup;
@@ -29,17 +30,19 @@ public class TC_DynamicTabNavigation extends BasePageSetup {
 	}	
 	
 	@Test(priority=1,enabled=true)
-	public void Validate_TabNamesCorrectness() throws Exception
+	@Parameters("Url")
+	public void Validate_TabNamesCorrectness(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		List<String> expectedTabs = Arrays.asList("Home", "Udemy Courses", "Online Trainings", "Blog","PlaywrightPractice");
 		corestep.verifyTabName(expectedTabs);	
 	}
 	
 	@Test(priority=2,enabled=true)
-	public void Validate_TabNamesNavigatedCorrectly() throws Exception
+	@Parameters("Url")
+	public void Validate_TabNamesNavigatedCorrectly(String url) throws Exception
 	{
-		getUrl();
+		getUrl(url);
 		List<String> expectedTabs = Arrays.asList("Home", "Udemy Courses", "Online Trainings", "Blog","PlaywrightPractice");
 		corestep.verifyTabNavigation(expectedTabs);	
 	}

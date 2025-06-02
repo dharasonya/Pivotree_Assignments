@@ -1,0 +1,7 @@
+02:06:2025 12:48:18 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:143] - Browser Initilzation Started : chrome
+02:06:2025 12:48:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+02:06:2025 12:48:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+02:06:2025 12:48:31 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:188] - https://testautomationpractice.blogspot.com/
+02:06:2025 12:50:03 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.addPersonalDetails [Line:46] - Initiated the process of filling in details on Section-PersonalDetails-GUI Elements
+02:06:2025 12:50:28 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.enterAndVerify [Line:54] - Field: Name is entered & verified.
+02:06:2025 12:50:37 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Test_ActionMethods.Method_BlogSpot.addPersonalDetails [Line:70] - The process of adding Personal details has been completed.

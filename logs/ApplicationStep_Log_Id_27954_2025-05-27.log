@@ -1,0 +1,18 @@
+27:05:2025 12:24:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed
+27:05:2025 12:24:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed
+27:05:2025 12:24:24 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.BrowserIntilization [Line:143] - Browser Initilzation Started : chrome
+27:05:2025 12:24:29 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.LoadConfigFile [Line:102] - Browser Launched :- chrome
+27:05:2025 12:24:29 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onTestStart [Line:70] - -------Execution Started for Record : ------1
+27:05:2025 12:24:37 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.getUrl [Line:188] - https://www.aldoshoes.in/
+27:05:2025 12:24:43 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.WrapMethods.WrapperMethods.clickOnButtonAndVerify [Line:303] - RunTime Exception Occurred: [[ChromeDriver: chrome on windows (84094f0e3bfe5bc8362d014e3ed00ea8)] -> xpath: //div[@class='nav']/nav/ul/li[2]/a[@role='button']] - org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 5.000
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84094f0e3bfe5bc8362d014e3ed00ea8, clickElement {id=f.7CF8913BCD7653CFDEBF7CE0BFF355A2.d.1681C910111E43F9613338C9EC689F7D.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\sonya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56364/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (84094f0e3bfe5bc8362d014e3ed00ea8)] -> xpath: //div[@class='nav']/nav/ul/li[2]/a[@role='button']]
+Session ID: 84094f0e3bfe5bc8362d014e3ed00ea8
+27:05:2025 12:24:43 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:171] - Closing Browser: chrome
+27:05:2025 12:24:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.LandingPage.BasePageSetup.TearDown [Line:175] - -------Execution Completed---
+27:05:2025 12:24:44 -  INFO ePay_CRM.Reusable_Utils.CommonLogger.log [Line:23] - ePay_CRM.Reusable_Utils.CallListeners.onFinish [Line:136] - Report got flushed
