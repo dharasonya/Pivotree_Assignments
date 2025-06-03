@@ -11,8 +11,8 @@
 		<parameter name="sheetName" value="Add" />
 		<parameter name="fileName" value="blogspot_PersonalDetails_Data" />
 		<classes>
-			<class name="com.pivotree.auto.training.TC_FillPersonalDetails" /> 
-			<class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" /> 
+			<!--<class name="com.pivotree.auto.training.TC_FillPersonalDetails" /> 
+			 
 			<class name="com.pivotree.auto.training.TC_SelectDateFromPicker" /> 
 			<class name="com.pivotree.auto.training.TC_IdentifyMax_MinBookDetails" /> 
 			<class name="com.pivotree.auto.training.TC_ValidateDateErros" /> 
@@ -24,11 +24,12 @@
 			<class name="com.pivotree.auto.training.TC_LogSoftAssertFailures" /> 
 			<class name="com.pivotree.auto.training.TC_ProductSelectionAutomation" /> 
 			<class name="com.pivotree.auto.training.TC_ValidateBrokenLinks" /> 
-			<class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" />
+			<class name="com.pivotree.auto.training.TC_IdentifyDuplicateSelectValues" /> -->
+			<class name="com.pivotree.auto.training.TC_DynamicHandlingCheckBoxes" /> 
 		</classes>
 	</test> 
 	
-	<test name="DataDrivenTests_1">
+	<!-- <test name="DataDrivenTests_1">
     <parameter name="BrowserValue" value="chrome" />
     <parameter name="Url" value="https://testautomationpractice.blogspot.com/" />
     <classes>
@@ -38,10 +39,10 @@
             </methods>
         </class>
     </classes>
-	</test>
+	</test> -->
 	
 	
-	<test name="DataDrivenTests_2">
+	<!-- <test name="DataDrivenTests_2">
     <parameter name="BrowserValue" value="chrome" />
     <parameter name="Url" value="https://www.aldoshoes.in/" />
   	<classes>
@@ -52,7 +53,7 @@
             </methods>
         </class>
     </classes>
-	</test>
+	</test> -->
 	
 </suite> <!-- TestAutomationPractive -->
 
