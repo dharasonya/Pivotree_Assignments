@@ -59,9 +59,13 @@ public class BasePageSetup {
 		case "chrome" :
 		{	
 			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("--disable-gpu"); // Optional: Use to disable GPU rendering in headless mode
+			options.addArguments("--window-size=1920,1080"); // Optional: Set window size
 
 			//options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			setDriver(new ChromeDriver());		
+			
+			setDriver(new ChromeDriver());	
 			break;
 		}
 
